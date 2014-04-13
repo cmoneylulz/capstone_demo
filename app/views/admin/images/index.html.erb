@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h2><%= "#{@images.count} pending #{"Image".pluralize(@images.count)}" %></h2>
+  </div>
+
+<% @interest_points.each do |interest_point| %>
+  <div class="col-xs-12">
+    <h3><%= interest_point.name %></h3>
+    <% interest_point.images.each do |image| %>
+        <% div_class_text = image.pending ? "col-xs-3 bg-danger" : "col-xs-3" %>
+        <div class="#{div_class_text}">
+        <%= image_tag image.file_url, class: 'image-thumbnail', style: "padding-top: 25px; #{"border: 2px solid red;".html_safe if image.default? }" %>
+        <% if image.pending %>
+          <%= button_to approve_admin_image_path(image), method: :put, class: 'btn btn-default btn-sm', type: :submit do %><span class="glyphicon glyphicon-ok"></span>Approve<% end %>
+        <% else %>
+          <%= button_to unapprove_admin_image_path(image), method: :put, class: 'btn btn-default btn-sm', type: :submit do %><span class="glyphicon glyphicon-remove"></span>Unapprove<% end %>
+        <% end %>
+        <% unless image.default? %><%= link_to 'Set Default', admin_update_default_image_path(interest_point, image_id: image),  { method: :put } %><% end %>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

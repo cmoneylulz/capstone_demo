@@ -1,0 +1,25 @@
+<div class='container-fluid'>
+	<h1>Update your password</h1>
+
+	<p>Please enter the new password below and then press "Update Password".</p>
+
+<%= form_tag reset_password_path, :method => :put do %>
+<div class='row'>
+	<div class='col-xs-3'>
+		<%= label_tag :password %>
+  		<%= password_field_tag :password, "", class: 'form-control' %>
+  	</div>
+</div>
+<div class='row'>
+  	<div class='col-xs-3'>
+  		<%= label_tag :password_confirmation %>
+  		<%= password_field_tag :password_confirmation, "", class: 'form-control' %>
+  	</div>
+</div>
+<p>&nbsp;</p>
+<div class='row'>
+	<div class='col-xs-3'><%= submit_tag "Update Password", class: 'btn btn-primary pull-right' %></div>
+</div>
+<% end %>
+</fieldset>
+</div>

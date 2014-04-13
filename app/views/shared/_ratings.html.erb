@@ -1,0 +1,39 @@
+<%= form_for [ratable, rating], url: rating.default_path,  remote: true do %>
+    <% if can? :read, rating %>
+        <div class="rating">
+            <p>Average Rating: <%= Rating.average_rating(ratable) %></p>
+            <div id="star"></div>
+        </div>
+    <% end %>
+    <% if can? :modify, rating %>
+        <div class="rating">
+            <p>Your Current Rating: </p>
+            <div id="user_star"></div>
+        </div>
+    <% end %>
+<% end %>
+
+<script type="text/javascript">
+    $('#star').raty({
+        readOnly: true,
+        half: true,
+        starHalf: 'star-half.png',
+        score: <%= Rating.average_rating(ratable) %>,
+        path: '/assets'
+    });
+
+    $('#user_star').raty({
+        half: true,
+        click: function() {  },
+        score: <%= rating.score %>,
+        path: '/assets',
+        click: function(score, evt) {
+            $.ajax({
+                url: <%= rating.default_path %>,
+                type: 'PUT',
+                data: { score: score }
+            }).done(function(){
+            });
+        }
+    });
+</script>

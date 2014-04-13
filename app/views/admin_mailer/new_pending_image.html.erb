@@ -1,0 +1,20 @@
+<p>A new image has been uploaded to Hot Spots and needs your approval!</p>
+
+<h3><b>Image information</b></h3>
+<table class="table table-responsive email">
+  <tr>
+    <td>Interest Point:</td>
+    <td><%= @image.interest_point.name %></td>
+  </tr>
+  <tr>
+    <td>Contributed by:</td>
+    <td><%= @image.contributor.first_name %> <%= @image.contributor.last_name %> [<%= @image.contributor.user_name %>] on <%= format_datetime(@image.created_at) %></td>
+  </tr>
+</table>
+
+<h3><b>Image preview:</b></h3>
+<%= image_tag @image.file_url, host: 'localhost:3000', class: 'image-thumbnail' %>
+
+<p>Visit <%= link_to 'Admin Images', admin_images_url, host: 'localhost:3000' %> to approve Images.</p>
+
+<p>As always, thanks for your time and dedication to keep this application running smoothly!</p>

@@ -1,0 +1,18 @@
+<%= form_for(@artist) do |f| %>
+<table class="table">
+  <tr>
+    <td><%= f.label :first_name %></td>
+    <td><%= f.text_field :first_name %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :last_name %></td>
+    <td><%= f.text_field :last_name %></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <%= link_to 'Cancel', artist_path(@artist), class: 'btn btn-default btn-sm' %>
+      <%= f.submit class: 'btn btn-primary btn-sm' %>
+    </td>
+  </tr>
+</table>
+<% end %>

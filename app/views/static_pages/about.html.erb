@@ -1,0 +1,34 @@
+<div class="panel panel-info">
+  <div class="panel-heading clearfix">
+    <h1>About Us</h1>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>
+            The "Hot Spot" project is a collaborative effort between Ashley Childress and Christopher Wilson. It was developed
+            as a group project for our capstone class at University of West Georgia. The goal of this project is to use agile
+            development practices to create a website running on the <i>Ruby on Rails</i> engine to allow users to create and
+            maintain several interest points. In addition to listing interest points <%= link_to "here", interest_points_path %>,
+            we also listed the locations on a <%= link_to "map page", maps_main_path, 'data-no-turbolink' => true %>. Also,
+            each interest point can be assigned an <%= link_to "artist", artists_path %>, or a <%= link_to "category", categories_path %>.
+            The map view can be filtered to only show interest points in certain categories. In addition, clicking on an interest point's
+            map marker will bring up an info window with a link to the page, as well as a button that will generate directions to the point.
+        </p>
+        <p>
+            <h4>Want to see more?</h4>Login to our site using any social media network to add comments to the interest points.
+            All our interest points can also be shared on most social media platforms by clicking the icons at the bottom of the image
+            carousel. As a user, you can post your own interest point images as well as rate interest points and view the average
+            rating an interest point has.
+        </p>
+        <p>
+            <h4>Want to contribute?</h4>Email one of our admins on our <%= link_to "contact us page", contact_path %> to get
+            contributor access. Contributors can create and modify interest points as well as select a default image.
+        </p>
+        <p>
+            <h4>Want to be an admin?</h4>Are you Dr. Yoder? If so, use the info we provided :) if not, TOO BAD.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

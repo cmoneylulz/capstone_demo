@@ -1,0 +1,22 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <b>POINTS OF INTEREST</b>
+    <select id="category-filter" class="pull-right">
+      <option value="/">All Categories</option>
+      <% @categories.each do |category| %>
+          <option value="maps/<%= category.id %>" <% if (category.id.to_i == params[:id].to_i) %>selected="selected" <% end %>><%= category.name %></option>
+      <% end %>
+    </select>
+  </div>
+  <div class="panel-body">
+    <ul>
+      <% @interest_points.each do |interest_point| %>
+          <% unless interest_point.pending %>
+          <li>
+            <%= link_to interest_point.name, interest_point, 'data-no-turbolink' => true %>
+          </li>
+          <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-lg-12" id="map-view">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <b>Interest Point Map:</b>
+        <div class="btn-group pull-right">
+          <button class="btn-xs btn-info" id="poi-show">POI List</button>
+        </div>
+      </div>
+      <%= render 'maps/display' %>
+    </div>
+  </div>
+  <div class="col-lg-3" id="ip-view">
+    <%= render 'maps/poi' %>
+  </div>
+</div>
+<%= render 'maps/filter' %>

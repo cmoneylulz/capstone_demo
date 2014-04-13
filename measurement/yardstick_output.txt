@@ -1,0 +1,781 @@
+app/controllers/admin/images_controller.rb:14: Admin::ImagesController#index: The @return tag should be specified
+app/controllers/admin/images_controller.rb:14: Admin::ImagesController#GET: The @return tag should be specified
+app/controllers/admin/images_controller.rb:30: Admin::ImagesController#approve: The method summary should be less than 80 characters in length
+app/controllers/admin/images_controller.rb:30: Admin::ImagesController#approve: The method summary should be a single line
+app/controllers/admin/images_controller.rb:30: Admin::ImagesController#approve: The @return tag should be specified
+app/controllers/admin/images_controller.rb:45: Admin::ImagesController#unapprove: The method summary should be less than 80 characters in length
+app/controllers/admin/images_controller.rb:45: Admin::ImagesController#unapprove: The method summary should not end in a period
+app/controllers/admin/images_controller.rb:45: Admin::ImagesController#unapprove: The @return tag should be specified
+app/controllers/admin/images_controller.rb:60: Admin::ImagesController#update_multiple: The method summary should be less than 80 characters in length
+app/controllers/admin/images_controller.rb:60: Admin::ImagesController#update_multiple: The @return tag should be specified
+app/controllers/admin/images_controller.rb:76: Admin::ImagesController#approve_multiple: The method summary should be less than 80 characters in length
+app/controllers/admin/images_controller.rb:90: Admin::ImagesController#unapprove_multiple: The method summary should be less than 80 characters in length
+app/controllers/admin/images_controller.rb:90: Admin::ImagesController#unapprove_multiple: The method summary should not end in a period
+app/controllers/admin/interest_points_controller.rb:12: Admin::InterestPointsController#index: The @api tag should be specified
+app/controllers/admin/interest_points_controller.rb:12: Admin::InterestPointsController#index: The @api tag must be either public, semipublic or private
+app/controllers/admin/interest_points_controller.rb:12: Admin::InterestPointsController#index: The public/semipublic method should have an example specified
+app/controllers/admin/interest_points_controller.rb:12: Admin::InterestPointsController#index: The method summary should be less than 80 characters in length
+app/controllers/admin/interest_points_controller.rb:12: Admin::InterestPointsController#index: The method summary should not end in a period
+app/controllers/admin/interest_points_controller.rb:12: Admin::InterestPointsController#index: The @return tag should be specified
+app/controllers/admin/interest_points_controller.rb:21: Admin::InterestPointsController#show: The @api tag should be specified
+app/controllers/admin/interest_points_controller.rb:21: Admin::InterestPointsController#show: The @api tag must be either public, semipublic or private
+app/controllers/admin/interest_points_controller.rb:21: Admin::InterestPointsController#show: The public/semipublic method should have an example specified
+app/controllers/admin/interest_points_controller.rb:21: Admin::InterestPointsController#show: The method summary should be less than 80 characters in length
+app/controllers/admin/interest_points_controller.rb:21: Admin::InterestPointsController#show: The method summary should not end in a period
+app/controllers/admin/interest_points_controller.rb:21: Admin::InterestPointsController#show: The @return tag should be specified
+app/controllers/admin/interest_points_controller.rb:30: Admin::InterestPointsController#approve: The @api tag should be specified
+app/controllers/admin/interest_points_controller.rb:30: Admin::InterestPointsController#approve: The @api tag must be either public, semipublic or private
+app/controllers/admin/interest_points_controller.rb:30: Admin::InterestPointsController#approve: The public/semipublic method should have an example specified
+app/controllers/admin/interest_points_controller.rb:30: Admin::InterestPointsController#approve: The method summary should be less than 80 characters in length
+app/controllers/admin/interest_points_controller.rb:30: Admin::InterestPointsController#approve: The method summary should not end in a period
+app/controllers/admin/interest_points_controller.rb:30: Admin::InterestPointsController#approve: The @return tag should be specified
+app/controllers/admin/interest_points_controller.rb:43: Admin::InterestPointsController#unapprove: The @api tag should be specified
+app/controllers/admin/interest_points_controller.rb:43: Admin::InterestPointsController#unapprove: The @api tag must be either public, semipublic or private
+app/controllers/admin/interest_points_controller.rb:43: Admin::InterestPointsController#unapprove: The public/semipublic method should have an example specified
+app/controllers/admin/interest_points_controller.rb:43: Admin::InterestPointsController#unapprove: The method summary should be less than 80 characters in length
+app/controllers/admin/interest_points_controller.rb:43: Admin::InterestPointsController#unapprove: The method summary should not end in a period
+app/controllers/admin/interest_points_controller.rb:43: Admin::InterestPointsController#unapprove: The @return tag should be specified
+app/controllers/admin/interest_points_controller.rb:56: Admin::InterestPointsController#update_multiple: The @api tag should be specified
+app/controllers/admin/interest_points_controller.rb:56: Admin::InterestPointsController#update_multiple: The @api tag must be either public, semipublic or private
+app/controllers/admin/interest_points_controller.rb:56: Admin::InterestPointsController#update_multiple: The public/semipublic method should have an example specified
+app/controllers/admin/interest_points_controller.rb:56: Admin::InterestPointsController#update_multiple: The method summary should be less than 80 characters in length
+app/controllers/admin/interest_points_controller.rb:56: Admin::InterestPointsController#update_multiple: The @return tag should be specified
+app/controllers/admin/interest_points_controller.rb:70: Admin::InterestPointsController#approve_multiple: The @api tag should be specified
+app/controllers/admin/interest_points_controller.rb:70: Admin::InterestPointsController#approve_multiple: The @api tag must be either public, semipublic or private
+app/controllers/admin/interest_points_controller.rb:70: Admin::InterestPointsController#approve_multiple: The public/semipublic method should have an example specified
+app/controllers/admin/interest_points_controller.rb:70: Admin::InterestPointsController#approve_multiple: The method summary should be less than 80 characters in length
+app/controllers/admin/interest_points_controller.rb:82: Admin::InterestPointsController#unapprove_multiple: The @api tag should be specified
+app/controllers/admin/interest_points_controller.rb:82: Admin::InterestPointsController#unapprove_multiple: The @api tag must be either public, semipublic or private
+app/controllers/admin/interest_points_controller.rb:82: Admin::InterestPointsController#unapprove_multiple: The public/semipublic method should have an example specified
+app/controllers/admin/interest_points_controller.rb:82: Admin::InterestPointsController#unapprove_multiple: The method summary should be less than 80 characters in length
+app/controllers/admin/interest_points_controller.rb:82: Admin::InterestPointsController#unapprove_multiple: The method summary should not end in a period
+app/controllers/admin/interest_points_controller.rb:90: Admin::InterestPointsController#update_default_image: The @api tag should be specified
+app/controllers/admin/interest_points_controller.rb:90: Admin::InterestPointsController#update_default_image: The @api tag must be either public, semipublic or private
+app/controllers/admin/interest_points_controller.rb:90: Admin::InterestPointsController#update_default_image: The public/semipublic method should have an example specified
+app/controllers/admin/interest_points_controller.rb:90: Admin::InterestPointsController#update_default_image: The method summary should be specified
+app/controllers/admin/interest_points_controller.rb:90: Admin::InterestPointsController#update_default_image: The @return tag should be specified
+app/controllers/application_controller.rb:56: ApplicationController#current_user: The @api tag should be specified
+app/controllers/application_controller.rb:56: ApplicationController#current_user: The @api tag must be either public, semipublic or private
+app/controllers/application_controller.rb:56: ApplicationController#current_user: A method with private visibility must have an @api tag of private
+app/controllers/application_controller.rb:56: ApplicationController#current_user: The public/semipublic method should have an example specified
+app/controllers/application_controller.rb:61: ApplicationController#store_location: The @api tag should be specified
+app/controllers/application_controller.rb:61: ApplicationController#store_location: The @api tag must be either public, semipublic or private
+app/controllers/application_controller.rb:61: ApplicationController#store_location: A method with private visibility must have an @api tag of private
+app/controllers/application_controller.rb:61: ApplicationController#store_location: The public/semipublic method should have an example specified
+app/controllers/application_controller.rb:61: ApplicationController#store_location: The method summary should not end in a period
+app/controllers/application_controller.rb:61: ApplicationController#store_location: The @return tag should be specified
+app/controllers/application_controller.rb:66: ApplicationController#redirect_back_or_to_default: The @api tag should be specified
+app/controllers/application_controller.rb:66: ApplicationController#redirect_back_or_to_default: The @api tag must be either public, semipublic or private
+app/controllers/application_controller.rb:66: ApplicationController#redirect_back_or_to_default: A method with private visibility must have an @api tag of private
+app/controllers/application_controller.rb:66: ApplicationController#redirect_back_or_to_default: The public/semipublic method should have an example specified
+app/controllers/application_controller.rb:66: ApplicationController#redirect_back_or_to_default: The method summary should not end in a period
+app/controllers/application_controller.rb:66: ApplicationController#redirect_back_or_to_default: The @return tag should be specified
+app/controllers/application_controller.rb:73: ApplicationController#apply_strong_parameters: The @api tag should be specified
+app/controllers/application_controller.rb:73: ApplicationController#apply_strong_parameters: The @api tag must be either public, semipublic or private
+app/controllers/application_controller.rb:73: ApplicationController#apply_strong_parameters: A method with private visibility must have an @api tag of private
+app/controllers/application_controller.rb:73: ApplicationController#apply_strong_parameters: The public/semipublic method should have an example specified
+app/controllers/application_controller.rb:73: ApplicationController#apply_strong_parameters: The method summary should be less than 80 characters in length
+app/controllers/application_controller.rb:73: ApplicationController#apply_strong_parameters: The method summary should be a single line
+app/controllers/application_controller.rb:73: ApplicationController#apply_strong_parameters: The @return tag should be specified
+app/controllers/artists_controller.rb:6: ArtistsController#index: The @api tag should be specified
+app/controllers/artists_controller.rb:6: ArtistsController#index: The @api tag must be either public, semipublic or private
+app/controllers/artists_controller.rb:6: ArtistsController#index: The public/semipublic method should have an example specified
+app/controllers/artists_controller.rb:6: ArtistsController#index: The method summary should be a single line
+app/controllers/artists_controller.rb:6: ArtistsController#index: The @return tag should be specified
+app/controllers/artists_controller.rb:12: ArtistsController#show: The @api tag should be specified
+app/controllers/artists_controller.rb:12: ArtistsController#show: The @api tag must be either public, semipublic or private
+app/controllers/artists_controller.rb:12: ArtistsController#show: The public/semipublic method should have an example specified
+app/controllers/artists_controller.rb:12: ArtistsController#show: The method summary should be a single line
+app/controllers/artists_controller.rb:12: ArtistsController#show: The @return tag should be specified
+app/controllers/artists_controller.rb:17: ArtistsController#new: The @api tag should be specified
+app/controllers/artists_controller.rb:17: ArtistsController#new: The @api tag must be either public, semipublic or private
+app/controllers/artists_controller.rb:17: ArtistsController#new: The public/semipublic method should have an example specified
+app/controllers/artists_controller.rb:17: ArtistsController#new: The @return tag should be specified
+app/controllers/artists_controller.rb:22: ArtistsController#edit: The @api tag should be specified
+app/controllers/artists_controller.rb:22: ArtistsController#edit: The @api tag must be either public, semipublic or private
+app/controllers/artists_controller.rb:22: ArtistsController#edit: The public/semipublic method should have an example specified
+app/controllers/artists_controller.rb:22: ArtistsController#edit: The @return tag should be specified
+app/controllers/artists_controller.rb:27: ArtistsController#create: The @api tag should be specified
+app/controllers/artists_controller.rb:27: ArtistsController#create: The @api tag must be either public, semipublic or private
+app/controllers/artists_controller.rb:27: ArtistsController#create: The public/semipublic method should have an example specified
+app/controllers/artists_controller.rb:27: ArtistsController#create: The method summary should be a single line
+app/controllers/artists_controller.rb:27: ArtistsController#create: The @return tag should be specified
+app/controllers/artists_controller.rb:43: ArtistsController#update: The @api tag should be specified
+app/controllers/artists_controller.rb:43: ArtistsController#update: The @api tag must be either public, semipublic or private
+app/controllers/artists_controller.rb:43: ArtistsController#update: The public/semipublic method should have an example specified
+app/controllers/artists_controller.rb:43: ArtistsController#update: The method summary should be a single line
+app/controllers/artists_controller.rb:43: ArtistsController#update: The @return tag should be specified
+app/controllers/artists_controller.rb:57: ArtistsController#destroy: The @api tag should be specified
+app/controllers/artists_controller.rb:57: ArtistsController#destroy: The @api tag must be either public, semipublic or private
+app/controllers/artists_controller.rb:57: ArtistsController#destroy: The public/semipublic method should have an example specified
+app/controllers/artists_controller.rb:57: ArtistsController#destroy: The method summary should be a single line
+app/controllers/artists_controller.rb:57: ArtistsController#destroy: The @return tag should be specified
+app/controllers/artists_controller.rb:67: ArtistsController#set_artist: The @api tag should be specified
+app/controllers/artists_controller.rb:67: ArtistsController#set_artist: The @api tag must be either public, semipublic or private
+app/controllers/artists_controller.rb:67: ArtistsController#set_artist: A method with private visibility must have an @api tag of private
+app/controllers/artists_controller.rb:67: ArtistsController#set_artist: The public/semipublic method should have an example specified
+app/controllers/artists_controller.rb:67: ArtistsController#set_artist: The method summary should not end in a period
+app/controllers/artists_controller.rb:67: ArtistsController#set_artist: The @return tag should be specified
+app/controllers/artists_controller.rb:72: ArtistsController#artist_params: The @api tag should be specified
+app/controllers/artists_controller.rb:72: ArtistsController#artist_params: The @api tag must be either public, semipublic or private
+app/controllers/artists_controller.rb:72: ArtistsController#artist_params: A method with private visibility must have an @api tag of private
+app/controllers/artists_controller.rb:72: ArtistsController#artist_params: The public/semipublic method should have an example specified
+app/controllers/artists_controller.rb:72: ArtistsController#artist_params: The method summary should be less than 80 characters in length
+app/controllers/artists_controller.rb:72: ArtistsController#artist_params: The method summary should not end in a period
+app/controllers/artists_controller.rb:72: ArtistsController#artist_params: The @return tag should be specified
+app/controllers/categories_controller.rb:13: CategoriesController#index: The @api tag should be specified
+app/controllers/categories_controller.rb:13: CategoriesController#index: The @api tag must be either public, semipublic or private
+app/controllers/categories_controller.rb:13: CategoriesController#index: The public/semipublic method should have an example specified
+app/controllers/categories_controller.rb:13: CategoriesController#index: The method summary should not end in a period
+app/controllers/categories_controller.rb:13: CategoriesController#index: The @return tag should be specified
+app/controllers/categories_controller.rb:21: CategoriesController#show: The @api tag should be specified
+app/controllers/categories_controller.rb:21: CategoriesController#show: The @api tag must be either public, semipublic or private
+app/controllers/categories_controller.rb:21: CategoriesController#show: The public/semipublic method should have an example specified
+app/controllers/categories_controller.rb:21: CategoriesController#show: The @return tag should be specified
+app/controllers/categories_controller.rb:26: CategoriesController#new: The @api tag should be specified
+app/controllers/categories_controller.rb:26: CategoriesController#new: The @api tag must be either public, semipublic or private
+app/controllers/categories_controller.rb:26: CategoriesController#new: The public/semipublic method should have an example specified
+app/controllers/categories_controller.rb:26: CategoriesController#new: The @return tag should be specified
+app/controllers/categories_controller.rb:32: CategoriesController#create: The @api tag should be specified
+app/controllers/categories_controller.rb:32: CategoriesController#create: The @api tag must be either public, semipublic or private
+app/controllers/categories_controller.rb:32: CategoriesController#create: The public/semipublic method should have an example specified
+app/controllers/categories_controller.rb:32: CategoriesController#create: The method summary should not end in a period
+app/controllers/categories_controller.rb:32: CategoriesController#create: The @return tag should be specified
+app/controllers/categories_controller.rb:47: CategoriesController#destroy: The @api tag should be specified
+app/controllers/categories_controller.rb:47: CategoriesController#destroy: The @api tag must be either public, semipublic or private
+app/controllers/categories_controller.rb:47: CategoriesController#destroy: The public/semipublic method should have an example specified
+app/controllers/categories_controller.rb:47: CategoriesController#destroy: The method summary should not end in a period
+app/controllers/categories_controller.rb:47: CategoriesController#destroy: The @return tag should be specified
+app/controllers/categories_controller.rb:56: CategoriesController#edit: The @api tag should be specified
+app/controllers/categories_controller.rb:56: CategoriesController#edit: The @api tag must be either public, semipublic or private
+app/controllers/categories_controller.rb:56: CategoriesController#edit: The public/semipublic method should have an example specified
+app/controllers/categories_controller.rb:56: CategoriesController#edit: The method summary should not end in a period
+app/controllers/categories_controller.rb:56: CategoriesController#edit: The @return tag should be specified
+app/controllers/categories_controller.rb:63: CategoriesController#update: The @api tag should be specified
+app/controllers/categories_controller.rb:63: CategoriesController#update: The @api tag must be either public, semipublic or private
+app/controllers/categories_controller.rb:63: CategoriesController#update: The public/semipublic method should have an example specified
+app/controllers/categories_controller.rb:63: CategoriesController#update: The method summary should be less than 80 characters in length
+app/controllers/categories_controller.rb:63: CategoriesController#update: The method summary should not end in a period
+app/controllers/categories_controller.rb:63: CategoriesController#update: The @return tag should be specified
+app/controllers/categories_controller.rb:83: CategoriesController#category_params: The @api tag should be specified
+app/controllers/categories_controller.rb:83: CategoriesController#category_params: The @api tag must be either public, semipublic or private
+app/controllers/categories_controller.rb:83: CategoriesController#category_params: A method with private visibility must have an @api tag of private
+app/controllers/categories_controller.rb:83: CategoriesController#category_params: The public/semipublic method should have an example specified
+app/controllers/categories_controller.rb:83: CategoriesController#category_params: The method summary should not end in a period
+app/controllers/categories_controller.rb:83: CategoriesController#category_params: The @return tag should be specified
+app/controllers/categories_controller.rb:88: CategoriesController#get_all_errors: The @api tag should be specified
+app/controllers/categories_controller.rb:88: CategoriesController#get_all_errors: The @api tag must be either public, semipublic or private
+app/controllers/categories_controller.rb:88: CategoriesController#get_all_errors: A method with private visibility must have an @api tag of private
+app/controllers/categories_controller.rb:88: CategoriesController#get_all_errors: The public/semipublic method should have an example specified
+app/controllers/categories_controller.rb:88: CategoriesController#get_all_errors: The method summary should not end in a period
+app/controllers/categories_controller.rb:88: CategoriesController#get_all_errors: The @return tag should be specified
+app/controllers/comments_controller.rb:12: CommentsController#index: The @api tag should be specified
+app/controllers/comments_controller.rb:12: CommentsController#index: The @api tag must be either public, semipublic or private
+app/controllers/comments_controller.rb:12: CommentsController#index: The public/semipublic method should have an example specified
+app/controllers/comments_controller.rb:12: CommentsController#index: The method summary should not end in a period
+app/controllers/comments_controller.rb:25: CommentsController#new: The @api tag should be specified
+app/controllers/comments_controller.rb:25: CommentsController#new: The @api tag must be either public, semipublic or private
+app/controllers/comments_controller.rb:25: CommentsController#new: The public/semipublic method should have an example specified
+app/controllers/comments_controller.rb:25: CommentsController#new: The method summary should not end in a period
+app/controllers/comments_controller.rb:29: CommentsController#show: The @api tag should be specified
+app/controllers/comments_controller.rb:29: CommentsController#show: The @api tag must be either public, semipublic or private
+app/controllers/comments_controller.rb:29: CommentsController#show: The public/semipublic method should have an example specified
+app/controllers/comments_controller.rb:29: CommentsController#show: The method summary should be specified
+app/controllers/comments_controller.rb:29: CommentsController#show: The @return tag should be specified
+app/controllers/comments_controller.rb:39: CommentsController#create: The @api tag should be specified
+app/controllers/comments_controller.rb:39: CommentsController#create: The @api tag must be either public, semipublic or private
+app/controllers/comments_controller.rb:39: CommentsController#create: The public/semipublic method should have an example specified
+app/controllers/comments_controller.rb:39: CommentsController#create: The method summary should be less than 80 characters in length
+app/controllers/comments_controller.rb:39: CommentsController#create: The method summary should not end in a period
+app/controllers/comments_controller.rb:39: CommentsController#create: The @return tag should be specified
+app/controllers/comments_controller.rb:50: CommentsController#destroy: The @api tag should be specified
+app/controllers/comments_controller.rb:50: CommentsController#destroy: The @api tag must be either public, semipublic or private
+app/controllers/comments_controller.rb:50: CommentsController#destroy: The public/semipublic method should have an example specified
+app/controllers/comments_controller.rb:50: CommentsController#destroy: The method summary should be specified
+app/controllers/comments_controller.rb:50: CommentsController#destroy: The @return tag should be specified
+app/controllers/comments_controller.rb:57: CommentsController#reported: The @api tag should be specified
+app/controllers/comments_controller.rb:57: CommentsController#reported: The @api tag must be either public, semipublic or private
+app/controllers/comments_controller.rb:57: CommentsController#reported: The public/semipublic method should have an example specified
+app/controllers/comments_controller.rb:57: CommentsController#reported: The method summary should be specified
+app/controllers/comments_controller.rb:57: CommentsController#reported: The @return tag should be specified
+app/controllers/comments_controller.rb:66: CommentsController#comment_params: The @api tag should be specified
+app/controllers/comments_controller.rb:66: CommentsController#comment_params: The @api tag must be either public, semipublic or private
+app/controllers/comments_controller.rb:66: CommentsController#comment_params: A method with private visibility must have an @api tag of private
+app/controllers/comments_controller.rb:66: CommentsController#comment_params: The public/semipublic method should have an example specified
+app/controllers/comments_controller.rb:66: CommentsController#comment_params: The method summary should not end in a period
+app/controllers/comments_controller.rb:66: CommentsController#comment_params: The @return tag should be specified
+app/controllers/comments_controller.rb:71: CommentsController#load_commentable: The @api tag should be specified
+app/controllers/comments_controller.rb:71: CommentsController#load_commentable: The @api tag must be either public, semipublic or private
+app/controllers/comments_controller.rb:71: CommentsController#load_commentable: A method with private visibility must have an @api tag of private
+app/controllers/comments_controller.rb:71: CommentsController#load_commentable: The public/semipublic method should have an example specified
+app/controllers/comments_controller.rb:71: CommentsController#load_commentable: The method summary should be less than 80 characters in length
+app/controllers/comments_controller.rb:71: CommentsController#load_commentable: The method summary should not end in a period
+app/controllers/comments_controller.rb:71: CommentsController#load_commentable: The @return tag should be specified
+app/controllers/comments_controller.rb:78: CommentsController#list_comment_errors: The @api tag should be specified
+app/controllers/comments_controller.rb:78: CommentsController#list_comment_errors: The @api tag must be either public, semipublic or private
+app/controllers/comments_controller.rb:78: CommentsController#list_comment_errors: A method with private visibility must have an @api tag of private
+app/controllers/comments_controller.rb:78: CommentsController#list_comment_errors: The public/semipublic method should have an example specified
+app/controllers/comments_controller.rb:78: CommentsController#list_comment_errors: The method summary should be less than 80 characters in length
+app/controllers/comments_controller.rb:78: CommentsController#list_comment_errors: The method summary should not end in a period
+app/controllers/contributor/interest_points_controller.rb:18: Contributor::InterestPointsController#edit: The @api tag should be specified
+app/controllers/contributor/interest_points_controller.rb:18: Contributor::InterestPointsController#edit: The @api tag must be either public, semipublic or private
+app/controllers/contributor/interest_points_controller.rb:18: Contributor::InterestPointsController#edit: The public/semipublic method should have an example specified
+app/controllers/contributor/interest_points_controller.rb:18: Contributor::InterestPointsController#edit: The @return tag should be specified
+app/controllers/contributor/interest_points_controller.rb:22: Contributor::InterestPointsController#update_default_image: The @api tag should be specified
+app/controllers/contributor/interest_points_controller.rb:22: Contributor::InterestPointsController#update_default_image: The @api tag must be either public, semipublic or private
+app/controllers/contributor/interest_points_controller.rb:22: Contributor::InterestPointsController#update_default_image: The public/semipublic method should have an example specified
+app/controllers/contributor/interest_points_controller.rb:22: Contributor::InterestPointsController#update_default_image: The method summary should be specified
+app/controllers/contributor/interest_points_controller.rb:22: Contributor::InterestPointsController#update_default_image: The @return tag should be specified
+app/controllers/contributor/interest_points_controller.rb:36: Contributor::InterestPointsController#pending: The @api tag should be specified
+app/controllers/contributor/interest_points_controller.rb:36: Contributor::InterestPointsController#pending: The @api tag must be either public, semipublic or private
+app/controllers/contributor/interest_points_controller.rb:36: Contributor::InterestPointsController#pending: The public/semipublic method should have an example specified
+app/controllers/contributor/interest_points_controller.rb:36: Contributor::InterestPointsController#pending: The method summary should be less than 80 characters in length
+app/controllers/contributor/interest_points_controller.rb:36: Contributor::InterestPointsController#pending: The method summary should not end in a period
+app/controllers/contributor/interest_points_controller.rb:36: Contributor::InterestPointsController#pending: The @return tag should be specified
+app/controllers/contributor/interest_points_controller.rb:45: Contributor::InterestPointsController#active: The @api tag should be specified
+app/controllers/contributor/interest_points_controller.rb:45: Contributor::InterestPointsController#active: The @api tag must be either public, semipublic or private
+app/controllers/contributor/interest_points_controller.rb:45: Contributor::InterestPointsController#active: The public/semipublic method should have an example specified
+app/controllers/contributor/interest_points_controller.rb:45: Contributor::InterestPointsController#active: The method summary should be less than 80 characters in length
+app/controllers/contributor/interest_points_controller.rb:45: Contributor::InterestPointsController#active: The method summary should not end in a period
+app/controllers/contributor/interest_points_controller.rb:45: Contributor::InterestPointsController#active: The @return tag should be specified
+app/controllers/interest_point_ratings_controller.rb:3: InterestPointRatingsController#update: The @api tag should be specified
+app/controllers/interest_point_ratings_controller.rb:3: InterestPointRatingsController#update: The @api tag must be either public, semipublic or private
+app/controllers/interest_point_ratings_controller.rb:3: InterestPointRatingsController#update: The public/semipublic method should have an example specified
+app/controllers/interest_point_ratings_controller.rb:3: InterestPointRatingsController#update: The method summary should be specified
+app/controllers/interest_point_ratings_controller.rb:3: InterestPointRatingsController#update: The @return tag should be specified
+app/controllers/interest_points_controller.rb:13: InterestPointsController#average_rating: The @api tag should be specified
+app/controllers/interest_points_controller.rb:13: InterestPointsController#average_rating: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:13: InterestPointsController#average_rating: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:13: InterestPointsController#average_rating: The @return tag should be specified
+app/controllers/interest_points_controller.rb:19: InterestPointsController#new: The @api tag should be specified
+app/controllers/interest_points_controller.rb:19: InterestPointsController#new: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:19: InterestPointsController#new: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:19: InterestPointsController#new: The method summary should be less than 80 characters in length
+app/controllers/interest_points_controller.rb:19: InterestPointsController#new: The method summary should not end in a period
+app/controllers/interest_points_controller.rb:19: InterestPointsController#new: The method summary should be a single line
+app/controllers/interest_points_controller.rb:19: InterestPointsController#new: The @return tag should be specified
+app/controllers/interest_points_controller.rb:35: InterestPointsController#create: The @api tag should be specified
+app/controllers/interest_points_controller.rb:35: InterestPointsController#create: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:35: InterestPointsController#create: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:35: InterestPointsController#create: The method summary should not end in a period
+app/controllers/interest_points_controller.rb:35: InterestPointsController#create: The @return tag should be specified
+app/controllers/interest_points_controller.rb:53: InterestPointsController#show: The @api tag should be specified
+app/controllers/interest_points_controller.rb:53: InterestPointsController#show: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:53: InterestPointsController#show: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:53: InterestPointsController#show: The method summary should not end in a period
+app/controllers/interest_points_controller.rb:53: InterestPointsController#show: The @return tag should be specified
+app/controllers/interest_points_controller.rb:72: InterestPointsController#index: The @api tag should be specified
+app/controllers/interest_points_controller.rb:72: InterestPointsController#index: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:72: InterestPointsController#index: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:72: InterestPointsController#index: The @return tag should be specified
+app/controllers/interest_points_controller.rb:79: InterestPointsController#destroy: The @api tag should be specified
+app/controllers/interest_points_controller.rb:79: InterestPointsController#destroy: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:79: InterestPointsController#destroy: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:79: InterestPointsController#destroy: The method summary should be less than 80 characters in length
+app/controllers/interest_points_controller.rb:79: InterestPointsController#destroy: The method summary should not end in a period
+app/controllers/interest_points_controller.rb:79: InterestPointsController#destroy: The @return tag should be specified
+app/controllers/interest_points_controller.rb:87: InterestPointsController#edit: The @api tag should be specified
+app/controllers/interest_points_controller.rb:87: InterestPointsController#edit: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:87: InterestPointsController#edit: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:87: InterestPointsController#edit: The method summary should not end in a period
+app/controllers/interest_points_controller.rb:87: InterestPointsController#edit: The @return tag should be specified
+app/controllers/interest_points_controller.rb:94: InterestPointsController#update: The @api tag should be specified
+app/controllers/interest_points_controller.rb:94: InterestPointsController#update: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:94: InterestPointsController#update: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:94: InterestPointsController#update: The method summary should be less than 80 characters in length
+app/controllers/interest_points_controller.rb:94: InterestPointsController#update: The method summary should not end in a period
+app/controllers/interest_points_controller.rb:94: InterestPointsController#update: The @return tag should be specified
+app/controllers/interest_points_controller.rb:110: InterestPointsController#interest_point_params: The @api tag should be specified
+app/controllers/interest_points_controller.rb:110: InterestPointsController#interest_point_params: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:110: InterestPointsController#interest_point_params: A method with private visibility must have an @api tag of private
+app/controllers/interest_points_controller.rb:110: InterestPointsController#interest_point_params: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:110: InterestPointsController#interest_point_params: The method summary should be less than 80 characters in length
+app/controllers/interest_points_controller.rb:110: InterestPointsController#interest_point_params: The @return tag should be specified
+app/controllers/interest_points_controller.rb:115: InterestPointsController#get_all_errors: The @api tag should be specified
+app/controllers/interest_points_controller.rb:115: InterestPointsController#get_all_errors: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:115: InterestPointsController#get_all_errors: A method with private visibility must have an @api tag of private
+app/controllers/interest_points_controller.rb:115: InterestPointsController#get_all_errors: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:115: InterestPointsController#get_all_errors: The method summary should not end in a period
+app/controllers/interest_points_controller.rb:115: InterestPointsController#get_all_errors: The @return tag should be specified
+app/controllers/interest_points_controller.rb:126: InterestPointsController#set_valid_contributors: The @api tag should be specified
+app/controllers/interest_points_controller.rb:126: InterestPointsController#set_valid_contributors: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:126: InterestPointsController#set_valid_contributors: A method with private visibility must have an @api tag of private
+app/controllers/interest_points_controller.rb:126: InterestPointsController#set_valid_contributors: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:126: InterestPointsController#set_valid_contributors: The method summary should be less than 80 characters in length
+app/controllers/interest_points_controller.rb:126: InterestPointsController#set_valid_contributors: The @return tag should be specified
+app/controllers/interest_points_controller.rb:137: InterestPointsController#set_default_image: The @api tag should be specified
+app/controllers/interest_points_controller.rb:137: InterestPointsController#set_default_image: The @api tag must be either public, semipublic or private
+app/controllers/interest_points_controller.rb:137: InterestPointsController#set_default_image: A method with private visibility must have an @api tag of private
+app/controllers/interest_points_controller.rb:137: InterestPointsController#set_default_image: The public/semipublic method should have an example specified
+app/controllers/interest_points_controller.rb:137: InterestPointsController#set_default_image: The method summary should be less than 80 characters in length
+app/controllers/interest_points_controller.rb:137: InterestPointsController#set_default_image: The method summary should not end in a period
+app/controllers/interest_points_controller.rb:137: InterestPointsController#set_default_image: The @return tag should be specified
+app/controllers/maps_controller.rb:2: MapsController#main: The @api tag should be specified
+app/controllers/maps_controller.rb:2: MapsController#main: The @api tag must be either public, semipublic or private
+app/controllers/maps_controller.rb:2: MapsController#main: The public/semipublic method should have an example specified
+app/controllers/maps_controller.rb:2: MapsController#main: The method summary should be specified
+app/controllers/maps_controller.rb:2: MapsController#main: The @return tag should be specified
+app/controllers/maps_controller.rb:14: MapsController#show: The @api tag should be specified
+app/controllers/maps_controller.rb:14: MapsController#show: The @api tag must be either public, semipublic or private
+app/controllers/maps_controller.rb:14: MapsController#show: The public/semipublic method should have an example specified
+app/controllers/maps_controller.rb:14: MapsController#show: The method summary should be specified
+app/controllers/maps_controller.rb:14: MapsController#show: The @return tag should be specified
+app/controllers/reset_passwords_controller.rb:17: ResetPasswordsController#new: The @api tag should be specified
+app/controllers/reset_passwords_controller.rb:17: ResetPasswordsController#new: The @api tag must be either public, semipublic or private
+app/controllers/reset_passwords_controller.rb:17: ResetPasswordsController#new: The public/semipublic method should have an example specified
+app/controllers/reset_passwords_controller.rb:17: ResetPasswordsController#new: The method summary should be less than 80 characters in length
+app/controllers/reset_passwords_controller.rb:17: ResetPasswordsController#new: The method summary should not end in a period
+app/controllers/reset_passwords_controller.rb:17: ResetPasswordsController#new: The @return tag should be specified
+app/controllers/reset_passwords_controller.rb:24: ResetPasswordsController#create: The @api tag should be specified
+app/controllers/reset_passwords_controller.rb:24: ResetPasswordsController#create: The @api tag must be either public, semipublic or private
+app/controllers/reset_passwords_controller.rb:24: ResetPasswordsController#create: The public/semipublic method should have an example specified
+app/controllers/reset_passwords_controller.rb:24: ResetPasswordsController#create: The method summary should be less than 80 characters in length
+app/controllers/reset_passwords_controller.rb:24: ResetPasswordsController#create: The method summary should not end in a period
+app/controllers/reset_passwords_controller.rb:24: ResetPasswordsController#create: The @return tag should be specified
+app/controllers/reset_passwords_controller.rb:37: ResetPasswordsController#edit: The @api tag should be specified
+app/controllers/reset_passwords_controller.rb:37: ResetPasswordsController#edit: The @api tag must be either public, semipublic or private
+app/controllers/reset_passwords_controller.rb:37: ResetPasswordsController#edit: The public/semipublic method should have an example specified
+app/controllers/reset_passwords_controller.rb:37: ResetPasswordsController#edit: The @return tag should be specified
+app/controllers/reset_passwords_controller.rb:41: ResetPasswordsController#update: The @api tag should be specified
+app/controllers/reset_passwords_controller.rb:41: ResetPasswordsController#update: The @api tag must be either public, semipublic or private
+app/controllers/reset_passwords_controller.rb:41: ResetPasswordsController#update: The public/semipublic method should have an example specified
+app/controllers/reset_passwords_controller.rb:41: ResetPasswordsController#update: The @return tag should be specified
+app/controllers/reset_passwords_controller.rb:55: ResetPasswordsController#load_user_using_perishable_token: The @api tag should be specified
+app/controllers/reset_passwords_controller.rb:55: ResetPasswordsController#load_user_using_perishable_token: The @api tag must be either public, semipublic or private
+app/controllers/reset_passwords_controller.rb:55: ResetPasswordsController#load_user_using_perishable_token: A method with private visibility must have an @api tag of private
+app/controllers/reset_passwords_controller.rb:55: ResetPasswordsController#load_user_using_perishable_token: The public/semipublic method should have an example specified
+app/controllers/reset_passwords_controller.rb:55: ResetPasswordsController#load_user_using_perishable_token: The @return tag should be specified
+app/controllers/reset_passwords_controller.rb:66: ResetPasswordsController#reset_password_params: The @api tag should be specified
+app/controllers/reset_passwords_controller.rb:66: ResetPasswordsController#reset_password_params: The @api tag must be either public, semipublic or private
+app/controllers/reset_passwords_controller.rb:66: ResetPasswordsController#reset_password_params: A method with private visibility must have an @api tag of private
+app/controllers/reset_passwords_controller.rb:66: ResetPasswordsController#reset_password_params: The public/semipublic method should have an example specified
+app/controllers/reset_passwords_controller.rb:66: ResetPasswordsController#reset_password_params: The method summary should not end in a period
+app/controllers/reset_passwords_controller.rb:66: ResetPasswordsController#reset_password_params: The @return tag should be specified
+app/controllers/reset_passwords_controller.rb:71: ResetPasswordsController#find_user_by_email: The @api tag should be specified
+app/controllers/reset_passwords_controller.rb:71: ResetPasswordsController#find_user_by_email: The @api tag must be either public, semipublic or private
+app/controllers/reset_passwords_controller.rb:71: ResetPasswordsController#find_user_by_email: A method with private visibility must have an @api tag of private
+app/controllers/reset_passwords_controller.rb:71: ResetPasswordsController#find_user_by_email: The public/semipublic method should have an example specified
+app/controllers/reset_passwords_controller.rb:71: ResetPasswordsController#find_user_by_email: The @return tag should be specified
+app/controllers/roles_controller.rb:10: RolesController#index: The @api tag should be specified
+app/controllers/roles_controller.rb:10: RolesController#index: The @api tag must be either public, semipublic or private
+app/controllers/roles_controller.rb:10: RolesController#index: The public/semipublic method should have an example specified
+app/controllers/roles_controller.rb:10: RolesController#index: The @return tag should be specified
+app/controllers/roles_controller.rb:18: RolesController#show: The @api tag should be specified
+app/controllers/roles_controller.rb:18: RolesController#show: The @api tag must be either public, semipublic or private
+app/controllers/roles_controller.rb:18: RolesController#show: The public/semipublic method should have an example specified
+app/controllers/roles_controller.rb:18: RolesController#show: The @return tag should be specified
+app/controllers/roles_controller.rb:23: RolesController#new: The @api tag should be specified
+app/controllers/roles_controller.rb:23: RolesController#new: The @api tag must be either public, semipublic or private
+app/controllers/roles_controller.rb:23: RolesController#new: The public/semipublic method should have an example specified
+app/controllers/roles_controller.rb:23: RolesController#new: The @return tag should be specified
+app/controllers/roles_controller.rb:31: RolesController#edit: The @api tag should be specified
+app/controllers/roles_controller.rb:31: RolesController#edit: The @api tag must be either public, semipublic or private
+app/controllers/roles_controller.rb:31: RolesController#edit: The public/semipublic method should have an example specified
+app/controllers/roles_controller.rb:31: RolesController#edit: The @return tag should be specified
+app/controllers/roles_controller.rb:39: RolesController#create: The @api tag should be specified
+app/controllers/roles_controller.rb:39: RolesController#create: The @api tag must be either public, semipublic or private
+app/controllers/roles_controller.rb:39: RolesController#create: The public/semipublic method should have an example specified
+app/controllers/roles_controller.rb:39: RolesController#create: The @return tag should be specified
+app/controllers/roles_controller.rb:54: RolesController#update: The @api tag should be specified
+app/controllers/roles_controller.rb:54: RolesController#update: The @api tag must be either public, semipublic or private
+app/controllers/roles_controller.rb:54: RolesController#update: The public/semipublic method should have an example specified
+app/controllers/roles_controller.rb:54: RolesController#update: The method summary should be less than 80 characters in length
+app/controllers/roles_controller.rb:54: RolesController#update: The @return tag should be specified
+app/controllers/roles_controller.rb:67: RolesController#destroy: The @api tag should be specified
+app/controllers/roles_controller.rb:67: RolesController#destroy: The @api tag must be either public, semipublic or private
+app/controllers/roles_controller.rb:67: RolesController#destroy: The public/semipublic method should have an example specified
+app/controllers/roles_controller.rb:67: RolesController#destroy: The @return tag should be specified
+app/controllers/roles_controller.rb:78: RolesController#get_all_errors: The @api tag should be specified
+app/controllers/roles_controller.rb:78: RolesController#get_all_errors: The @api tag must be either public, semipublic or private
+app/controllers/roles_controller.rb:78: RolesController#get_all_errors: A method with private visibility must have an @api tag of private
+app/controllers/roles_controller.rb:78: RolesController#get_all_errors: The public/semipublic method should have an example specified
+app/controllers/roles_controller.rb:78: RolesController#get_all_errors: The method summary should be specified
+app/controllers/roles_controller.rb:91: RolesController#role_params: The @api tag should be specified
+app/controllers/roles_controller.rb:91: RolesController#role_params: The @api tag must be either public, semipublic or private
+app/controllers/roles_controller.rb:91: RolesController#role_params: A method with private visibility must have an @api tag of private
+app/controllers/roles_controller.rb:91: RolesController#role_params: The public/semipublic method should have an example specified
+app/controllers/roles_controller.rb:91: RolesController#role_params: The @return tag should be specified
+app/controllers/user_sessions_controller.rb:13: UserSessionsController#new: The public/semipublic method should have an example specified
+app/controllers/user_sessions_controller.rb:13: UserSessionsController#new: The @return tag should be specified
+app/controllers/user_sessions_controller.rb:21: UserSessionsController#create: The public/semipublic method should have an example specified
+app/controllers/user_sessions_controller.rb:21: UserSessionsController#CREATE: The @api tag should be specified
+app/controllers/user_sessions_controller.rb:21: UserSessionsController#CREATE: The @api tag must be either public, semipublic or private
+app/controllers/user_sessions_controller.rb:21: UserSessionsController#CREATE: The public/semipublic method should have an example specified
+app/controllers/user_sessions_controller.rb:50: UserSessionsController#destroy: The public/semipublic method should have an example specified
+app/controllers/user_sessions_controller.rb:50: UserSessionsController#destroy: The @return tag should be specified
+app/controllers/user_sessions_controller.rb:50: UserSessionsController#DELETE: The @api tag should be specified
+app/controllers/user_sessions_controller.rb:50: UserSessionsController#DELETE: The @api tag must be either public, semipublic or private
+app/controllers/user_sessions_controller.rb:50: UserSessionsController#DELETE: The public/semipublic method should have an example specified
+app/controllers/user_sessions_controller.rb:50: UserSessionsController#DELETE: The @return tag should be specified
+app/controllers/user_sessions_controller.rb:60: UserSessionsController#user_session_params: The method summary should be less than 80 characters in length
+app/controllers/user_sessions_controller.rb:60: UserSessionsController#user_session_params: The @return tag should be specified
+app/controllers/user_sessions_controller.rb:66: UserSessionsController#reset_current_ability: The method summary should be specified
+app/controllers/user_sessions_controller.rb:66: UserSessionsController#reset_current_ability: The @return tag should be specified
+app/controllers/users_controller.rb:10: UsersController#new: The @api tag should be specified
+app/controllers/users_controller.rb:10: UsersController#new: The @api tag must be either public, semipublic or private
+app/controllers/users_controller.rb:10: UsersController#new: The public/semipublic method should have an example specified
+app/controllers/users_controller.rb:10: UsersController#new: The method summary should not end in a period
+app/controllers/users_controller.rb:10: UsersController#new: The @return tag should be specified
+app/controllers/users_controller.rb:23: UsersController#create: The @api tag should be specified
+app/controllers/users_controller.rb:23: UsersController#create: The @api tag must be either public, semipublic or private
+app/controllers/users_controller.rb:23: UsersController#create: The public/semipublic method should have an example specified
+app/controllers/users_controller.rb:23: UsersController#create: The method summary should not end in a period
+app/controllers/users_controller.rb:23: UsersController#create: The @return tag should be specified
+app/controllers/users_controller.rb:35: UsersController#show: The @api tag should be specified
+app/controllers/users_controller.rb:35: UsersController#show: The @api tag must be either public, semipublic or private
+app/controllers/users_controller.rb:35: UsersController#show: The public/semipublic method should have an example specified
+app/controllers/users_controller.rb:35: UsersController#show: The method summary should be less than 80 characters in length
+app/controllers/users_controller.rb:35: UsersController#show: The @return tag should be specified
+app/controllers/users_controller.rb:40: UsersController#index: The @api tag should be specified
+app/controllers/users_controller.rb:40: UsersController#index: The @api tag must be either public, semipublic or private
+app/controllers/users_controller.rb:40: UsersController#index: The public/semipublic method should have an example specified
+app/controllers/users_controller.rb:40: UsersController#index: The @return tag should be specified
+app/controllers/users_controller.rb:46: UsersController#destroy: The @api tag should be specified
+app/controllers/users_controller.rb:46: UsersController#destroy: The @api tag must be either public, semipublic or private
+app/controllers/users_controller.rb:46: UsersController#destroy: The public/semipublic method should have an example specified
+app/controllers/users_controller.rb:46: UsersController#destroy: The method summary should be less than 80 characters in length
+app/controllers/users_controller.rb:46: UsersController#destroy: The method summary should not end in a period
+app/controllers/users_controller.rb:46: UsersController#destroy: The @return tag should be specified
+app/controllers/users_controller.rb:60: UsersController#edit: The @api tag should be specified
+app/controllers/users_controller.rb:60: UsersController#edit: The @api tag must be either public, semipublic or private
+app/controllers/users_controller.rb:60: UsersController#edit: The public/semipublic method should have an example specified
+app/controllers/users_controller.rb:60: UsersController#edit: The @return tag should be specified
+app/controllers/users_controller.rb:68: UsersController#update: The @api tag should be specified
+app/controllers/users_controller.rb:68: UsersController#update: The @api tag must be either public, semipublic or private
+app/controllers/users_controller.rb:68: UsersController#update: The public/semipublic method should have an example specified
+app/controllers/users_controller.rb:68: UsersController#update: The @return tag should be specified
+app/controllers/users_controller.rb:81: UsersController#user_params: The @api tag should be specified
+app/controllers/users_controller.rb:81: UsersController#user_params: The @api tag must be either public, semipublic or private
+app/controllers/users_controller.rb:81: UsersController#user_params: A method with private visibility must have an @api tag of private
+app/controllers/users_controller.rb:81: UsersController#user_params: The public/semipublic method should have an example specified
+app/controllers/users_controller.rb:81: UsersController#user_params: The method summary should be less than 80 characters in length
+app/controllers/users_controller.rb:81: UsersController#user_params: The method summary should not end in a period
+app/controllers/users_controller.rb:81: UsersController#user_params: The @return tag should be specified
+app/controllers/users_controller.rb:86: UsersController#get_all_errors: The @api tag should be specified
+app/controllers/users_controller.rb:86: UsersController#get_all_errors: The @api tag must be either public, semipublic or private
+app/controllers/users_controller.rb:86: UsersController#get_all_errors: A method with private visibility must have an @api tag of private
+app/controllers/users_controller.rb:86: UsersController#get_all_errors: The public/semipublic method should have an example specified
+app/controllers/users_controller.rb:86: UsersController#get_all_errors: The method summary should be less than 80 characters in length
+app/controllers/users_controller.rb:86: UsersController#get_all_errors: The method summary should not end in a period
+app/controllers/users_controller.rb:86: UsersController#get_all_errors: The @return tag should be specified
+app/helpers/interest_points_helper.rb:12: InterestPointsHelper#link_to_add_fields: The @api tag should be specified
+app/helpers/interest_points_helper.rb:12: InterestPointsHelper#link_to_add_fields: The @api tag must be either public, semipublic or private
+app/helpers/interest_points_helper.rb:12: InterestPointsHelper#link_to_add_fields: The public/semipublic method should have an example specified
+app/helpers/interest_points_helper.rb:12: InterestPointsHelper#link_to_add_fields: The method summary should be less than 80 characters in length
+app/helpers/interest_points_helper.rb:12: InterestPointsHelper#link_to_add_fields: The method summary should not end in a period
+app/helpers/interest_points_helper.rb:12: InterestPointsHelper#link_to_add_fields: The @return tag should be specified
+app/helpers/interest_points_helper.rb:25: InterestPointsHelper#page_header: The @api tag should be specified
+app/helpers/interest_points_helper.rb:25: InterestPointsHelper#page_header: The @api tag must be either public, semipublic or private
+app/helpers/interest_points_helper.rb:25: InterestPointsHelper#page_header: The public/semipublic method should have an example specified
+app/helpers/interest_points_helper.rb:25: InterestPointsHelper#page_header: The method summary should not end in a period
+app/helpers/interest_points_helper.rb:25: InterestPointsHelper#page_header: The @return tag should be specified
+app/helpers/text_format_helper.rb:8: TextFormatHelper#format_datetime: The @api tag should be specified
+app/helpers/text_format_helper.rb:8: TextFormatHelper#format_datetime: The @api tag must be either public, semipublic or private
+app/helpers/text_format_helper.rb:8: TextFormatHelper#format_datetime: The public/semipublic method should have an example specified
+app/helpers/text_format_helper.rb:8: TextFormatHelper#format_datetime: The method summary should be less than 80 characters in length
+app/helpers/text_format_helper.rb:8: TextFormatHelper#format_datetime: The method summary should be a single line
+app/helpers/text_format_helper.rb:8: TextFormatHelper#format_datetime: The @return tag should be specified
+app/helpers/text_format_helper.rb:12: TextFormatHelper#default_button: The @api tag should be specified
+app/helpers/text_format_helper.rb:12: TextFormatHelper#default_button: The @api tag must be either public, semipublic or private
+app/helpers/text_format_helper.rb:12: TextFormatHelper#default_button: The public/semipublic method should have an example specified
+app/helpers/text_format_helper.rb:12: TextFormatHelper#default_button: The method summary should be specified
+app/helpers/text_format_helper.rb:12: TextFormatHelper#default_button: The @return tag should be specified
+app/helpers/text_format_helper.rb:19: TextFormatHelper#default_create_button: The @api tag should be specified
+app/helpers/text_format_helper.rb:19: TextFormatHelper#default_create_button: The @api tag must be either public, semipublic or private
+app/helpers/text_format_helper.rb:19: TextFormatHelper#default_create_button: The public/semipublic method should have an example specified
+app/helpers/text_format_helper.rb:19: TextFormatHelper#default_create_button: The method summary should be specified
+app/helpers/text_format_helper.rb:19: TextFormatHelper#default_create_button: The @return tag should be specified
+app/mailers/admin_mailer.rb:14: AdminMailer#update_interest_point: The @api tag should be specified
+app/mailers/admin_mailer.rb:14: AdminMailer#update_interest_point: The @api tag must be either public, semipublic or private
+app/mailers/admin_mailer.rb:14: AdminMailer#update_interest_point: The public/semipublic method should have an example specified
+app/mailers/admin_mailer.rb:14: AdminMailer#update_interest_point: The method summary should be less than 80 characters in length
+app/mailers/admin_mailer.rb:14: AdminMailer#update_interest_point: The @return tag should be specified
+app/mailers/admin_mailer.rb:21: AdminMailer#new_pending_interest_point: The @api tag should be specified
+app/mailers/admin_mailer.rb:21: AdminMailer#new_pending_interest_point: The @api tag must be either public, semipublic or private
+app/mailers/admin_mailer.rb:21: AdminMailer#new_pending_interest_point: The public/semipublic method should have an example specified
+app/mailers/admin_mailer.rb:21: AdminMailer#new_pending_interest_point: The @return tag should be specified
+app/mailers/admin_mailer.rb:27: AdminMailer#new_pending_image: The @api tag should be specified
+app/mailers/admin_mailer.rb:27: AdminMailer#new_pending_image: The @api tag must be either public, semipublic or private
+app/mailers/admin_mailer.rb:27: AdminMailer#new_pending_image: The public/semipublic method should have an example specified
+app/mailers/admin_mailer.rb:27: AdminMailer#new_pending_image: The @return tag should be specified
+app/mailers/user_mailer.rb:13: UserMailer#reset_password_instructions: The @api tag should be specified
+app/mailers/user_mailer.rb:13: UserMailer#reset_password_instructions: The @api tag must be either public, semipublic or private
+app/mailers/user_mailer.rb:13: UserMailer#reset_password_instructions: The public/semipublic method should have an example specified
+app/mailers/user_mailer.rb:13: UserMailer#reset_password_instructions: The method summary should be less than 80 characters in length
+app/mailers/user_mailer.rb:13: UserMailer#reset_password_instructions: The method summary should not end in a period
+app/mailers/user_mailer.rb:13: UserMailer#reset_password_instructions: The @return tag should be specified
+app/mailers/user_mailer.rb:22: UserMailer#missing_user: The @api tag should be specified
+app/mailers/user_mailer.rb:22: UserMailer#missing_user: The @api tag must be either public, semipublic or private
+app/mailers/user_mailer.rb:22: UserMailer#missing_user: The public/semipublic method should have an example specified
+app/mailers/user_mailer.rb:22: UserMailer#missing_user: The method summary should be less than 80 characters in length
+app/mailers/user_mailer.rb:22: UserMailer#missing_user: The method summary should not end in a period
+app/mailers/user_mailer.rb:22: UserMailer#missing_user: The @return tag should be specified
+app/mailers/user_mailer.rb:30: UserMailer#welcome_email: The @api tag should be specified
+app/mailers/user_mailer.rb:30: UserMailer#welcome_email: The @api tag must be either public, semipublic or private
+app/mailers/user_mailer.rb:30: UserMailer#welcome_email: The public/semipublic method should have an example specified
+app/mailers/user_mailer.rb:30: UserMailer#welcome_email: The method summary should be less than 80 characters in length
+app/mailers/user_mailer.rb:30: UserMailer#welcome_email: The method summary should not end in a period
+app/mailers/user_mailer.rb:30: UserMailer#welcome_email: The @return tag should be specified
+app/models/ability.rb:9: Ability#initialize: The @api tag should be specified
+app/models/ability.rb:9: Ability#initialize: The @api tag must be either public, semipublic or private
+app/models/ability.rb:9: Ability#initialize: The public/semipublic method should have an example specified
+app/models/ability.rb:9: Ability#initialize: The method summary should be less than 80 characters in length
+app/models/ability.rb:9: Ability#initialize: The method summary should not end in a period
+app/models/artist.rb:13: Artist#interest_points: The @api tag should be specified
+app/models/artist.rb:13: Artist#interest_points: The @api tag must be either public, semipublic or private
+app/models/artist.rb:13: Artist#interest_points: The public/semipublic method should have an example specified
+app/models/artist.rb:14: Artist#artist_interest_points: The @api tag should be specified
+app/models/artist.rb:14: Artist#artist_interest_points: The @api tag must be either public, semipublic or private
+app/models/artist.rb:14: Artist#artist_interest_points: The public/semipublic method should have an example specified
+app/models/artist_interest_point.rb:13: ArtistInterestPoint#artist: The @api tag should be specified
+app/models/artist_interest_point.rb:13: ArtistInterestPoint#artist: The @api tag must be either public, semipublic or private
+app/models/artist_interest_point.rb:13: ArtistInterestPoint#artist: The public/semipublic method should have an example specified
+app/models/artist_interest_point.rb:14: ArtistInterestPoint#interest_point: The @api tag should be specified
+app/models/artist_interest_point.rb:14: ArtistInterestPoint#interest_point: The @api tag must be either public, semipublic or private
+app/models/artist_interest_point.rb:14: ArtistInterestPoint#interest_point: The public/semipublic method should have an example specified
+app/models/category.rb:16: Category#category_pages: The @api tag should be specified
+app/models/category.rb:16: Category#category_pages: The @api tag must be either public, semipublic or private
+app/models/category.rb:16: Category#category_pages: The public/semipublic method should have an example specified
+app/models/category.rb:19: Category#comments: The @api tag should be specified
+app/models/category.rb:19: Category#comments: The @api tag must be either public, semipublic or private
+app/models/category.rb:19: Category#comments: The public/semipublic method should have an example specified
+app/models/category.rb:19: Category#comments: The @return tag should be specified
+app/models/category.rb:22: Category#interest_points: The @api tag should be specified
+app/models/category.rb:22: Category#interest_points: The @api tag must be either public, semipublic or private
+app/models/category.rb:22: Category#interest_points: The public/semipublic method should have an example specified
+app/models/category.rb:22: Category#interest_points: The @return tag should be specified
+app/models/category_page.rb:13: CategoryPage#category: The @api tag should be specified
+app/models/category_page.rb:13: CategoryPage#category: The @api tag must be either public, semipublic or private
+app/models/category_page.rb:13: CategoryPage#category: The public/semipublic method should have an example specified
+app/models/category_page.rb:14: CategoryPage#interest_point: The @api tag should be specified
+app/models/category_page.rb:14: CategoryPage#interest_point: The @api tag must be either public, semipublic or private
+app/models/category_page.rb:14: CategoryPage#interest_point: The public/semipublic method should have an example specified
+app/models/comment.rb:21: Comment#commentable: The @api tag should be specified
+app/models/comment.rb:21: Comment#commentable: The @api tag must be either public, semipublic or private
+app/models/comment.rb:21: Comment#commentable: The public/semipublic method should have an example specified
+app/models/comment.rb:21: Comment#commentable: The method summary should be less than 80 characters in length
+app/models/comment.rb:21: Comment#commentable: The method summary should not end in a period
+app/models/comment.rb:21: Comment#commentable: The method summary should be a single line
+app/models/comment.rb:21: Comment#commentable: The @return tag should be specified
+app/models/comment.rb:23: Comment#reports: The @api tag should be specified
+app/models/comment.rb:23: Comment#reports: The @api tag must be either public, semipublic or private
+app/models/comment.rb:23: Comment#reports: The public/semipublic method should have an example specified
+app/models/comment.rb:25: Comment.reported: The @api tag should be specified
+app/models/comment.rb:25: Comment.reported: The @api tag must be either public, semipublic or private
+app/models/comment.rb:25: Comment.reported: The public/semipublic method should have an example specified
+app/models/comment.rb:41: Comment#times_reported: The @api tag should be specified
+app/models/comment.rb:41: Comment#times_reported: The @api tag must be either public, semipublic or private
+app/models/comment.rb:41: Comment#times_reported: The public/semipublic method should have an example specified
+app/models/comment.rb:41: Comment#times_reported: The method summary should be specified
+app/models/comment.rb:41: Comment#times_reported: The @return tag should be specified
+app/models/comment_rating.rb:14: CommentRating#comment: The @api tag should be specified
+app/models/comment_rating.rb:14: CommentRating#comment: The @api tag must be either public, semipublic or private
+app/models/comment_rating.rb:14: CommentRating#comment: The public/semipublic method should have an example specified
+app/models/comment_rating.rb:15: CommentRating#user: The @api tag should be specified
+app/models/comment_rating.rb:15: CommentRating#user: The @api tag must be either public, semipublic or private
+app/models/comment_rating.rb:15: CommentRating#user: The public/semipublic method should have an example specified
+app/models/image.rb:20: Image#interest_point: The @api tag should be specified
+app/models/image.rb:20: Image#interest_point: The @api tag must be either public, semipublic or private
+app/models/image.rb:20: Image#interest_point: The public/semipublic method should have an example specified
+app/models/image.rb:20: Image#interest_point: The @return tag should be specified
+app/models/image.rb:21: Image#default_interest_point: The @api tag should be specified
+app/models/image.rb:21: Image#default_interest_point: The @api tag must be either public, semipublic or private
+app/models/image.rb:21: Image#default_interest_point: The public/semipublic method should have an example specified
+app/models/image.rb:22: Image#contributor: The @api tag should be specified
+app/models/image.rb:22: Image#contributor: The @api tag must be either public, semipublic or private
+app/models/image.rb:22: Image#contributor: The public/semipublic method should have an example specified
+app/models/image.rb:23: Image#approver: The @api tag should be specified
+app/models/image.rb:23: Image#approver: The @api tag must be either public, semipublic or private
+app/models/image.rb:23: Image#approver: The public/semipublic method should have an example specified
+app/models/image.rb:27: Image.pending: The @api tag should be specified
+app/models/image.rb:27: Image.pending: The @api tag must be either public, semipublic or private
+app/models/image.rb:27: Image.pending: The public/semipublic method should have an example specified
+app/models/image.rb:28: Image.active: The @api tag should be specified
+app/models/image.rb:28: Image.active: The @api tag must be either public, semipublic or private
+app/models/image.rb:28: Image.active: The public/semipublic method should have an example specified
+app/models/image.rb:32: Image#pending: The @api tag should be specified
+app/models/image.rb:32: Image#pending: The @api tag must be either public, semipublic or private
+app/models/image.rb:32: Image#pending: The public/semipublic method should have an example specified
+app/models/image.rb:32: Image#pending: The method summary should be specified
+app/models/image.rb:32: Image#pending: The @return tag should be specified
+app/models/image.rb:36: Image#default: The @api tag should be specified
+app/models/image.rb:36: Image#default: The @api tag must be either public, semipublic or private
+app/models/image.rb:36: Image#default: The public/semipublic method should have an example specified
+app/models/image.rb:36: Image#default: The method summary should be specified
+app/models/image.rb:36: Image#default: The @return tag should be specified
+app/models/image.rb:43: Image#notify_administrators!: The @api tag should be specified
+app/models/image.rb:43: Image#notify_administrators!: The @api tag must be either public, semipublic or private
+app/models/image.rb:43: Image#notify_administrators!: The public/semipublic method should have an example specified
+app/models/image.rb:43: Image#notify_administrators!: The method summary should be less than 80 characters in length
+app/models/image.rb:43: Image#notify_administrators!: The method summary should not end in a period
+app/models/image.rb:43: Image#notify_administrators!: The @return tag should be specified
+app/models/image.rb:52: Image#set_valid_contributor: The method summary should be less than 80 characters in length
+app/models/image.rb:52: Image#set_valid_contributor: The @return tag should be specified
+app/models/interest_point.rb:29: InterestPoint.pending: The @api tag should be specified
+app/models/interest_point.rb:29: InterestPoint.pending: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:29: InterestPoint.pending: The public/semipublic method should have an example specified
+app/models/interest_point.rb:29: InterestPoint.pending: The method summary should be less than 80 characters in length
+app/models/interest_point.rb:30: InterestPoint.active: The @api tag should be specified
+app/models/interest_point.rb:30: InterestPoint.active: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:30: InterestPoint.active: The public/semipublic method should have an example specified
+app/models/interest_point.rb:32: InterestPoint#contributor: The @api tag should be specified
+app/models/interest_point.rb:32: InterestPoint#contributor: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:32: InterestPoint#contributor: The public/semipublic method should have an example specified
+app/models/interest_point.rb:33: InterestPoint#approver: The @api tag should be specified
+app/models/interest_point.rb:33: InterestPoint#approver: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:33: InterestPoint#approver: The public/semipublic method should have an example specified
+app/models/interest_point.rb:34: InterestPoint#category: The @api tag should be specified
+app/models/interest_point.rb:34: InterestPoint#category: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:34: InterestPoint#category: The public/semipublic method should have an example specified
+app/models/interest_point.rb:37: InterestPoint#interest_point_ratings: The @api tag should be specified
+app/models/interest_point.rb:37: InterestPoint#interest_point_ratings: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:37: InterestPoint#interest_point_ratings: The public/semipublic method should have an example specified
+app/models/interest_point.rb:37: InterestPoint#interest_point_ratings: The @return tag should be specified
+app/models/interest_point.rb:39: InterestPoint#artist: The @api tag should be specified
+app/models/interest_point.rb:39: InterestPoint#artist: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:39: InterestPoint#artist: The public/semipublic method should have an example specified
+app/models/interest_point.rb:41: InterestPoint#artist_interest_points: The @api tag should be specified
+app/models/interest_point.rb:41: InterestPoint#artist_interest_points: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:41: InterestPoint#artist_interest_points: The public/semipublic method should have an example specified
+app/models/interest_point.rb:41: InterestPoint#artist_interest_points: The method summary should be less than 80 characters in length
+app/models/interest_point.rb:41: InterestPoint#artist_interest_points: The @return tag should be specified
+app/models/interest_point.rb:43: InterestPoint#category_pages: The @api tag should be specified
+app/models/interest_point.rb:43: InterestPoint#category_pages: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:43: InterestPoint#category_pages: The public/semipublic method should have an example specified
+app/models/interest_point.rb:47: InterestPoint#comments: The @api tag should be specified
+app/models/interest_point.rb:47: InterestPoint#comments: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:47: InterestPoint#comments: The public/semipublic method should have an example specified
+app/models/interest_point.rb:47: InterestPoint#comments: The method summary should be specified
+app/models/interest_point.rb:52: InterestPoint#default_image: The @api tag should be specified
+app/models/interest_point.rb:52: InterestPoint#default_image: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:52: InterestPoint#default_image: The public/semipublic method should have an example specified
+app/models/interest_point.rb:52: InterestPoint#default_image: The method summary should be less than 80 characters in length
+app/models/interest_point.rb:52: InterestPoint#default_image: The method summary should not end in a period
+app/models/interest_point.rb:52: InterestPoint#default_image: The @return tag should be specified
+app/models/interest_point.rb:53: InterestPoint#images: The @api tag should be specified
+app/models/interest_point.rb:53: InterestPoint#images: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:53: InterestPoint#images: The public/semipublic method should have an example specified
+app/models/interest_point.rb:79: InterestPoint#full_address: The @api tag should be specified
+app/models/interest_point.rb:79: InterestPoint#full_address: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:79: InterestPoint#full_address: The public/semipublic method should have an example specified
+app/models/interest_point.rb:79: InterestPoint#full_address: The method summary should be specified
+app/models/interest_point.rb:84: InterestPoint#pending: The @api tag should be specified
+app/models/interest_point.rb:84: InterestPoint#pending: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:84: InterestPoint#pending: The public/semipublic method should have an example specified
+app/models/interest_point.rb:84: InterestPoint#pending: The method summary should be specified
+app/models/interest_point.rb:88: InterestPoint#average_rating: The @api tag should be specified
+app/models/interest_point.rb:88: InterestPoint#average_rating: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:88: InterestPoint#average_rating: The public/semipublic method should have an example specified
+app/models/interest_point.rb:88: InterestPoint#average_rating: The method summary should be specified
+app/models/interest_point.rb:88: InterestPoint#average_rating: The @return tag should be specified
+app/models/interest_point.rb:97: InterestPoint#normalize_coordinates: The @api tag should be specified
+app/models/interest_point.rb:97: InterestPoint#normalize_coordinates: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:97: InterestPoint#normalize_coordinates: A method with protected visibility must have an @api tag of semipublic or private
+app/models/interest_point.rb:97: InterestPoint#normalize_coordinates: The public/semipublic method should have an example specified
+app/models/interest_point.rb:97: InterestPoint#normalize_coordinates: The method summary should be less than 80 characters in length
+app/models/interest_point.rb:97: InterestPoint#normalize_coordinates: The method summary should not end in a period
+app/models/interest_point.rb:97: InterestPoint#normalize_coordinates: The @return tag should be specified
+app/models/interest_point.rb:105: InterestPoint#notify_administrators!: The @api tag should be specified
+app/models/interest_point.rb:105: InterestPoint#notify_administrators!: The @api tag must be either public, semipublic or private
+app/models/interest_point.rb:105: InterestPoint#notify_administrators!: A method with protected visibility must have an @api tag of semipublic or private
+app/models/interest_point.rb:105: InterestPoint#notify_administrators!: The public/semipublic method should have an example specified
+app/models/interest_point.rb:105: InterestPoint#notify_administrators!: The method summary should be less than 80 characters in length
+app/models/interest_point.rb:105: InterestPoint#notify_administrators!: The method summary should not end in a period
+app/models/interest_point.rb:105: InterestPoint#notify_administrators!: The @return tag should be specified
+app/models/interest_point_rating.rb:14: InterestPointRating#interest_point: The @api tag should be specified
+app/models/interest_point_rating.rb:14: InterestPointRating#interest_point: The @api tag must be either public, semipublic or private
+app/models/interest_point_rating.rb:14: InterestPointRating#interest_point: The public/semipublic method should have an example specified
+app/models/interest_point_rating.rb:15: InterestPointRating#user: The @api tag should be specified
+app/models/interest_point_rating.rb:15: InterestPointRating#user: The @api tag must be either public, semipublic or private
+app/models/interest_point_rating.rb:15: InterestPointRating#user: The public/semipublic method should have an example specified
+app/models/report.rb:13: Report#comment: The @api tag should be specified
+app/models/report.rb:13: Report#comment: The @api tag must be either public, semipublic or private
+app/models/report.rb:13: Report#comment: The public/semipublic method should have an example specified
+app/models/report.rb:14: Report#user: The @api tag should be specified
+app/models/report.rb:14: Report#user: The @api tag must be either public, semipublic or private
+app/models/report.rb:14: Report#user: The public/semipublic method should have an example specified
+app/models/role.rb:17: Role#users: The @api tag should be specified
+app/models/role.rb:17: Role#users: The @api tag must be either public, semipublic or private
+app/models/role.rb:17: Role#users: The public/semipublic method should have an example specified
+app/models/role.rb:17: Role#users: The @return tag should be specified
+app/models/user.rb:25: User#reports: The @api tag should be specified
+app/models/user.rb:25: User#reports: The @api tag must be either public, semipublic or private
+app/models/user.rb:25: User#reports: The public/semipublic method should have an example specified
+app/models/user.rb:28: User#role: The @api tag should be specified
+app/models/user.rb:28: User#role: The @api tag must be either public, semipublic or private
+app/models/user.rb:28: User#role: The public/semipublic method should have an example specified
+app/models/user.rb:28: User#role: The @return tag should be specified
+app/models/user.rb:31: User#interest_point_ratings: The @api tag should be specified
+app/models/user.rb:31: User#interest_point_ratings: The @api tag must be either public, semipublic or private
+app/models/user.rb:31: User#interest_point_ratings: The public/semipublic method should have an example specified
+app/models/user.rb:31: User#interest_point_ratings: The @return tag should be specified
+app/models/user.rb:35: User.admin: The @api tag should be specified
+app/models/user.rb:35: User.admin: The @api tag must be either public, semipublic or private
+app/models/user.rb:35: User.admin: The method summary should be specified
+app/models/user.rb:35: User#admin: The @api tag should be specified
+app/models/user.rb:35: User#admin: The @api tag must be either public, semipublic or private
+app/models/user.rb:35: User#admin: The method summary should be specified
+app/models/user.rb:72: User#normalize_user_name: The @api tag should be specified
+app/models/user.rb:72: User#normalize_user_name: The @api tag must be either public, semipublic or private
+app/models/user.rb:72: User#normalize_user_name: The public/semipublic method should have an example specified
+app/models/user.rb:72: User#normalize_user_name: The method summary should be less than 80 characters in length
+app/models/user.rb:72: User#normalize_user_name: The @return tag should be specified
+app/models/user.rb:78: User#deliver_reset_password_instructions!: The @api tag should be specified
+app/models/user.rb:78: User#deliver_reset_password_instructions!: The @api tag must be either public, semipublic or private
+app/models/user.rb:78: User#deliver_reset_password_instructions!: The public/semipublic method should have an example specified
+app/models/user.rb:78: User#deliver_reset_password_instructions!: The method summary should be less than 80 characters in length
+app/models/user.rb:78: User#deliver_reset_password_instructions!: The @return tag should be specified
+app/models/user.rb:88: User.from_omniauth: The @api tag should be specified
+app/models/user.rb:88: User.from_omniauth: The @api tag must be either public, semipublic or private
+app/models/user.rb:88: User.from_omniauth: The public/semipublic method should have an example specified
+app/models/user.rb:88: User.from_omniauth: The method summary should be less than 80 characters in length
+app/models/user.rb:88: User.from_omniauth: The method summary should not end in a period
+app/models/user.rb:96: User#is?: The @api tag should be specified
+app/models/user.rb:96: User#is?: The @api tag must be either public, semipublic or private
+app/models/user.rb:96: User#is?: The public/semipublic method should have an example specified
+app/models/user.rb:96: User#is?: The method summary should not end in a period
+app/models/user.rb:100: User#admin?: The @api tag should be specified
+app/models/user.rb:100: User#admin?: The @api tag must be either public, semipublic or private
+app/models/user.rb:100: User#admin?: The public/semipublic method should have an example specified
+app/models/user.rb:100: User#admin?: The method summary should be specified
+app/models/user.rb:104: User#contributor?: The @api tag should be specified
+app/models/user.rb:104: User#contributor?: The @api tag must be either public, semipublic or private
+app/models/user.rb:104: User#contributor?: The public/semipublic method should have an example specified
+app/models/user.rb:104: User#contributor?: The method summary should be specified
+app/models/user.rb:110: User.guest_user: The @api tag should be specified
+app/models/user.rb:110: User.guest_user: The @api tag must be either public, semipublic or private
+app/models/user.rb:110: User.guest_user: The public/semipublic method should have an example specified
+app/models/user.rb:121: User.create_from_omniauth: The @api tag should be specified
+app/models/user.rb:121: User.create_from_omniauth: The @api tag must be either public, semipublic or private
+app/models/user.rb:121: User.create_from_omniauth: A method with private visibility must have an @api tag of private
+app/models/user.rb:121: User.create_from_omniauth: The public/semipublic method should have an example specified
+app/models/user.rb:121: User.create_from_omniauth: The method summary should not end in a period
+app/models/user.rb:121: User.create_from_omniauth: The @return tag should be specified
+app/models/user.rb:155: User.create_guest_user: The @api tag should be specified
+app/models/user.rb:155: User.create_guest_user: The @api tag must be either public, semipublic or private
+app/models/user.rb:155: User.create_guest_user: A method with private visibility must have an @api tag of private
+app/models/user.rb:155: User.create_guest_user: The public/semipublic method should have an example specified
+app/models/user.rb:155: User.create_guest_user: The method summary should be less than 80 characters in length
+app/models/user.rb:155: User.create_guest_user: The method summary should not end in a period
+app/models/user.rb:155: User.create_guest_user: The @return tag should be specified
+app/uploaders/image_uploader.rb:15: ImageUploader#store_dir: The @api tag should be specified
+app/uploaders/image_uploader.rb:15: ImageUploader#store_dir: The @api tag must be either public, semipublic or private
+app/uploaders/image_uploader.rb:15: ImageUploader#store_dir: The public/semipublic method should have an example specified
+app/uploaders/image_uploader.rb:15: ImageUploader#store_dir: The method summary should be less than 80 characters in length
+app/uploaders/image_uploader.rb:15: ImageUploader#store_dir: The method summary should be a single line
+app/uploaders/image_uploader.rb:15: ImageUploader#store_dir: The @return tag should be specified
+app/uploaders/image_uploader.rb:42: ImageUploader#extension_white_list: The @api tag should be specified
+app/uploaders/image_uploader.rb:42: ImageUploader#extension_white_list: The @api tag must be either public, semipublic or private
+app/uploaders/image_uploader.rb:42: ImageUploader#extension_white_list: The public/semipublic method should have an example specified
+app/uploaders/image_uploader.rb:42: ImageUploader#extension_white_list: The method summary should be less than 80 characters in length
+app/uploaders/image_uploader.rb:42: ImageUploader#extension_white_list: The method summary should be a single line
+app/uploaders/image_uploader.rb:42: ImageUploader#extension_white_list: The @return tag should be specified
+app/uploaders/image_uploader.rb:48: ImageUploader#filename: The @api tag should be specified
+app/uploaders/image_uploader.rb:48: ImageUploader#filename: The @api tag must be either public, semipublic or private
+app/uploaders/image_uploader.rb:48: ImageUploader#filename: The public/semipublic method should have an example specified
+app/uploaders/image_uploader.rb:48: ImageUploader#filename: The method summary should be less than 80 characters in length
+app/uploaders/image_uploader.rb:48: ImageUploader#filename: The method summary should not end in a period
+app/uploaders/image_uploader.rb:48: ImageUploader#filename: The method summary should be a single line
+app/uploaders/image_uploader.rb:48: ImageUploader#filename: The @return tag should be specified
+
+YARD-Coverage: 54.9%  Success: 951  Failed: 779  Total: 1730

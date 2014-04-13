@@ -1,0 +1,7 @@
+<!-- Defines Image fields for the given fields_for builder defined in the Interest Point form -->
+<fieldset class="image_fields">
+  <%= f.file_field :file, accept: 'image/png,image/gif,image/jpeg', class: 'file_input' %>
+  <%= f.hidden_field :_destroy %>
+  <%= f.hidden_field :contributor_id, value: current_user.nil? ? User.guest.id : current_user.id %>
+  <p><%= link_to 'Remove', '#', class: 'remove_fields btn btn-danger btn-xs' %></p>
+</fieldset>

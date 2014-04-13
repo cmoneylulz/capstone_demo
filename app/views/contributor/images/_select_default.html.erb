@@ -1,0 +1,10 @@
+<!-- Select the default? image to display for this Interest Point -->
+<div class="row">
+  <%= form_for @interest_point do %>
+    <% @interest_point.images.each do |image| %>
+      <div class="col-xs-2">
+        <%= link_to contributor_interest_point_update_default_image_path(@interest_point, image_id: image),  { method: :put } do %><%= image_tag image.file, class: 'image-thumbnail', { style: "padding-top: 25px; #{"border: 2px solid red;" if image.default? }" }%><% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

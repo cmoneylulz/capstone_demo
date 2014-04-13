@@ -1,0 +1,17 @@
+<footer style="margin-top: 35px; padding-top: 15px; border-top: 1px solid black; text-align: center">
+  <a class="doge" href="">Donate Doge Coins</a>
+  <script>
+      (function(w, d, address){
+          var a = d.getElementsByTagName('A');
+          for (var i = 0, n = a.length; i < n; i = i + 1) {
+              if (a[i].className && a[i].className === 'doge') {
+                  var span = d.createElement('I');
+                  a[i].appendChild(span);
+                  a[i].onclick = function () {
+                      window.prompt('To Copy Wallet Address Press Ctrl + C', address);
+                  }
+              }
+          }
+      }(window, document, 'DLdGwpUG739VyVRQaM1edMnxXXciijWigY'));
+  </script>
+</footer>

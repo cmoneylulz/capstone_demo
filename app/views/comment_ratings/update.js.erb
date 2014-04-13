@@ -1,0 +1,17 @@
+$('#<%= @comment.id %>star').raty({
+    readOnly: true,
+    score: <%= @comment.average_rating %>,
+    path: '/assets'
+});
+
+$('#<%= @comment.id %>user_star').raty({
+    score: <%= @comment_rating.score %>,
+    path: '/assets',
+    click: function(score, evt) {
+        $.ajax({
+            url: '/comment_ratings/' + <%= @comment_rating.id %>,
+            type: 'PATCH',
+            data: { score: score }
+        }).done(function (data){});
+    }
+});

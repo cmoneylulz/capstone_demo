@@ -1,0 +1,65 @@
+<%= form_for @interest_point, style: :horizontal, :role => 'form', class: 'form-horizontal'  do |f| %>
+
+	<!-- Upload new images section -->
+  <div class="row">
+    <div class="col-xs-12">
+    <%= fields_for :images do |builder| %>
+      <%= render partial: 'images/fields', locals: { f: builder } %>
+    <% end %>     
+    <%= link_to_add_fields "Add Image", f, :images, 'images/fields' %>
+    </div>
+  </div>
+	  
+  <!-- Name/Type fields -->
+      <table class="table">
+        <tr>
+          <td><%= f.label :name %></td>
+          <td><%= f.text_field :name, class: 'form-control' %></td>
+        </tr>
+        <tr>
+          <td><%= f.label :category_id %></td>
+          <td><%= f.select :category_id, options_for_select(Category.all.collect{ |u| [u.name, u.id] }), { }, { class: 'form-control' } %></td>
+        </tr>
+            <tr>
+                <td><%= f.label :address_line_1 %></td>
+                <td><%= f.text_field :address_line_1, class: 'form-control' %></td>
+            </tr>
+            <tr>
+                <td><%= f.label :address_line_2 %></td>
+                <td><%= f.text_field :address_line_2, class: 'form-control' %></td>
+            </tr>
+            <tr>
+                <td><%= f.label :city %></td>
+                <td><%= f.text_field :city, class: 'form-control' %></td>
+            </tr>
+            <tr>
+                <td><%= f.label :state %></td>
+                <td><%= f.select :state, options_for_select(States::LIST.map { |s| [ s[1], s[0] ] }), { }, { class: 'form-control' } %></td>
+            </tr>
+            <tr>
+                <td><%= f.label :zip %></td>
+                <td><%= f.text_field :zip, class: 'form-control' %></td>
+            </tr>
+            <tr>
+                <td><%= f.label :latitude %></td>
+                <td><%= f.text_field :latitude, class: 'form-control' %></td>
+            </tr>
+            <tr>
+                <td><%= f.label :longitude %></td>
+                <td><%= f.text_field :longitude, class: 'form-control' %></td>
+            </tr>
+            <!-- Summary -->
+            <tr>
+                <td><%= f.label :summary %></td>
+                <td><%= f.text_area :summary, size: "50x10", class: 'form-control' %></td>
+            </tr>
+            <!-- Save/Cancel buttons -->
+            <tr>
+                <td colspan="2">
+                    <%= f.submit "Save Interest Point", class: "btn btn-primary pull-right" %>
+                    <% unless @interest_point.new_record? %><%= link_to 'Cancel', interest_point_path(@interest_point), class: "btn btn-default pull-right" %>
+                    <% else %><%= link_to 'Cancel', interest_points_path, class: 'btn btn-default pull-right' %><% end %>
+                </td>
+            </tr>
+        </table>
+<% end %>

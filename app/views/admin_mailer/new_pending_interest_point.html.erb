@@ -1,0 +1,41 @@
+<p>A new Interest Point has been uploaded to Hot Spots and needs your approval!</p>
+
+<h3><b>Interest Point information</b></h3>
+<table class="table table-responsive email">
+  <tr>
+    <td>Name:</td>
+    <td><%= @interest_point.name %></td>
+  </tr>
+  <tr>
+    <td>Category:</td>
+    <td><%= @interest_point.category.name %></td>
+  </tr>
+  <tr>
+    <td>Location:</td>
+    <td><%= @interest_point.full_address %></td>
+  </tr>
+  <tr>
+    <td>Contributed by:</td>
+    <td><%= @interest_point.contributor.first_name %> <%= @interest_point.contributor.last_name %> [<%= @interest_point.contributor.user_name %>]  on <%= format_datetime(@interest_point.created_at) %></td>
+  </tr>
+  <tr>
+    <td>Last updated on:</td>
+    <td><%= format_datetime(@interest_point.updated_at) %></td>
+  </tr>
+  <tr>
+    <td>Number of images:</td>
+    <td><%= @interest_point.images.count %></td>
+  </tr>
+</table>
+<h3><b>Image preview</b></h3>
+<div class="row">
+  <% @interest_point.images.each do |image| %>
+  <div class="col-xs-2">
+    <%= image_tag image.file_url, class: 'image-thumbnail' %>
+  </div>
+  <% end %>
+</div>
+
+<p>Visit <%= link_to 'Admin Interest Points', admin_interest_points_url, host: 'localhost:3000' %> to view this Interest Point in context.</p>
+
+<p>As always, thanks for your time and dedication to keep this application running smoothly!</p>

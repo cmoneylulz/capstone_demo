@@ -1,0 +1,25 @@
+<div class="panel panel-info">
+    <div class="panel-heading clearfix">
+      <b style="font-size: 24px;">All Reported Comments</b>
+    </div>
+    <table class="table">
+      <thead>
+        <tr class="active">
+          <th>Comment ID:</th>
+          <th>Comment Body:</th>
+          <th>Times Reported:</th>
+          <th>Delete?</th>
+        </tr>
+      </thead>
+      <tbody>
+    <% @unique_reports.each do |report| %>
+        <tr class="info">
+          <td><%= report.comment_id %></td>
+          <td><%= @comment = Comment.find(report.comment_id).body %></td>
+          <td><%= Report.where("comment_id = ? ", "#{report.comment_id}").count %></td>
+          <td><%= link_to "delete", destroy_comment_path %></td>
+        </tr>
+    <% end %>
+      </tbody>
+    </table>
+</div>

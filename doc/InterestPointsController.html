@@ -1,0 +1,1309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: InterestPointsController
+  
+    &mdash; Capstone Hot Spots
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (I)</a> &raquo;
+    
+    
+    <span class="title">InterestPointsController</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: InterestPointsController
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActionController::Base</li>
+          
+            <li class="next"><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></li>
+          
+            <li class="next">InterestPointsController</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">app/controllers/interest_points_controller.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>This <code>InterestPointsController</code> should be used to control new
+<code>InterestPoint</code> instances that are added to this application</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Author:</p>
+<ul class="author">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Ashley Childress</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Version:</p>
+<ul class="version">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.25.2014</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="Contributor/InterestPointsController.html" title="Contributor::InterestPointsController (class)">Contributor::InterestPointsController</a></span></p>
+</div>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#average_rating-instance_method" title="#average_rating (instance method)">- (Object) <strong>average_rating</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Find average rating for <code>InterestPoint</code>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create-instance_method" title="#create (instance method)">- (Object) <strong>create</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a new <tt>Interest Point</tt> with attributes equal to the given
+parameters.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#destroy-instance_method" title="#destroy (instance method)">- (Object) <strong>destroy</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Permanently delete the <tt>Interest Point</tt> with the given <code>id</code> from
+this application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit-instance_method" title="#edit (instance method)">- (Object) <strong>edit</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Edit details for the <tt>Interest Point</tt> identified by the given
+<code>id</code>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#index-instance_method" title="#index (instance method)">- (Object) <strong>index</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Display a list of all <tt>Interest Points</tt>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new-instance_method" title="#new (instance method)">- (Object) <strong>new</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Ensure the <tt>Interest Point</tt> used by this <tt>Interest Points Controllers</tt> is
+set before the show, update, edit, or delete actions Create a new, empty
+<tt>Interest Point</tt> and build any associated <code>Images</code>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show-instance_method" title="#show (instance method)">- (Object) <strong>show</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Display details for a specific <tt>Interest Point</tt> identified by the given
+<code>id</code>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update-instance_method" title="#update (instance method)">- (Object) <strong>update</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Modify details for the <tt>Interest Point</tt> identified by the given
+<code>id</code>.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="average_rating-instance_method">
+  
+    - (<tt>Object</tt>) <strong>average_rating</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Find average rating for <code>InterestPoint</code></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/interest_points_controller.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_average_rating'>average_rating</span>
+  <span class='int'>0</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create-instance_method">
+  
+    - (<tt>Object</tt>) <strong>create</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a new <tt>Interest Point</tt> with attributes equal to the given parameters</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the title used to identify the <tt>Interest Point</tt></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>summary</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a description of this <tt>Interest Point</tt> that will be displayed to users on
+the details page</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>address_line_1</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the primary physical location of the <tt>Interest Point</tt> used to generate
+coordinates on the map</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>address_line_2</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the secondary description of the physical location of the <tt>Interest Point</tt>,
+if applicable</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>city</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the place that describes the physical location of this <tt>Interest Point</tt></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>state</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the state this <tt>Interest Point</tt> is located in</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>zip</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the postal zip code for the <tt>Interest Point</tt> location</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>latitude</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the location given as a northern coordinate degree, optional if address is
+given</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>longitude</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the location given as a western coordinate degree, optional if address is
+given</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>category_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the identification number of the <code>Category</code> this +Interest
+Point+ is defined under</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>contributor_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number identifying the <code>User</code> who initially created this
+<tt>Interest Point</tt></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>approver_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number identifying the <code>User</code> who approved this +Interest
+Point+ to be displayed for all application users.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/interest_points_controller.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span>
+	<span class='id identifier rubyid_store_location'>store_location</span>
+	
+	<span class='comment'>## You can&#39;t call @interest_point.id here because it doesn&#39;t have one yet; this needs to be moved out
+</span>   <span class='comment'># if current_user
+</span>     <span class='comment'># @interest_point_rating = InterestPointRating.create(interest_point_id: @interest_point.id, user_id: @current_user.id, score: 0)
+</span>   <span class='comment'># end
+</span>	<span class='kw'>if</span> <span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+		<span class='id identifier rubyid_set_default_image'>set_default_image</span>
+		<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:notice</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Interest Point was created successfully!</span><span class='tstring_end'>&quot;</span></span>
+		
+		<span class='comment'>## This is causing tests to fail
+</span>		<span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_notify_administrators!'>notify_administrators!</span>
+		<span class='id identifier rubyid_redirect_back_or_to_default'>redirect_back_or_to_default</span> <span class='id identifier rubyid_interest_point_path'>interest_point_path</span><span class='lparen'>(</span><span class='ivar'>@interest_point</span><span class='rparen'>)</span>
+	<span class='kw'>else</span>
+		<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_get_all_errors'>get_all_errors</span>
+		<span class='id identifier rubyid_render'>render</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>new</span><span class='tstring_end'>&#39;</span></span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="destroy-instance_method">
+  
+    - (<tt>Object</tt>) <strong>destroy</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Permanently delete the <tt>Interest Point</tt> with the given <code>id</code> from
+this application</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the unique identification number of the <tt>Interest Point</tt> that will be
+permanently removed from this application</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/interest_points_controller.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span>
+	<span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span>
+	<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:notice</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Successfully removed Interest Point</span><span class='tstring_end'>&quot;</span></span>	
+	<span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_interest_points_path'>interest_points_path</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="edit-instance_method">
+  
+    - (<tt>Object</tt>) <strong>edit</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Edit details for the <tt>Interest Point</tt> identified by the given
+<code>id</code></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the unique identification number of the <tt>Interest Point</tt> to be modified</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+96
+97
+98</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/interest_points_controller.rb', line 96</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit'>edit</span>
+	
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="index-instance_method">
+  
+    - (<tt>Object</tt>) <strong>index</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Display a list of all <tt>Interest Points</tt></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+81
+82
+83
+84</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/interest_points_controller.rb', line 81</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
+	<span class='ivar'>@interest_points</span> <span class='op'>=</span> <span class='const'>InterestPoint</span><span class='period'>.</span><span class='id identifier rubyid_active'>active</span>
+	<span class='id identifier rubyid_current_ability'>current_ability</span><span class='period'>.</span><span class='id identifier rubyid_can'>can</span> <span class='symbol'>:read</span><span class='comma'>,</span> <span class='ivar'>@interest_points</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="new-instance_method">
+  
+    - (<tt>Object</tt>) <strong>new</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Ensure the <tt>Interest Point</tt> used by this <tt>Interest Points Controllers</tt> is
+set before the show, update, edit, or delete actions Create a new, empty
+<tt>Interest Point</tt> and build any associated <code>Images</code></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/interest_points_controller.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new'>new</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="show-instance_method">
+  
+    - (<tt>Object</tt>) <strong>show</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Display details for a specific <tt>Interest Point</tt> identified by the given
+<code>id</code></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the unique identification nunber of the <tt>Interest Point</tt> to display details
+for</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/interest_points_controller.rb', line 58</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span>
+ <span class='comment'># Move ratings out, causing test to fail
+</span>  <span class='comment'>#define interest point rating to be the current user&#39;s rating for the interest point or create a new one
+</span>  <span class='comment'>#if current_user
+</span>    <span class='comment'># @interest_point_rating = InterestPointRating.where(interest_point_id: @interest_point.id, user_id: @current_user.id).first
+</span>    <span class='comment'># unless @interest_point_rating
+</span>      <span class='comment'># @interest_point_rating = InterestPointRating.create(interest_point_id: @interest_point.id, user_id: @current_user.id, score: 0)
+</span>    <span class='comment'># end
+</span>
+    <span class='id identifier rubyid_map_image'>map_image</span> <span class='op'>=</span> <span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_default_image'>default_image</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>:</span> <span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_default_image'>default_image</span><span class='period'>.</span><span class='id identifier rubyid_file_url'>file_url</span>
+    <span class='ivar'>@hash</span> <span class='op'>=</span> <span class='const'>Gmaps4rails</span><span class='period'>.</span><span class='id identifier rubyid_build_markers'>build_markers</span><span class='lparen'>(</span><span class='ivar'>@interest_point</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interest_point'>interest_point</span><span class='comma'>,</span> <span class='id identifier rubyid_marker'>marker</span><span class='op'>|</span>
+      <span class='id identifier rubyid_marker'>marker</span><span class='period'>.</span><span class='id identifier rubyid_lat'>lat</span> <span class='id identifier rubyid_interest_point'>interest_point</span><span class='period'>.</span><span class='id identifier rubyid_latitude'>latitude</span>
+      <span class='id identifier rubyid_marker'>marker</span><span class='period'>.</span><span class='id identifier rubyid_lng'>lng</span> <span class='id identifier rubyid_interest_point'>interest_point</span><span class='period'>.</span><span class='id identifier rubyid_longitude'>longitude</span>
+      <span class='id identifier rubyid_lat'>lat</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_interest_point'>interest_point</span><span class='period'>.</span><span class='id identifier rubyid_latitude'>latitude</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_long'>long</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_interest_point'>interest_point</span><span class='period'>.</span><span class='id identifier rubyid_longitude'>longitude</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_image'>image</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_map_image'>map_image</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_name'>name</span> <span class='op'>=</span> <span class='id identifier rubyid_interest_point'>interest_point</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>
+      <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_interest_point'>interest_point</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_marker'>marker</span><span class='period'>.</span><span class='id identifier rubyid_infowindow'>infowindow</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;h4&gt;Go Here?&lt;/h4&gt;&lt;a href=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_url'>url</span><span class='embexpr_end'>}</span><span class='tstring_content'>&gt;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&lt;/a&gt;&lt;br /&gt;&lt;img src=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_image'>image</span><span class='embexpr_end'>}</span><span class='tstring_content'> class=&#39;image-map-marker&#39;/&gt;&lt;br /&gt;&lt;button onclick=&#39;getLocation(</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_lat'>lat</span><span class='embexpr_end'>}</span><span class='tstring_content'>,</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_long'>long</span><span class='embexpr_end'>}</span><span class='tstring_content'>)&#39;&gt;GET DIRECTIONS&lt;/button&gt;</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update-instance_method">
+  
+    - (<tt>Object</tt>) <strong>update</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Modify details for the <tt>Interest Point</tt> identified by the given
+<code>id</code>. If one or more attributes are modified by the user, the
+corresponding database record will also be updated</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the unique identification number of the <tt>Interest Point</tt> to modify in the
+database using the specified attributes</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the title used to identify the <tt>Interest Point</tt></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>summary</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a description of this <tt>Interest Point</tt> that will be displayed to users on
+the details page</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>address_line_1</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the primary physical location of the <tt>Interest Point</tt> used to generate
+coordinates on the map</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>address_line_2</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the secondary description of the physical location of the <tt>Interest Point</tt>,
+if applicable</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>city</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the place that describes the physical location of this <tt>Interest Point</tt></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>state</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the state this <tt>Interest Point</tt> is located in</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>zip</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the postal zip code for the <tt>Interest Point</tt> location</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>latitude</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the location given as a northern coordinate degree, optional if address is
+given</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>longitude</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the location given as a western coordinate degree, optional if address is
+given</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>category_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the identification number of the <code>Category</code> this +Interest
+Point+ is defined under</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>contributor_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number identifying the <code>User</code> who initially created this
+<tt>Interest Point</tt></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>approver_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number identifying the <code>User</code> who approved this +Interest
+Point+ to be displayed for all application users.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/interest_points_controller.rb', line 103</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
+	<span class='id identifier rubyid_store_location'>store_location</span>
+	<span class='id identifier rubyid_set_default_image'>set_default_image</span> <span class='kw'>if</span> <span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_default_image'>default_image</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+	<span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_approver'>approver</span> <span class='op'>=</span> <span class='kw'>nil</span>
+	<span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_approved_at'>approved_at</span> <span class='op'>=</span> <span class='kw'>nil</span>
+	<span class='kw'>if</span> <span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_interest_point_params'>interest_point_params</span><span class='rparen'>)</span>
+		<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:notice</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Successfully updated Interest Point</span><span class='tstring_end'>&quot;</span></span>
+		<span class='id identifier rubyid_redirect_back_or_to_default'>redirect_back_or_to_default</span> <span class='id identifier rubyid_interest_point_path'>interest_point_path</span><span class='lparen'>(</span><span class='ivar'>@interest_point</span><span class='rparen'>)</span>
+	<span class='kw'>else</span>
+		<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_get_all_errors'>get_all_errors</span>
+		<span class='id identifier rubyid_redirect_back_or_to_default'>redirect_back_or_to_default</span> <span class='id identifier rubyid_edit_interest_point_path'>edit_interest_point_path</span><span class='lparen'>(</span><span class='ivar'>@interest_point</span><span class='rparen'>)</span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Mar 13 18:53:12 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.3 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<%= form_for @category, style: :horizontal, :url => categories_path, class: 'form-horizontal', :role => 'form' do |f| %>
+	<div class="row">
+	  <div class="col-xs-3">
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	  </div>
+	</div>
+	<hr	/>
+	<div class="row">
+	  <div class="col-xs-3">
+		<%= link_to "Cancel", categories_path, class: 'btn btn-default' %>
+		<%= f.submit "Save Category", class: 'btn btn-primary' %>
+	  </div>
+	</div>
+<% end %>

@@ -1,0 +1,30 @@
+<div class="panel panel-info">
+  <!-- Page header -->
+  <div class="panel-heading clearfix">    
+    <!-- Action buttons -->
+    <div class="btn-group pull-right">	
+    		<% if @interest_point.pending %>
+    			<%= button_to approve_admin_interest_point_path(@interest_point), method: :put, class: 'btn btn-default btn-sm', type: :submit do %><span class="glyphicon glyphicon-ok"></span>Approve<% end %>
+    		<% else %>
+    			<%= button_to unapprove_admin_interest_point_path(@interest_point), method: :put, class: 'btn btn-default btn-sm', type: :submit do %><span class="glyphicon glyphicon-remove"></span>Unapprove<% end %>  
+    		<% end %>
+    		<%= button_to admin_interest_points_path, class: "btn btn-default btn-sm", method: :get do %><span class="glyphicon glyphicon-arrow-left"></span>Back to List<% end %>
+    </div>
+    
+    <h1>Interest Point Admin - '<%= @interest_point.name %>'</h1>
+  </div>
+  
+  <!-- Map -->
+  <div class="row">
+    <!-- TODO: ADD SMALL MAP PARTIAL 
+      render 'maps/interest_point' -->
+  </div>
+  
+  
+  <div class="row">
+      <%= render "images_list", locals: { interest_point: @interest_point } %>
+  </div>
+  
+  <!-- Interest Point fields -->
+  <%= render 'interest_points/show_fields' %>
+</div>

@@ -1,0 +1,4 @@
+achildr1|Password1|Ashley|Childress|achildr1@my.westga.edu|1
+cwilso25|Password2|Chris|Wilson|cwilso25@my.westga.edu|1
+testcontributor|Password3|Test|Contributor|testuser@email.com|2
+guestuser|Password3|Guest|User|guestuser@email.com|3

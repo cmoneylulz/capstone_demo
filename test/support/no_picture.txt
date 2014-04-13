@@ -1,0 +1,1 @@
+This file represents an invalid Image for testing the Image model for this application.

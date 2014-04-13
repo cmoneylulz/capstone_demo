@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-12">
+      <table class="table table-collapse">
+          <tbody>
+              <tr>
+                  <td><strong>Location: </strong></td><td><%= @interest_point.latitude %>&deg; N, <%= @interest_point.longitude %>&deg; W</td>
+              </tr>
+              <tr>
+                  <td><strong>Address: </strong></td><td><%= @interest_point.full_address %></td>
+              </tr>
+              <tr>
+                  <td><strong>Category:  </strong></td><td><%= link_to @interest_point.category.name, @interest_point.category %></p></td>
+              </tr>
+              <tr>
+                  <td><strong>Summary:</strong></td><td><%= @interest_point.summary %></td>
+              </tr>
+              <tr>
+                  <td><strong>Created By:  </strong></td><td><%= @interest_point.contributor.first_name %> <%= @interest_point.contributor.last_name %></td>
+              </tr>
+              <tr>
+                  <td><strong>Created On:  </strong></td><td><%= format_datetime(@interest_point.created_at) %></td>
+              </tr>
+              <tr>
+                <td><strong>Approved By:  </strong></td><td><% unless @interest_point.approver.nil? %><%= @interest_point.approver.first_name %> <%= @interest_point.approver.last_name %><% end %></td>
+              </tr>
+              <tr>
+                <td><strong>Approved On: </strong></td><td><% unless @interest_point.approved_at.nil? %><%= format_datetime(@interest_point.approved_at) %><% end %></td>
+              </tr>
+              <tr>
+                  <td colspan='2'>
+                    <% if can? :update, @interest_point %><%= link_to 'Edit', edit_interest_point_path(@interest_point), class: "btn btn-success" %><% end %>
+                    <% if can? :delete, @interest_point %><%= link_to 'Delete', interest_point_path(@interest_point), method: :delete, data: { confirm: "Are you sure you want to delete this Interest Point?" }, class: 'btn btn-danger' %><% end %>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

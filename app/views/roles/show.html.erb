@@ -1,0 +1,52 @@
+<div class='panel panel-info'>
+		<!-- Role Details -->
+		<div class='panel-heading clearfix'><h1>Role Details</h1>
+			<% if can? :create, @role %>
+		        <div class="btn-group pull-right">
+		            <button type="button" class="btn-xs btn-info">
+		                <span class="glyphicon glyphicon-plus"></span>
+		                <%= link_to 'Create New Role', new_role_path %>
+		            </button>
+		        </div>
+		        <% end %>
+		</div>
+		<table class='table'>
+			<tr>
+				<td><strong>Id:</strong></td>
+				<td><%= @role.id %></td>
+			</tr>
+			<tr>
+				<td><strong>Name:</strong></td>
+				<td><%= @role.name %></td>
+			</tr>
+			<tr>
+				<td colspan='2'>
+					<% if can? :edit, @role %><%= link_to 'Edit', edit_role_path(@role), class: 'btn btn-success' %><% end %>
+					<% if can? :delete, @role %><%= link_to 'Delete', role_path(@role), method: :delete, class: 'btn btn-danger' %><% end %>
+					<% if can? :read, @roles %><%= link_to 'Back to List', roles_path, class: 'btn btn-default' %><% end %>
+				</td>
+			</tr>
+		</table>
+		
+	<!-- Display all Users associated with this Role, if any -->
+	<% if can? :read, @role.users %>
+	<% unless @role.users.empty? %>
+		<div class='panel-heading'><h1>List of <%= @role.name.capitalize.pluralize %></h1></div>
+		<table class='table'>
+			<tr>
+				<th>User Name</th>
+				<th>Created On</th>
+				<th>Last Modified On</th>
+			</tr>
+			<% @role.users.each do |user| %>
+				<tr>
+					<td><%= link_to user.user_name, user_path(user) %></td>
+					<td><%= user.created_at %></td>
+					<td><%= user.updated_at %></td>
+				</tr>
+			<% end %>
+		</table>
+	<% end %>
+	<% end %>
+	
+	</div><!-- END PANEL -->
