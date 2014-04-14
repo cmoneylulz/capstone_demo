@@ -1,0 +1,31 @@
+<div class="panel panel-info">
+  <div class="panel-heading clearfix">
+    <span>Pending Interest Points</span>
+    
+  <p class='clearfix'></p>  
+  </div>
+  <table class="table table-collapse">
+      <thead>
+          <tr class="active">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Last Updated On</th>
+            <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+      <% @interest_points.each do |ip| %>
+          <% if ip.pending %><tr class="warning"><% else %><tr class="active"><% end %>
+            <td><%= ip.id %></td>
+              <td><%= link_to ip.name, interest_point_path(ip) %></td>
+              <td><%= ip.category.name %></td>
+              <td><%= ip.full_address %></td>
+              <td><%= ip.updated_at %></td>
+              <td><%= link_to 'Edit', edit_contributor_interest_point_path(ip), class: "btn btn-success btn-xs", 'data-no-turbolink' => true %></td>
+          </tr>
+      <% end %>
+      </tbody>
+  </table>
+</div>

@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: Interest Points Application
+  
+    &mdash; Capstone Hot Spots
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: Interest Points Application</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'>
+<h1 id="label-Interest+Points+Application%2C+Version+0.2.1">Interest Points Application, Version 0.2.1</h1>
+
+<h2 id="label-Group+D+-+Chris+Wilson+%26+Ashley+Childress">Group D - <em>Chris Wilson &amp; Ashley Childress</em></h2>
+
+<h2 id="label-Application+Overview">Application Overview</h2>
+
+<p>This web application provides a central location for users to store
+interesting places or unique locations, called Interest Points. Users may
+create a new Interest Point or learn about Interest Points created by
+others. The home page initially displays a list of all Interest Points
+currently defined in the application and a map that displays each Interest
+Point location.</p>
+
+<h1 id="label-Final+Project+-+Report%3A+March+10th%2C+2014">Final Project - Report: March 10th, 2014</h1>
+
+<h5 id="label-Group+D+-+Chris+Wilson+%26+Ashley+Childress">Group D - <em>Chris Wilson &amp; Ashley Childress</em></h5>
+<hr style="height: 1px">
+
+<p>—–</p>
+
+<h1 id="label-Getting+Started">Getting Started</h1>
+<ul><li>
+<p>After cloning the <em>POI Submission</em>, be sure to run <em>$ bundle
+install</em> to load all gem dependencies.</p>
+<ul><li>
+<p>A list of gems used in this project is at the bottom of this page.</p>
+</li><li>
+<p>The <em>Gemfile.lock</em> file automatically locks each gem in at its
+required version needed in this application.</p>
+</li></ul>
+</li><li>
+<p>In a command terminal, navigate to the cloned project and enter <em>$ rake
+db:reset</em> to load all default data.</p>
+</li><li>
+<p>In the same terminal, after the reset command completes, run <em>$ rails
+s</em> to start the server.</p>
+</li><li>
+<p>The application will be loaded at <em><a
+href="http://localhost:3000">localhost:3000</a></em></p>
+</li><li>
+<p>There are three distinct users, each with different rights in this
+application:</p>
+<ol><li>
+<p><strong>Guest</strong> - You do not need to be logged in to have guest
+privileges; however, using any social media sign in method will
+automatically create a user with <em>Guest</em> rights.</p>
+</li><li>
+<p><strong>Contributor</strong> - Click the <em>login</em> link in the
+upper-right corner of the application and log in with the following
+credentials:</p>
+<ul><li>
+<p>User Name: <em>testcontributor</em></p>
+</li><li>
+<p>Password: <em>Password3</em></p>
+</li></ul>
+</li><li>
+<p><strong>Administrator</strong> - Click the <em>login</em> link in the
+upper-right corner of the application and log in with the following
+credentials:</p>
+<ul><li>
+<p>User Name: <em>achildr1</em></p>
+</li><li>
+<p>Password: <em>Password1</em></p>
+</li><li>
+<p>or</p>
+</li><li>
+<p>User Name: <em>cwilso25</em></p>
+</li><li>
+<p>Password: <em>Password2</em></p>
+</li></ul>
+</li></ol>
+</li></ul>
+
+<h1 id="label-Create+your+own+account">Create your own account</h1>
+
+<p><strong>IMPORTANT NOTE:</strong> You cannot create an administrative user
+in this application without first having default admin privileges.</p>
+<ol><li>
+<p>Click <em>login</em> in the upper-right part of the page</p>
+</li><li>
+<p>Click the <em>Create Account</em> link, displayed between the User Name and
+Password fields and the buttons to log in with social media</p>
+</li><li>
+<p>Fill in all fields, and click <em>Save User</em> at the bottom of the page.</p>
+</li><li>
+<p>You will automatically be logged in with <strong>Guest</strong> privileges.</p>
+</li><li>
+<p>To make your account an administrator account, first click <em>Logout</em>
+at the top of the page, and then login with one of the
+*<em>Administrators*, using credentials listed in the previous section of
+this page.Administrators</em>, using credentials listed in the previous
+section of this page.</p>
+</li><li>
+<p>After logging in, the <em>Users</em> link should be visible in the menu bar
+at the top of the page. Click <em>Users</em> to display the <em>Users
+Home</em> page.</p>
+</li><li>
+<p>Find the user in the list who should be an administrator and click the
++user name+ to display <em>User Details</em>.</p>
+</li><li>
+<p>The <em>Role</em> drop-down list should be accessible (if not, make sure
+you are logged in as an administrator); select <em>Administrator</em> and
+click <em>Save User</em> at the bottom of the page.</p>
+</li><li>
+<p>Log out and log back in using the newly added administrator; you should
+have all rights in this application;</p>
+</li></ol>
+
+<h1 id="label-Information+for+developers">Information for developers</h1>
+<ul><li>
+<p>All default information for this application is defined in the db/default
+folder. The db/seeds.rb file is used to read all data from the default
+files and create database records in this application. Each section in the
+db/seeds.rb file defines the structure that should be used in the
+corresponding file.</p>
+</li><li>
+<p>You need <a href="https://github.com/blowmage/minitest-rails">MiniTest -
+Rails</a> to run the test suite for this application. All test cases are
+written in Spec format. Call <em>&#39;$ rake minitest&#39;</em> before
+creating a pull request for this application to ensure all tests pass.</p>
+</li><li>
+<p><a href="https://github.com/colszowka/simplecov">Simplecov</a> is used to
+determine coverage of all application code. The coverage report is
+automatically generated when the test suite is ran, and is located at
+<em>&#39;coverage/index.html&#39;</em> in the top-level application folder.</p>
+</li><li>
+<p>Documentation for this application is generated using <a
+href="http://yardoc.org">Yard</a> and is located at
+<em>&#39;doc/index.html&#39;</em> in the top-level application folder.
+Simply call <em>&#39;$ yardoc&#39;</em> in the application terminal to
+update application documentation.</p>
+</li><li>
+<p><a href="https://github.com/dkubb/yardstick">Yardstick</a> is used to
+determine whether or not code documentation is adequate and can be
+generated by calling *&#39;$ rake yardstick&#39; in the application
+terminal. Results are stored in the
+<em>&#39;measurements/yard-output.txt&#39;</em> file in the top-level
+folder.</p>
+</li><li>
+<p>Additional application measurements were taken using <a
+href="https://github.com/troessner/reek">Reek</a> and <a
+href="https://github.com/seattlerb/flog">Flog</a>. Run in the command
+terminal using <em>&#39;$ flog &#39;app//</em>.rb&#39;&#39;* or <em>&#39;$
+reek .&#39;</em> and results will be automatically stored in the
+corresponding text file located in the <em>measurements</em> folder.</p>
+</li><li>
+<p>All application models and the <em>config/routes.rb</em> file should be
+annotated using the <a
+href="https://github.com/ctran/annotate_models">Annotate</a> gem. Simply
+call <em>&#39;$ annotate&#39;</em> or <em>&#39;$ annotate –routes&#39;</em>
+in the command terminal to generate these annotations.</p>
+</li><li>
+<p>A complete list of gems used in this application is available <a
+href="https://bitbucket.org/achildr1/cs4982-capstone-project-1/wiki/Complete%20list%20of%20gems">here</a></p>
+</li></ul>
+<hr style="height: 1px">
+
+<h2 id="label-Application+Architecture+-+Key+Functionality">Application Architecture - Key Functionality</h2>
+
+<p><strong>Maps - Home page</strong></p>
+<ul><li>
+<p>By default, a map of all active Interest Points in the application is
+displayed</p>
+</li><li>
+<p>Click any red marker in the map to display details for the corresponding
+point</p>
+<ul><li>
+<p>If the Interest Point has a default image assigned, then it will also be
+displayed</p>
+</li><li>
+<p>Click <em>Get Directions</em> to automatically display directions from your
+current location to the corresponding interest point</p>
+</li></ul>
+</li><li>
+<p>Click the <em>POI List</em> button (located in the upper right corner of
+the map display) to display a list of all active Interest Points</p>
+<ul><li>
+<p>Click <em>Hide List</em> to collapse the list and display the full map view
+again</p>
+</li><li>
+<p>Click the name of any Interest Point in the list to display</p>
+</li><li>
+<p>Change the <em>Category</em> in the drop-down list to display only Interest
+Points for the selected category <strong>WOW!</strong></p>
+</li></ul>
+</li></ul>
+<hr style="height: 1px">
+
+<p>** Interest Points</p>
+<ul><li>
+<p>Click <em>Interest Points</em> in the navigation menu to display a list of
+all Interest Points</p>
+<ul><li>
+<p>This is the same list of active points displayed in the list on the Maps
+Home page, but additional details are added</p>
+</li></ul>
+</li><li>
+<p>Click the name of any Interest Point in the list to display details for
+that interest point</p>
+</li><li>
+<p>The map displayed at the top of the details page is the same as the one on
+the Maps Home page, except only the current Interest Point is displayed</p>
+</li><li>
+<p>To upload a personal image, click the green <em>Add your image</em> button,
+select a file, and then click Upload.</p>
+<ul><li>
+<p>The image will automatically be set to pending and will not be displayed
+for guest users until it has been approved by an administrator</p>
+</li></ul>
+</li><li>
+<p>By default, all approved Images uploaded for the Interest Point are
+displayed in the image carousel</p>
+<ul><li>
+<p>Hover over the image to temporarily stop animations</p>
+</li><li>
+<p>Click any circle link under the carousel to automatically display that
+image</p>
+</li></ul>
+</li><li>
+<p>Click any of the <em>share</em> links, displayed between Interest Point
+details and the images carousel, to share the page using social media</p>
+</li><li>
+<p>Click the Category link to display the corresponding Category Details page</p>
+</li><li>
+<p>If you have permission, then links to &#39;Edit&#39; or &#39;Delete&#39;
+are also displayed.</p>
+</li><li>
+<p>A list of all comments is displayed at the bottom of the page; however, you
+cannot add a new comment unless you are logged in;</p>
+</li></ul>
+<hr style="height: 1px">
+
+<p><strong>Categories &amp; Artists</strong></p>
+<ul><li>
+<p>Click <em>Categories</em> in the navigation menu to display a list of all
+Categories and the corresponding details</p>
+</li><li>
+<p>Click the name of any Category in the list to display a list of all
+Interest Points defined under that category and the corresponding default
+images, if defined; Click to display the Interest Point Details page</p>
+</li><li>
+<p>If the default image for the Interest Point has been approved, then it will
+be displayed in the list; otherwise, only the interest point name is
+displayed</p>
+</li><li>
+<p>Comments about the entire Category are displayed at the bottom of the
+Categories page.</p>
+<ul><li>
+<p>Users must be signed into the application in order to leave a new comment;</p>
+</li></ul>
+</li><li>
+<p>Click <em>Artists</em> in the navigation menu to display a list of all
+Artists that are currently defined in the application.</p>
+<ul><li>
+<p>Click an artist&#39;s name to show a list of all Interest Points associated
+with the artist.</p>
+</li></ul>
+</li></ul>
+<hr style="height: 1px">
+
+<p><strong>Account access &amp; management</strong></p>
+<ul><li>
+<p>Click <em>Login</em> at the top of the page to display the sign in page</p>
+<ul><li>
+<p>Enter your username of password and click Login to sign into the
+application</p>
+</li><li>
+<p>Alternatively, click any social sign-in button to</p>
+</li></ul>
+</li><li>
+<p>To create a new account, simply click the <em>Create an Account</em> link</p>
+<ul><li>
+<p>Fill in all account details and click save; by default, each new user is
+added as a Guest and can be upgraded by any application administrator</p>
+</li></ul>
+</li><li>
+<p>If logged in as an administrator, simply click Users at the top of the page
+to display a list and then click edit for the user to modify</p>
+<ul><li>
+<p>To only change the security level, select the appropriate role from the
+drop-down list and click save;</p>
+</li><li>
+<p>The user will automatically have permissions set in the system the next
+time they log in (although, they may need to reset cookies in the
+application)</p>
+</li></ul>
+</li><li>
+<p>If you have forgotten your password (not applicable for social media sign
+in users), then click the <em>Forgot Password</em> link on the &#39;Login
+page&#39;</p>
+<ul><li>
+<p>Enter the email address associated with the account and click reset
+password</p>
+</li><li>
+<p>The same success message will be displayed as long as the email address
+entered is valid, regardless of whether or not it exists for a user record
+in the application</p>
+</li><li>
+<p>If the email is not associated with a user, then the email they receive
+will say so</p>
+</li><li>
+<p>Otherwise, the user will receive an email with a link that goes to the
+&#39;reset password page&#39; in the application; enter a new password and
+password confirmation on this page to update the application password for
+that user;</p>
+</li></ul>
+</li><li>
+<p>Any user is allowed to modify details for their own user account, except
+for any changes made to their role</p>
+<ul><li>
+<p>Click the &#39;your name&#39;s profile&#39; link at the top of the page to
+display the edit my profile</p>
+</li><li>
+<p>This page can also be used to delete your user account in the application</p>
+</li></ul>
+</li></ul>
+<hr style="height: 1px">
+
+<p><strong>Social media</strong></p>
+<ul><li>
+<p>Sharing functionality is available on all &#39;details&#39; pages,
+including Interest Points, Categories, and Artist.</p>
+<ul><li>
+<p>Simply click the share link and select the social media site you want to
+share the page with, and add any additional information as desired;</p>
+</li><li>
+<p>After sharing, other users can access the page by simply clicking the link</p>
+</li></ul>
+</li><li>
+<p>Click Login to sign into the application as a guest user using a Facebook,
+Twitter, or Google+ account</p>
+<ul><li>
+<p>Social media users are created automatically if you have never used the
+account to log in</p>
+</li><li>
+<p>Future sign in attempts will load the existing social media user</p>
+</li><li>
+<p>By default, all social media accounts are created with a &#39;Guest&#39;
+user role; any administrator can change application rights by accessing the
+Edit Users page</p>
+</li><li>
+<p>Future work would allow users to request that their role be changed
+directly in the application</p>
+</li></ul>
+</li></ul>
+<hr style="height: 1px">
+
+<p><strong>Editing an Interest Point</strong></p>
+<ul><li>
+<p>You must be logged in with a user who has at least contributor privileges
+(testcontributor or achildr1) to be able to Edit Interest Points</p>
+</li><li>
+<p>On the Interest Point Details page, click the &#39;Edit&#39; link displayed
+above Interest Point comments;</p>
+<ul><li>
+<p>This link is also available on the Interest Points Home page, or from the
+admin/contributor dashboard pages</p>
+</li></ul>
+</li><li>
+<p>Enter details for the Interest Point directly on the page and click
+<em>Save Change</em> to update the model;</p>
+<ul><li>
+<p>Any existing approvals for the Interest Point will be removed after changes
+are made; updates must be re-approved before the Interest Point will be
+accessible to regular users in the application.</p>
+</li></ul>
+</li></ul>
+<hr style="height: 1px">
+
+<p><strong>Contributor Dashboard</strong></p>
+<ul><li>
+<p>Sign in as any user with <em>contributor</em> abilities, (testcontributor;
+Password3), to display the Contributor dashboard</p>
+</li><li>
+<p>Any pending Interest Points are displayed in yellow</p>
+<ul><li>
+<p>Personal Interest Points that are still pending are also visible to
+contributors on the Interest Points home page; these are also highlighted
+in yellow.</p>
+</li></ul>
+</li><li>
+<p>Contributors may modify any information for an Interest Point they have
+created before it is approved; if any active Interest Point is modified,
+then it will be subject to re-approval before it is visible in the
+application;</p>
+</li><li>
+<p>Click edit in the contributor dashboard (this is different than the
+interest points edit link) to show additional contributor features
+available for the interest point</p>
+<ul><li>
+<p>Contributors can select the default image displayed as thumbnails
+throughout the application on this edit page by simply clicking on the
+image that should be the default</p>
+</li><li>
+<p>The default image is outlined in red on the edit contributor interest point
+page</p>
+</li></ul>
+</li><li>
+<p>A list of all active interest points created by the current user is
+displayed on the Active Interest Points page</p>
+<ul><li>
+<p>Like with pending interest points, contributors can modify the default
+image displayed for an active interest point by clicking the image on the
+edit page</p>
+</li></ul>
+</li></ul>
+<hr style="height: 1px">
+
+<p><strong>Administrator Dashboard</strong></p>
+<ul><li>
+<p>Sign into the application as any administrator <em>(achildr1;
+Password1)</em> to view the administrator dashboard</p>
+</li><li>
+<p>The number of pending Interest Points and pending Images are displayed in
+the dashboard</p>
+<ul><li>
+<p>Click either link to display a list of all images or interest points</p>
+</li></ul>
+</li><li>
+<p>Click Pending Interest Points to display a list of all interest points;
+pending ones are highlighted in red</p>
+<ul><li>
+<p>Click the edit button to modify details before approving or click the name
+to display more details</p>
+</li><li>
+<p>Admins can also approve interest points or images individually using the
+interest point details page</p>
+</li><li>
+<p>Select multiple interest points in the list and click approve/unapprove to
+complete the action for all selected rows</p>
+</li><li>
+<p>Changes are effective immediately in the application</p>
+</li></ul>
+</li><li>
+<p>Click Pending images to display a list of all images, grouped according to
+their corresponding interest point</p>
+<ul><li>
+<p>A red box is displayed around the default image defined for each Interest
+Point, if one exists (if not, then the first will be used or no image is
+displayed)</p>
+</li><li>
+<p>Click any image to update the corresponding default image for the interest
+point</p>
+</li><li>
+<p>Click approve or unapprove for each image to determine its visibility in
+the application for other users</p>
+</li></ul>
+</li></ul>
+<hr style="height: 1px">
+
+<h2 id="label-Database+schema">Database schema</h2>
+<ul><li>
+<p><a
+href="https://bitbucket.org/achildr1/cs4982-capstone-project-1/downloads/POI_Models_v5_03102014.pdf">Download
+ERD</a></p>
+</li><li>
+<p><a
+href="https://bitbucket.org/achildr1/cs4982-capstone-project-1/wiki/Database%20Schema">View
+Database Schema</a></p>
+</li></ul>
+<hr style="height: 1px">
+
+<h2 id="label-WOW+Factor+Summary">WOW Factor Summary</h2>
+<ul><li>
+<p>Users have the ability to filter the list of Interest Points on the Maps
+Home page</p>
+</li><li>
+<p>Administrator dashboards in the application always show what is pending</p>
+<ul><li>
+<p>In addition, the group of all application administrators receive an email
+when a new Interest Point or Image is pending</p>
+</li><li>
+<p>Administrator approve/unapprove multiple images or interest points at one
+time</p>
+</li></ul>
+</li><li>
+<p>Password reset ability for all users via email and unique password token
+<em>(this is not done using the built in features in Devise; instead, this
+ability was manually coded in)</em></p>
+</li><li>
+<p>Dashboards - separate dashboards and controls are available to both
+contributors and administrators</p>
+<ul><li>
+<p>Users can always see the work they need to do, from any page in the
+application</p>
+</li><li>
+<p>This was not built using the active_admin gem (which is not supported in
+the version of rails/ruby we are using), so all dashboard functionality was
+coded by hand</p>
+</li></ul>
+</li><li>
+<p>RBAC access system - the Ability model defines role-based access
+permissions for different user roles in the application</p>
+</li><li>
+<p>Dogecoin donation system - the footer on every page displays a <em>Donate
+Dogecoins</em> link. When clicked on, this link uses a javascript alert to
+prompt the user to copy our public wallet address in the send portion
+of
+the user&#39;s desktop wallet program. This same concept could easily be
+applied to bitcoin or any other form of cryptocurrency.</p>
+</li></ul>
+<hr style="height: 1px">
+
+<h2 id="label-Future+work">Future work</h2>
+
+<h5 id="label-Functionality+missing+or+not+working"><em>Functionality missing or not working</em></h5>
+<ul><li>
+<p>Users can not currently get directions to an Interest Point using a
+specific address; instead, the application automatically loads the
+user&#39;s current location on both desktop and mobile devices;</p>
+</li><li>
+<p>The ability to <em>report</em> or flag an inappropriate Comment is started,
+and is accessible to administrators on the Reports page; however, currently
+functionality has not been added in the UI to flag a comment;</p>
+</li><li>
+<p>Artists are not currently linked to a specific User record; future work
+would allow both models to be linked such that any contributor can create a
+new Artist and then a new user could claim that person as themselves</p>
+<ul><li>
+<p>After the artist record is linked, no other users (except admin) could make
+changes to their profile</p>
+</li></ul>
+</li><li>
+<p>Roles - the current role set up was not simply hard-coded into the User
+model so that future work would allow administrators to define security
+rights dynamically in the application</p>
+</li></ul>
+
+<p>Documentation was generated using <a
+href="http://rubydoc.info/gems/yard-rails/0.3.0/frames">YARD</a></p>
+
+<p>Find our repository at <a
+href="https://bitbucket.org/achildr1/cs4982-capstone-project-1">Bitbucket -
+CS4982: Capstone Project 1</a>.</p>
+</div></div>
+
+    <div id="footer">
+  Generated on Thu Mar 13 18:53:10 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.3 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

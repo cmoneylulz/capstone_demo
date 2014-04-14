@@ -1,0 +1,55 @@
+<!-- Display action buttons -->
+  <div class="panel panel-info">
+    <div class="btn-group pull-right">
+	<% if can? :create, @interest_point %><%= link_to new_interest_point_path, class: 'btn-sm btn-info' do %><span class="glyphicon glyphicon-plus"></span>New Interest Point<% end %><% end %>
+	<% if can? :read, @interest_points %><%= link_to interest_points_path, class: 'btn-sm btn-default' do %><span class="glyphicon glyphicon-arrow-left"></span>Back to List<% end %><% end %>
+	</div>
+	<div class="panel-heading clearfix">
+      <h1><%= @interest_point.name %><% if @interest_point.pending %> - <b style="text-decoration: small-caps;">Pending</b><% end %></h1>
+	</div>
+	<!-- Show map & directions -->
+    <div class="row">
+      <div class="col-md-12">
+        <%= render 'maps/display' %>
+      </div>
+    </div>
+   
+    
+       <!-- Show image carousel -->
+   <div class="row">
+    <% if can? :create, @interest_point => Image %>
+    <%= form_for @interest_point do |f| %>
+      <%= fields_for :images do |builder| %>
+      <% end %>
+      <div class="col-xs-12" style="padding-left:20px;">
+      <p style="padding-top: 10px;"><%= link_to_add_fields "Add your image", f, :images, 'images/fields' %></p>
+      <p><%= f.submit 'Upload Images', class: 'btn btn-default btn-sm' %></p>
+      </div>
+    <% end %>
+   </div>
+   <% end %>
+   <div class="row">
+     <%= render 'images/carousel', locals: { interest_point: @interest_point } %>
+   </div>
+
+    <!-- Ratings TODO: Determine appropriate location to display on page -->
+    <div class="row">
+       <div class="col-md-12">
+        <%= render partial: 'shared/ratings', locals: { ratable: @interest_point, rating: Rating.user_rating(@interest_point, current_user) }, 'data-no-turbolink' => true %>
+       </div>
+     </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <%= render 'shared/share_buttons' %>
+      </div>
+    </div>
+    <!-- Interest point fields -->
+    <%= render 'show_fields' %>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <% if can? :read, Comment %><%= render partial: "shared/comments", locals: { commentable: @interest_point } %><% end %>
+      </div>
+    </div>
+  </div>

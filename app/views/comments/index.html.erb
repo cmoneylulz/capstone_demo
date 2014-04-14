@@ -1,0 +1,23 @@
+<div class="panel panel-info">
+    <div class="panel-heading clearfix">
+      <b style="font-size: 24px;">All Reported Comments</b>
+    </div>
+    <table class="table">
+      <thead>
+        <tr class="active">
+          <th>Comment ID:</th>
+          <th>Comment Body:</th>
+          <th>Times Reported:</th>
+        </tr>
+      </thead>
+      <tbody>
+    <% @comments.each do |comment| %>
+        <tr class="info">
+          <td><%= comment.id %></td>
+          <td><%= comment.body %></td>
+          <td><%= comment.times_reported %></td>
+        </tr>
+    <% end %>
+      </tbody>
+    </table>
+</div>

@@ -1,0 +1,155 @@
+app/controllers/application_controller.rb -- 2 warnings:
+  [63, 63]:ApplicationController#current_user calls session[:user_id] twice (DuplicateMethodCall)
+  [94]:ApplicationController#redirect_back_or_default is controlled by argument default (ControlParameter)
+app/controllers/artists_controller.rb -- 8 warnings:
+  [1]:ArtistsController has no descriptive comment (IrresponsibleModule)
+  [32, 35]:ArtistsController#create calls format.html twice (DuplicateMethodCall)
+  [33, 36]:ArtistsController#create calls format.json twice (DuplicateMethodCall)
+  [32]:ArtistsController#create contains iterators nested 2 deep (NestedIterators)
+  [60]:ArtistsController#destroy contains iterators nested 2 deep (NestedIterators)
+  [46, 49]:ArtistsController#update calls format.html twice (DuplicateMethodCall)
+  [47, 50]:ArtistsController#update calls format.json twice (DuplicateMethodCall)
+  [46]:ArtistsController#update contains iterators nested 2 deep (NestedIterators)
+app/controllers/comment_ratings_controller.rb -- 1 warning:
+  [1]:CommentRatingsController has no descriptive comment (IrresponsibleModule)
+app/controllers/comments_controller.rb -- 5 warnings:
+  [38, 41]:CommentsController#create calls redirect_to(@commentable) twice (DuplicateMethodCall)
+  [14, 16]:CommentsController#index calls @current_user.id twice (DuplicateMethodCall)
+  [14, 16]:CommentsController#index calls comment.id twice (DuplicateMethodCall)
+  [60]:CommentsController#list_comment_errors has approx 6 statements (TooManyStatements)
+  [60]:CommentsController#list_comment_errors refers to error_messages more than self (FeatureEnvy)
+app/controllers/interest_point_ratings_controller.rb -- 1 warning:
+  [1]:InterestPointRatingsController has no descriptive comment (IrresponsibleModule)
+app/controllers/interest_points_controller.rb -- 5 warnings:
+  [51, 53]:InterestPointsController#show calls @current_user.id twice (DuplicateMethodCall)
+  [51, 53]:InterestPointsController#show calls @interest_point.id twice (DuplicateMethodCall)
+  [58, 60]:InterestPointsController#show calls interest_point.latitude twice (DuplicateMethodCall)
+  [59, 61]:InterestPointsController#show calls interest_point.longitude twice (DuplicateMethodCall)
+  [48]:InterestPointsController#show has approx 8 statements (TooManyStatements)
+app/controllers/maps_controller.rb -- 5 warnings:
+  [1]:MapsController has no descriptive comment (IrresponsibleModule)
+  [5, 7]:MapsController#main calls interest_point.latitude twice (DuplicateMethodCall)
+  [6, 8]:MapsController#main calls interest_point.longitude twice (DuplicateMethodCall)
+  [2]:MapsController#main has approx 7 statements (TooManyStatements)
+  [2]:MapsController#main refers to interest_point more than self (FeatureEnvy)
+app/controllers/reports_controller.rb -- 1 warning:
+  [1]:ReportsController has no descriptive comment (IrresponsibleModule)
+app/controllers/reset_passwords_controller.rb -- 3 warnings:
+  [24, 28]:ResetPasswordsController#create calls flash[:notice] = "Instructions to reset your password have been emailed to you." twice (DuplicateMethodCall)
+  [21, 27]:ResetPasswordsController#create calls params[:email] twice (DuplicateMethodCall)
+  [20]:ResetPasswordsController#create has approx 7 statements (TooManyStatements)
+app/controllers/user_sessions_controller.rb -- 5 warnings:
+  [22, 23]:UserSessionsController#create calls env["omniauth.auth"] twice (DuplicateMethodCall)
+  [28, 29]:UserSessionsController#create calls params[:user_session] twice (DuplicateMethodCall)
+  [25, 30]:UserSessionsController#create calls session[:user_id] = user.id twice (DuplicateMethodCall)
+  [25, 30]:UserSessionsController#create calls user.id twice (DuplicateMethodCall)
+  [19]:UserSessionsController#create has approx 10 statements (TooManyStatements)
+app/helpers/text_format_helper.rb -- 1 warning:
+  [8]:TextFormatHelper#format_datetime refers to datetime more than self (FeatureEnvy)
+app/models/ability.rb -- 2 warnings:
+  [27, 31, 39, 41, 42]:Ability#initialize calls user.id 5 times (DuplicateMethodCall)
+  [27]:Ability#initialize performs a nil-check. (NilCheck)
+app/models/artist.rb -- 1 warning:
+  [1]:Artist has no descriptive comment (IrresponsibleModule)
+app/models/artist_interest_point.rb -- 1 warning:
+  [1]:ArtistInterestPoint has no descriptive comment (IrresponsibleModule)
+app/models/category_page.rb -- 1 warning:
+  [1]:CategoryPage has no descriptive comment (IrresponsibleModule)
+app/models/comment_rating.rb -- 1 warning:
+  [1]:CommentRating has no descriptive comment (IrresponsibleModule)
+app/models/image.rb -- 1 warning:
+  [18]:Image#pending performs a nil-check. (NilCheck)
+app/models/interest_point.rb -- 3 warnings:
+  [36]:InterestPoint has the variable name 'a' (UncommunicativeVariableName)
+  [74]:InterestPoint#normalize_coordinates performs a nil-check. (NilCheck)
+  [61]:InterestPoint#pending performs a nil-check. (NilCheck)
+app/models/interest_point_rating.rb -- 1 warning:
+  [1]:InterestPointRating has no descriptive comment (IrresponsibleModule)
+app/models/report.rb -- 1 warning:
+  [1]:Report has no descriptive comment (IrresponsibleModule)
+app/models/states.rb -- 1 warning:
+  [2]:States has no descriptive comment (IrresponsibleModule)
+app/models/user.rb -- 13 warnings:
+  [4]:User has prima donna method `deliver_reset_password_instructions!` (PrimaDonnaMethod)
+  [24, 30]:User has the variable name 'a' (UncommunicativeVariableName)
+  [14]:User has the variable name 'c' (UncommunicativeVariableName)
+  [78, 78]:User#admin? calls self.role twice (DuplicateMethodCall)
+  [82, 82]:User#contributor? calls self.role twice (DuplicateMethodCall)
+  [74, 74]:User#is? calls self.role twice (DuplicateMethodCall)
+  [96, 98, 100, 101, 108, 112]:User#self.create_from_omniauth calls auth.info 6 times (DuplicateMethodCall)
+  [96, 112]:User#self.create_from_omniauth calls auth.info.name twice (DuplicateMethodCall)
+  [96, 112]:User#self.create_from_omniauth calls auth.info.name.split(" ") twice (DuplicateMethodCall)
+  [113, 114]:User#self.create_from_omniauth calls name.length twice (DuplicateMethodCall)
+  [95, 108]:User#self.create_from_omniauth calls user.provider twice (DuplicateMethodCall)
+  [91]:User#self.create_from_omniauth has approx 14 statements (TooManyStatements)
+  [111]:User#self.create_from_omniauth performs a nil-check. (NilCheck)
+config/application.rb -- 3 warnings:
+  [9]:GroupDProject1 has the name 'GroupDProject1' (UncommunicativeModuleName)
+  [10]:GroupDProject1::Application has no descriptive comment (IrresponsibleModule)
+  [23]:GroupDProject1::Application has the variable name 'g' (UncommunicativeVariableName)
+db/migrate/20140211010818_create_artists.rb -- 3 warnings:
+  [1]:CreateArtists has no descriptive comment (IrresponsibleModule)
+  [3]:CreateArtists#change has the variable name 't' (UncommunicativeVariableName)
+  [2]:CreateArtists#change refers to t more than self (FeatureEnvy)
+db/migrate/20140211232003_add_photo_to_images.rb -- 1 warning:
+  [1]:AddPhotoToImages has no descriptive comment (IrresponsibleModule)
+db/migrate/20140212000001_remove_old_photo_from_images.rb -- 1 warning:
+  [1]:RemoveOldPhotoFromImages has no descriptive comment (IrresponsibleModule)
+db/migrate/20140212162151_rename_images_photo_to_file.rb -- 1 warning:
+  [1]:RenameImagesPhotoToFile has no descriptive comment (IrresponsibleModule)
+db/migrate/20140214222550_rename_password_to_password_hash_in_users.rb -- 1 warning:
+  [1]:RenamePasswordToPasswordHashInUsers has no descriptive comment (IrresponsibleModule)
+db/migrate/20140214223213_add_perishable_token_to_users.rb -- 1 warning:
+  [1]:AddPerishableTokenToUsers has no descriptive comment (IrresponsibleModule)
+db/migrate/20140214224752_add_index_for_perishable_token_email_to_users.rb -- 1 warning:
+  [1]:AddIndexForPerishableTokenEmailToUsers has no descriptive comment (IrresponsibleModule)
+db/migrate/20140215171702_add_password_salt_to_users.rb -- 1 warning:
+  [1]:AddPasswordSaltToUsers has no descriptive comment (IrresponsibleModule)
+db/migrate/20140218035759_create_interest_types.rb -- 3 warnings:
+  [1]:CreateInterestTypes has no descriptive comment (IrresponsibleModule)
+  [3]:CreateInterestTypes#change has the variable name 't' (UncommunicativeVariableName)
+  [2]:CreateInterestTypes#change refers to t more than self (FeatureEnvy)
+db/migrate/20140220210336_create_categories.rb -- 2 warnings:
+  [1]:CreateCategories has no descriptive comment (IrresponsibleModule)
+  [5]:CreateCategories#change has the variable name 't' (UncommunicativeVariableName)
+db/migrate/20140220210452_change_interest_points_interest_type_to_category.rb -- 1 warning:
+  [1]:ChangeInterestPointsInterestTypeToCategory has no descriptive comment (IrresponsibleModule)
+db/migrate/20140220224650_drop_interest_types.rb -- 1 warning:
+  [1]:DropInterestTypes has no descriptive comment (IrresponsibleModule)
+db/migrate/20140220224931_remove_interest_type_reference_in_interest_points.rb -- 1 warning:
+  [1]:RemoveInterestTypeReferenceInInterestPoints has no descriptive comment (IrresponsibleModule)
+db/migrate/20140221141922_change_images_interest_point_id_to_ref.rb -- 1 warning:
+  [1]:ChangeImagesInterestPointIdToRef has no descriptive comment (IrresponsibleModule)
+db/migrate/20140222224852_add_provider_uid_to_users.rb -- 1 warning:
+  [1]:AddProviderUidToUsers has no descriptive comment (IrresponsibleModule)
+db/migrate/20140301225849_create_interest_point_ratings.rb -- 3 warnings:
+  [1]:CreateInterestPointRatings has no descriptive comment (IrresponsibleModule)
+  [3]:CreateInterestPointRatings#change has the variable name 't' (UncommunicativeVariableName)
+  [2]:CreateInterestPointRatings#change refers to t more than self (FeatureEnvy)
+db/migrate/20140302024516_add_user_to_interest_point_ratings.rb -- 1 warning:
+  [1]:AddUserToInterestPointRatings has no descriptive comment (IrresponsibleModule)
+db/migrate/20140302035144_create_comment_ratings.rb -- 3 warnings:
+  [1]:CreateCommentRatings has no descriptive comment (IrresponsibleModule)
+  [3]:CreateCommentRatings#change has the variable name 't' (UncommunicativeVariableName)
+  [2]:CreateCommentRatings#change refers to t more than self (FeatureEnvy)
+db/migrate/20140304220617_add_approver_to_images.rb -- 1 warning:
+  [1]:AddApproverToImages has no descriptive comment (IrresponsibleModule)
+db/migrate/20140304221220_add_created_by_to_images.rb -- 1 warning:
+  [1]:AddCreatedByToImages has no descriptive comment (IrresponsibleModule)
+db/migrate/20140304234612_create_artist_interest_points.rb -- 3 warnings:
+  [1]:CreateArtistInterestPoints has no descriptive comment (IrresponsibleModule)
+  [3]:CreateArtistInterestPoints#change has the variable name 't' (UncommunicativeVariableName)
+  [2]:CreateArtistInterestPoints#change refers to t more than self (FeatureEnvy)
+db/migrate/20140305023344_create_reports.rb -- 3 warnings:
+  [1]:CreateReports has no descriptive comment (IrresponsibleModule)
+  [3]:CreateReports#change has the variable name 't' (UncommunicativeVariableName)
+  [2]:CreateReports#change refers to t more than self (FeatureEnvy)
+db/migrate/20140305074513_create_category_pages.rb -- 3 warnings:
+  [1]:CreateCategoryPages has no descriptive comment (IrresponsibleModule)
+  [3]:CreateCategoryPages#change has the variable name 't' (UncommunicativeVariableName)
+  [2]:CreateCategoryPages#change refers to t more than self (FeatureEnvy)
+db/migrate/20140306040911_fix_migration_in_artist_interest_points_broken_in_merge.rb -- 1 warning:
+  [1]:FixMigrationInArtistInterestPointsBrokenInMerge has no descriptive comment (IrresponsibleModule)
+test/controllers/maps_controller_test.rb -- 1 warning:
+  [3]:MapsControllerTest has no descriptive comment (IrresponsibleModule)
+106 total warnings

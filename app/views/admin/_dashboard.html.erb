@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="list-group">
+      <%= link_to admin_interest_points_path, class: "btn btn-default" do %>
+          <span class="badge"><%= InterestPoint.pending.count %></span>Pending Interest Points
+      <% end %>
+      <%= link_to admin_images_path, class: "btn btn-default" do %>
+          <span class="badge"><%= Image.pending.count %></span>Pending Images
+      <% end %>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,54 @@
+<div class='container-fluid'>
+	<div class='panel panel-info'>
+		<!-- Role Details -->
+		<div class='panel-heading clearfix'><h1><%= @category.name %> Details</h1>
+			<% if can? :create, @category %>
+		        <div class="btn-group pull-right">
+		            <button type="button" class="btn-xs btn-info">
+		                <span class="glyphicon glyphicon-plus"></span>
+		                <%= link_to 'Create New Category', new_category_path %>
+		            </button>
+		        </div>
+		    <% end %>
+		</div>
+        <div>
+          <% @category.interest_points.each do |interest_point| %>
+            <% if can? :read, interest_point %>
+              <p style="text-align: center">
+                <%= link_to interest_point.name, interest_point, 'data-no-turbolink' => true %>
+              </p>
+              <p>
+                <%= link_to interest_point, 'data-no-turbolink' => true do %>
+                    <% if can? :read, interest_point.default_image %><%= image_tag interest_point.default_image.file, :class => "image-thumbnail" %><% end %>
+                <% end %>
+              </p>
+              <% end %>
+          <% end %>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_google_plusone_share"></a>
+            <a class="addthis_button_reddit"></a>
+            <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+          </div>
+          <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5316251b0fc4579f"></script>
+          <!-- AddThis Button END -->
+        </div>
+        </div>
+		<div>
+			<% if can? :edit, @category %><p><%= link_to 'Edit', edit_category_path(@category), class: 'btn btn-success' %></p><% end %>
+			<% if can? :delete, @category %><p><%= link_to 'Delete', category_path(@category), method: :delete, class: 'btn btn-danger' %></p><% end %>
+			<% if can? :read, @category %><p><%= link_to 'Back to List', categories_path, class: 'btn btn-default' %></p><% end %>
+		</div>			
+
+		
+		
+	</div><!-- END PANEL -->
+	
+<% if can? :read, Comment %><%= render :partial => "shared/comments", :locals => { :commentable => @category } %><% end %>
+</div>

@@ -1,0 +1,24 @@
+<!-- add navigation links to this file -->
+<ul class="nav navbar-nav navbar-left">
+  <a class="navbar-brand" href="#">Navigation:</a>
+  <li><%= link_to 'Map', root_path, class: 'navbar-brand', 'data-no-turbolink' => true %></li>
+  <li><%= link_to 'Interest Points', interest_points_path, class: 'navbar-brand', 'data-no-turbolink' => true %></li>
+  <li><%= link_to 'Categories', categories_path, class: 'navbar-brand' %></li>
+  <li><%= link_to 'Artists', artists_path, class: 'navbar-brand' %></li>
+  <li><%= link_to 'About Us', about_path, class: 'navbar-brand' %></li>
+  <li><%= link_to 'Contact Us', contact_path, class: 'navbar-brand' %></li>
+  
+  <!-- removed role requirement from categories -->
+	<li><% if can? :index, User %><%= link_to 'Users', users_path, class: 'navbar-brand' %><% end %></li>
+  <li><% if can? :manage, Role %><%= link_to 'Roles', roles_path, class: 'navbar-brand' %><% end %></li>
+  <li><% if can? :manage, Comment %><%= link_to 'Reports', reported_comments_path, class: 'navbar-brand' %><% end %></li>
+</ul>
+<ul class="nav navbar-nav navbar-right padding-right-3">
+  <% if current_user %>
+    <% profile = "#{current_user.first_name}'s Profile" %>
+    <li><b><%= link_to profile, edit_user_path(current_user.id), class: 'navbar-brand' %></b></li>
+    <li><%= link_to 'Logout', logout_path(current_user), :method => :delete, class: 'navbar-brand' %></li>
+  <% else %>
+    <li><%= link_to 'Login', login_path, class: 'navbar-brand' %></li>
+  <% end %>
+</ul>

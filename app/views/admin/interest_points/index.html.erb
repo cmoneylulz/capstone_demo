@@ -1,0 +1,38 @@
+<%= form_for :admin_interest_point, :url => update_multiple_admin_interest_points_path, method: :put do %>
+  <div class="panel panel-info">
+  <div class="panel-heading clearfix">
+    <span>Pending Interest Points</span>    
+    <div class="btn-group pull-right">
+	      <%= button_tag class: 'btn-default btn-xs', name: :approve, type: :submit do %><span class="glyphicon glyphicon-ok"></span>Approve Selected<% end %>
+	      <%= button_tag class: 'btn-default btn-xs', name: :unapprove, type: :submit do %><span class="glyphicon glyphicon-remove"></span>Unapprove Selected<% end %>	     
+    </div>
+  <p class='clearfix'></p>  
+  </div>
+  <table class="table table-collapse">
+      <thead>
+          <tr class="active">
+            <th></th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Last Updated On</th>
+            <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+      <% @interest_points.each do |ip| %>
+          <% if ip.pending %><tr class="danger"><% else %><tr class="active"><% end %>
+            <td><%= check_box_tag "interest_point_ids[]", ip.id  %></td>
+            <td><%= ip.id %></td>
+              <td><%= link_to ip.name, interest_point_path(ip), 'data-no-turbolink' => true %></td>
+              <td><%= ip.category.name %></td>
+              <td><%= ip.full_address %></td>
+              <td><%= ip.updated_at %></td>
+              <td><%= link_to 'Edit', edit_interest_point_path(ip), class: 'btn btn-success btn-xs' %></td>
+          </tr>
+      <% end %>
+      </tbody>
+  </table>
+</div>
+<% end %>

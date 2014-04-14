@@ -1,0 +1,86 @@
+  2826.4: flog total
+     7.8: flog/method average
+
+   375.7: main#none
+    68.9: describe(omniauth validation)::it#creates new user from omniauth ../groupdproject1/test/models/user_test.rb:79
+    62.7: User::create_from_omniauth       ../groupdproject1/app/models/user.rb:91
+    47.2: ApplicationController#none
+    35.4: UserSessionsController#create    ../groupdproject1/app/controllers/user_sessions_controller.rb:19
+    34.0: it#must get index                ../groupdproject1/test/controllers/users_controller_test.rb:20
+    33.3: it#gets coordinates and crops to six decimal places when given address ../groupdproject1/test/models/interest_point_test.rb:35
+    32.3: InterestPoint#none
+    31.4: Ability#initialize               ../groupdproject1/app/models/ability.rb:9
+    25.0: it#must get new                  ../groupdproject1/test/controllers/users_controller_test.rb:27
+    24.3: it#must get edit                 ../groupdproject1/test/controllers/users_controller_test.rb:51
+    23.2: it#must generate update interest point ../groupdproject1/test/mailers/admin_mailer_test.rb:7
+    22.8: User#none
+    22.7: describe(for valid user)::it#sends welcome message ../groupdproject1/test/mailers/user_mailer_test.rb:12
+    22.5: open#db/default/interest_points.txt ../groupdproject1/db/seeds.rb:45
+    22.0: InterestPointsController#show    ../groupdproject1/app/controllers/interest_points_controller.rb:48
+    21.3: describe(for invalid user)::it#sends missing user email ../groupdproject1/test/mailers/user_mailer_test.rb:37
+    20.7: create_table#interest_points     ../groupdproject1/db/schema.rb:97
+    20.5: open#db/default/images.txt       ../groupdproject1/db/seeds.rb:58
+    20.5: it#must be valid                 ../groupdproject1/test/models/report_test.rb:8
+    19.6: describe(for valid user)::it#sends reset password instructions ../groupdproject1/test/mailers/user_mailer_test.rb:22
+    18.3: ArtistsController#create         ../groupdproject1/app/controllers/artists_controller.rb:27
+    18.1: create_table#users               ../groupdproject1/db/schema.rb:135
+    17.5: Admin::InterestPointsController#update_multiple ../groupdproject1/app/controllers/admin/interest_points_controller.rb:55
+    17.4: ArtistsController#update         ../groupdproject1/app/controllers/artists_controller.rb:43
+    17.4: ResetPasswordsController#create  ../groupdproject1/app/controllers/reset_passwords_controller.rb:20
+    17.1: before#all                       ../groupdproject1/test/controllers/users_controller_test.rb:9
+    16.1: CommentsController#index         ../groupdproject1/app/controllers/comments_controller.rb:11
+    15.9: factory#user                     ../groupdproject1/test/factories.rb:80
+    15.7: before#each                      ../groupdproject1/test/controllers/users_controller_test.rb:16
+    14.8: it#resets token on password reset ../groupdproject1/test/models/user_test.rb:67
+    14.7: it#must approve interest point   ../groupdproject1/test/controllers/interest_points_controller_test.rb:51
+    14.2: main#store_dir                   ../groupdproject1/config/initializers/carrierwave.rb:21
+    13.7: Image#none
+    13.5: it#must update user              ../groupdproject1/test/controllers/users_controller_test.rb:58
+    13.3: it#must unapprove interest point ../groupdproject1/test/controllers/interest_points_controller_test.rb:60
+    12.9: open#db/default/users.txt        ../groupdproject1/db/seeds.rb:22
+    12.6: InterestPoint::reverse_geocoded_by#latitude ../groupdproject1/app/models/interest_point.rb:40
+    12.3: describe(omniauth validation)::it#sets existing user from social media ../groupdproject1/test/models/user_test.rb:105
+    11.9: Admin::ImagesController#approve  ../groupdproject1/app/controllers/admin/images_controller.rb:13
+    11.7: MapsController#main              ../groupdproject1/app/controllers/maps_controller.rb:2
+    11.7: CommentsController#load_commentable ../groupdproject1/app/controllers/comments_controller.rb:53
+    11.7: it#must create user              ../groupdproject1/test/controllers/users_controller_test.rb:34
+    11.3: UsersController#create           ../groupdproject1/app/controllers/users_controller.rb:33
+    11.3: it#is valid with valid params    ../groupdproject1/test/models/interest_point_test.rb:8
+    11.3: factory(user)::factory#user_from_social_media ../groupdproject1/test/factories.rb:89
+    11.3: describe(nil user)::describe(can not view)::it#active images for pending interest points ../groupdproject1/test/models/ability_test.rb:126
+    11.2: ImagesController#create          ../groupdproject1/app/controllers/images_controller.rb:13
+    11.0: factory#comment                  ../groupdproject1/test/factories.rb:22
+    10.9: InterestPointRatingsController#update ../groupdproject1/app/controllers/interest_point_ratings_controller.rb:3
+    10.9: CommentRatingsController#update  ../groupdproject1/app/controllers/comment_ratings_controller.rb:3
+    10.8: ResetPasswordsController#update  ../groupdproject1/app/controllers/reset_passwords_controller.rb:39
+    10.6: Admin::InterestPointsController#approve ../groupdproject1/app/controllers/admin/interest_points_controller.rb:29
+    10.5: it#must update role              ../groupdproject1/test/controllers/roles_controller_test.rb:50
+    10.5: it#must update category          ../groupdproject1/test/controllers/categories_controller_test.rb:52
+    10.3: create_table#images              ../groupdproject1/db/schema.rb:72
+    10.3: create_table#comments            ../groupdproject1/db/schema.rb:60
+    10.3: InterestPoint#normalize_coordinates ../groupdproject1/app/models/interest_point.rb:73
+    10.2: it#gets address when given coordinates ../groupdproject1/test/models/interest_point_test.rb:28
+    10.1: it#must show user                ../groupdproject1/test/controllers/users_controller_test.rb:44
+    10.0: factory#interest_point           ../groupdproject1/test/factories.rb:28
+    10.0: CommentsController#list_comment_errors ../groupdproject1/app/controllers/comments_controller.rb:60
+    10.0: open#db/default/comments.txt     ../groupdproject1/db/seeds.rb:73
+     9.9: UsersController#update           ../groupdproject1/app/controllers/users_controller.rb:84
+     9.9: InterestPointsController#update  ../groupdproject1/app/controllers/interest_points_controller.rb:89
+     9.6: it#will raise error if invalid file ../groupdproject1/test/models/image_test.rb:21
+     9.4: ImagesController#destroy         ../groupdproject1/app/controllers/images_controller.rb:43
+     9.2: InterestPoint#full_address       ../groupdproject1/app/models/interest_point.rb:55
+     9.2: ArtistsController#destroy        ../groupdproject1/app/controllers/artists_controller.rb:57
+     9.1: Admin::InterestPointsController#approve_multiple ../groupdproject1/app/controllers/admin/interest_points_controller.rb:69
+     9.1: describe(valid contributor)::describe(can not view)::describe(if I did not create)::it#active images for pending interest point ../groupdproject1/test/models/ability_test.rb:96
+     8.9: ResetPasswordsController#load_user_using_perishable_token ../groupdproject1/app/controllers/reset_passwords_controller.rb:53
+     8.8: it#defines contributor and created_at when saved ../groupdproject1/test/models/interest_point_test.rb:14
+     8.8: factory#image                    ../groupdproject1/test/factories.rb:59
+     8.8: GroupDProject1::Application#none
+     8.7: InterestPointsController#create  ../groupdproject1/app/controllers/interest_points_controller.rb:35
+     8.7: describe(nil user)::describe(can not view)::it#pending images for pending interest points ../groupdproject1/test/models/ability_test.rb:132
+     8.6: open#db/default/category_pages.txt ../groupdproject1/db/seeds.rb:97
+     8.6: open#db/default/artist_interest_points.txt ../groupdproject1/db/seeds.rb:110
+     8.6: open#db/default/reports.txt      ../groupdproject1/db/seeds.rb:122
+     8.6: open#db/default/artists.txt      ../groupdproject1/db/seeds.rb:85
+     8.6: CategoriesController#update      ../groupdproject1/app/controllers/categories_controller.rb:63
+     8.5: describe#valid contributor       ../groupdproject1/test/models/ability_test.rb:66

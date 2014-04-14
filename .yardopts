@@ -1,0 +1,7 @@
+--title "Capstone Hot Spots"
+--tag pre:"Preconditions"
+--tag post:"Postconditions"
+'app/**/*.rb' -
+README.rdoc
+
+'db/schema.rb'

@@ -1,0 +1,29 @@
+<div class="panel panel-info">
+  <div class="panel-heading clearfix">
+    <b style="font-size: 24px;">Listing All Artists</b>
+    <div class="btn-group pull-right">
+      <% if can? :create, Artist %><%= default_create_button('New Artist', new_artist_path) %><% end %>
+    </div>
+  </div>
+<table class="table">
+  <thead>
+    <tr class="active">
+      <th>Name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @artists.each do |artist| %>
+      <tr class="info">
+        <td><%= link_to "#{artist.first_name} #{artist.last_name}", artist %></td>
+        <td>
+            <% if can? :edit, artist %><%= link_to 'Edit', edit_artist_path(artist), class: 'btn btn-success btn-xs'  %><% end %>
+            <% if can? :delete, artist %><%= link_to 'Delete', artist, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs'  %><% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+

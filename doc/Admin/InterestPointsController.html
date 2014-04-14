@@ -1,0 +1,1219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Admin::InterestPointsController
+  
+    &mdash; Capstone Hot Spots
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (I)</a> &raquo;
+    <span class='title'>Admin</span>
+     &raquo; 
+    <span class="title">InterestPointsController</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Admin::InterestPointsController
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">ApplicationController</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ApplicationController</li>
+          
+            <li class="next">Admin::InterestPointsController</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">app/controllers/admin/interest_points_controller.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines methods for administrator functions related to <tt>Interest Points</tt>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Author:</p>
+<ul class="author">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Ashley Childress</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Version:</p>
+<ul class="version">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.6.2014</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#approve-instance_method" title="#approve (instance method)">- (Object) <strong>approve</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Approve the <tt>Interest Point</tt>, which is identified by the given
+<code>id</code>, by setting the <code>approver</code> to the current user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#approve_multiple-instance_method" title="#approve_multiple (instance method)">- (String) <strong>approve_multiple</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the <tt>approver id</tt> and <tt>approved at</tt> attributes for all given +Interest
+Points+.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#index-instance_method" title="#index (instance method)">- (Object) <strong>index</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Load all <tt>Interest Points</tt>, regardless of status and ensure the current
+user has permission to manage those <tt>Interest Points</tt>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show-instance_method" title="#show (instance method)">- (Object) <strong>show</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This method stub is used to display the selected <tt>Interest Point</tt> on the
+corresponding page.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#unapprove-instance_method" title="#unapprove (instance method)">- (Object) <strong>unapprove</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Remove the existing approval for this <tt>Interest Point</tt> by removing the
+<code>approver</code> information.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#unapprove_multiple-instance_method" title="#unapprove_multiple (instance method)">- (String) <strong>unapprove_multiple</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Remove all <code>approver</code> information the given <tt>Interest Points</tt>,
+which are identified by the list of <tt>interest point ids</tt>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_default_image-instance_method" title="#update_default_image (instance method)">- (Object) <strong>update_default_image</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Updates the <code>default_image</code> for the given <tt>Interest Point</tt>,
+which will be displayed to users throughout the application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_multiple-instance_method" title="#update_multiple (instance method)">- (Object) <strong>update_multiple</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Execute the specified action, either <code>approve</code> or
+<code>unapprove</code>, for selected <tt>Interest Points</tt>, which are
+identified in the array of <tt>interest point ids</tt>.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="approve-instance_method">
+  
+    - (<tt>Object</tt>) <strong>approve</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Approve the <tt>Interest Point</tt>, which is identified by the given
+<code>id</code>, by setting the <code>approver</code> to the current user.
+A notification message will be displayed to the user which describes the
+result of executing this method.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number used to identify the specific <tt>Interest Point</tt> to be displayed</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Preconditions:</p>
+<ul class="pre">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>the <tt>Interest Point</tt> must be pending</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Postconditions:</p>
+<ul class="post">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>The <tt>approver id</tt> for this <tt>Interest Point</tt> will be equal to the current
+user&#39;s id and a subsequent call to <code>pending</code> will be false.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32
+33
+34
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/admin/interest_points_controller.rb', line 30</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_approve'>approve</span>
+	<span class='kw'>if</span> <span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='label'>approver_id:</span> <span class='id identifier rubyid_current_user'>current_user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>approved_at:</span> <span class='const'>DateTime</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+		<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:notice</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>This interest point is approved!</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>else</span>
+		<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Something went wrong! </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_get_all_errors'>get_all_errors</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>end</span>
+		<span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_admin_interest_point_path'>admin_interest_point_path</span><span class='lparen'>(</span><span class='ivar'>@interest_point</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="approve_multiple-instance_method">
+  
+    - (<tt>String</tt>) <strong>approve_multiple</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the <tt>approver id</tt> and <tt>approved at</tt> attributes for all given +Interest
+Points+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>interest_point_ids</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the set of ids used to identify which <tt>Interest Points</tt> should be approved</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a notification message describing the result of executing this method</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Postconditions:</p>
+<ul class="post">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>all <tt>Interest Points</tt> identified in the given set of <tt>interest point ids</tt>
+will be updated such that the <code>approver</code> is set to the current
+user and the <tt>approved at</tt> value is the current DateTime. A notification
+message will be returned.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+70
+71
+72
+73
+74
+75
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/admin/interest_points_controller.rb', line 70</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_approve_multiple'>approve_multiple</span>
+	<span class='kw'>if</span> <span class='const'>InterestPoint</span><span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='label'>id:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:interest_point_ids</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_update_all'>update_all</span><span class='lparen'>(</span><span class='label'>approver_id:</span> <span class='id identifier rubyid_current_user'>current_user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>approved_at:</span> <span class='const'>DateTime</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='rparen'>)</span>
+		<span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>The selected Interest Points have been approved.</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>else</span>
+		<span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Something went wrong and the Interest Points could not be approved. Please try again.</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="index-instance_method">
+  
+    - (<tt>Object</tt>) <strong>index</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Load all <tt>Interest Points</tt>, regardless of status and ensure the current
+user has permission to manage those <tt>Interest Points</tt>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Preconditions:</p>
+<ul class="pre">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>the <tt>current user</tt> is an administrator</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Postconditions:</p>
+<ul class="post">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>a list of all <tt>Interest Points</tt> will be retrieved from the database and
+stored in this <tt>Interest Points Controller</tt></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14
+15</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/admin/interest_points_controller.rb', line 12</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
+	<span class='ivar'>@interest_points</span> <span class='op'>=</span> <span class='const'>InterestPoint</span><span class='period'>.</span><span class='id identifier rubyid_all'>all</span>
+	<span class='id identifier rubyid_authorize!'>authorize!</span> <span class='symbol'>:manage</span><span class='comma'>,</span> <span class='ivar'>@interest_points</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="show-instance_method">
+  
+    - (<tt>Object</tt>) <strong>show</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This method stub is used to display the selected <tt>Interest Point</tt> on the
+corresponding page.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number used to identify the specific <tt>Interest Point</tt> to be displayed</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Preconditions:</p>
+<ul class="pre">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>the <tt>current user</tt> is an administrator</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Postconditions:</p>
+<ul class="post">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>the <tt>Interest Point</tt> identified by the given <code>id</code> will be loaded
+for use by this <tt>Interest Points Controller</tt></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/admin/interest_points_controller.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span>
+	<span class='comment'># Store this path for reference in admin/interest_points/set_defafult_image so users are redirected to this page after setting default
+</span>	<span class='id identifier rubyid_store_location'>store_location</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="unapprove-instance_method">
+  
+    - (<tt>Object</tt>) <strong>unapprove</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Remove the existing approval for this <tt>Interest Point</tt> by removing the
+<code>approver</code> information. A notification message will be displayed
+to the user which describes the result of executing this method.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number used to identify the specific <tt>Interest Point</tt> to be displayed</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Preconditions:</p>
+<ul class="pre">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>the <tt>Interest Point</tt> must be active</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Postconditions:</p>
+<ul class="post">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>all <code>approver</code> information for this <tt>Interest Point</tt> will be
+removed.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+43
+44
+45
+46
+47
+48
+49
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/admin/interest_points_controller.rb', line 43</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_unapprove'>unapprove</span>
+	<span class='kw'>if</span> <span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='label'>approver_id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>approved_at:</span> <span class='kw'>nil</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+		<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:notice</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>The approval for this Interest Point has been revoked.</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>else</span>
+		<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Something went wrong! </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_get_all_errors'>get_all_errors</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>end</span>
+	<span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_admin_interest_point_path'>admin_interest_point_path</span><span class='lparen'>(</span><span class='ivar'>@interest_point</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="unapprove_multiple-instance_method">
+  
+    - (<tt>String</tt>) <strong>unapprove_multiple</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Remove all <code>approver</code> information the given <tt>Interest Points</tt>,
+which are identified by the list of <tt>interest point ids</tt>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>interest_point_ids</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the set of ids used to identify which <tt>Interest Points</tt> should be approved</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a notification message describing the result of executing this method</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Postconditions:</p>
+<ul class="post">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>the <tt>approver id</tt> and the <code>approved_at</code> values are removed for
+all <tt>Interest Points</tt> identified in the given set of
+<code>interest_point_ids</code>. A message will be returned that describes
+the result of executing this method as a String.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+82
+83
+84
+85
+86
+87
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/admin/interest_points_controller.rb', line 82</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_unapprove_multiple'>unapprove_multiple</span>
+	<span class='kw'>if</span> <span class='const'>InterestPoint</span><span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='label'>id:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:interest_point_ids</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_update_all'>update_all</span><span class='lparen'>(</span><span class='label'>approver_id:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>approved_at:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+		<span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Approval has been revoked for the selected Interest Points.</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>else</span> 
+		<span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Something went wrong and approval could not be revoked for these Interest Points. Please try again.</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update_default_image-instance_method">
+  
+    - (<tt>Object</tt>) <strong>update_default_image</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Updates the <code>default_image</code> for the given <tt>Interest Point</tt>,
+which will be displayed to users throughout the application.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>interest_point_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the <code>InterestPoint</code> to set the default image for</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>image_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the <code>image</code> to set as default for the corresponding +Interest
+Point+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Postconditions:</p>
+<ul class="post">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>the <code>default_image</code> for this <tt>Interest Point</tt> will be set to the
+given <code>image_id</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/admin/interest_points_controller.rb', line 94</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update_default_image'>update_default_image</span>
+	<span class='ivar'>@interest_point</span> <span class='op'>=</span> <span class='const'>InterestPoint</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:format</span><span class='rbracket'>]</span><span class='rparen'>)</span>		
+ 	<span class='id identifier rubyid_authorize!'>authorize!</span> <span class='symbol'>:update_default_image</span><span class='comma'>,</span> <span class='ivar'>@interest_point</span>
+ 	<span class='kw'>if</span> <span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='label'>default_image_id:</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:image_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  	<span class='kw'>if</span> <span class='ivar'>@interest_point</span><span class='period'>.</span><span class='id identifier rubyid_default_image'>default_image</span><span class='period'>.</span><span class='id identifier rubyid_pending'>pending</span><span class='period'>.</span><span class='id identifier rubyid_eql?'>eql?</span> <span class='kw'>true</span>
+			<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span>	<span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>The default image is pending, and will not be displayed in the application for users without permission to access pending Images. Consider changing the default image to an approved version, or approve the default image so it can be displayed.</span><span class='tstring_end'>&quot;</span></span>
+		<span class='kw'>else</span>					
+ 			<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:notice</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Default Image was successfully set!</span><span class='tstring_end'>&quot;</span></span>
+		<span class='kw'>end</span>
+ 	<span class='kw'>else</span>
+ 		<span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Something went wrong and the default image for this Interest Point could not be set. Please try again.</span><span class='tstring_end'>&quot;</span></span>
+ 	<span class='kw'>end</span>
+ 	
+ 	<span class='comment'># store_location is called in the show method
+</span> 	<span class='id identifier rubyid_redirect_back_or_to_default'>redirect_back_or_to_default</span> <span class='id identifier rubyid_admin_interest_point_path'>admin_interest_point_path</span><span class='lparen'>(</span><span class='ivar'>@interest_point</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update_multiple-instance_method">
+  
+    - (<tt>Object</tt>) <strong>update_multiple</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Execute the specified action, either <code>approve</code> or
+<code>unapprove</code>, for selected <tt>Interest Points</tt>, which are
+identified in the array of <tt>interest point ids</tt></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>action</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>unapprove</code> if all <tt>Interest Points</tt> identified in the given
+array should be unapproved; or <code>approve</code> if all should be
+approved by the <tt>current user</tt></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>interest_point_ids</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the set of ids used to identify which <tt>Interest Points</tt> should be approved
+or unapproved</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Postconditions:</p>
+<ul class="post">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p><tt>Interest Points</tt> identified by the set of <tt>interest point ids</tt> will be
+updated according to the given <code>action</code>. A notification message
+will be displayed describing the result of executing this method.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58
+59
+60
+61
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/admin/interest_points_controller.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update_multiple'>update_multiple</span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:interest_point_ids</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_count'>count</span> <span class='op'>&lt;</span> <span class='int'>1</span>
+		<span class='id identifier rubyid_flash'>flash</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You must select at least one Interest Point</span><span class='tstring_end'>&quot;</span></span>
+		<span class='kw'>return</span>
+	<span class='kw'>end</span>		
+	<span class='id identifier rubyid_message'>message</span> <span class='op'>=</span> <span class='id identifier rubyid_unapprove_multiple'>unapprove_multiple</span> <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:unapprove</span><span class='rbracket'>]</span>
+	<span class='id identifier rubyid_message'>message</span> <span class='op'>=</span> <span class='id identifier rubyid_approve_multiple'>approve_multiple</span> <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:approve</span><span class='rbracket'>]</span>
+	<span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_admin_interest_points_path'>admin_interest_points_path</span><span class='comma'>,</span> <span class='label'>notice:</span> <span class='id identifier rubyid_message'>message</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Mar 13 18:53:12 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.3 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

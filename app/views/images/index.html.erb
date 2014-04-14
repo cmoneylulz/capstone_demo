@@ -1,0 +1,5 @@
+<% if current_user.can? :view, @images %>
+    <% @images.each do |image| %>
+        <div class='col-xs-3'><%= image_tag image.file_url %></div>
+    <% end %>
+<% end %>

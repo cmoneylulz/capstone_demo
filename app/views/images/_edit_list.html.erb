@@ -1,0 +1,7 @@
+<% if can? :create, Image %><%= link_to new_image_path(interest_point_id: @interest_point.id), class: 'btn btn-primary btn-mini', style: 'margin-top: 25px; margin-left: 50px;' do %><span class="glyphicon glyphicon-plus"></span>Add Image<% end %><% end %>
+<% @interest_point.images.each do |image| %>
+<%= image_tag image.file_url if image.file? %>
+<div class='actions'>
+	<%= link_to image_path(image), data: { confirm: 'Are you sure you want to delete this image?' }, :method => :delete, class: 'btn btn-danger btn-mini' do %><span class="glyphicon glyphicon-remove"></span>Delete<% end %>
+</div>
+<% end %>

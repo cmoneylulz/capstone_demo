@@ -1,0 +1,53 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h2>Comments</h2>
+    </div>
+    <table class="table">
+    <% if can? :create, Comment %>
+        <%= form_for([commentable, Comment.new]) do |f| %>
+        <tr>
+            <td>
+                <%= f.label :author, "Your name:" %>
+            </td>
+            <td>
+                <%= f.text_field :author %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :body, "Comment Text:" %>
+            </td>
+            <td>
+                <%= f.text_area :body, size: "40x2" %>
+            </td>
+        </tr>
+        <tr>
+             <td></td>
+             <td>
+                <%= f.submit "Save Comment" %>
+             </td>
+        </tr>
+        <% end %>
+        <% end %>
+        <tr class="info">
+            <td></td>
+            <td></td>
+        </tr>
+        <% if commentable.comments.empty? %>
+        <tr>
+          No comments have been left.
+        </tr>
+        <% else %>
+            <% commentable.comments.each do |comment| %>
+            <tr>
+                  <td colspan='2'>
+                      <strong><%= comment.author %></strong> said &quot;<%= comment.body %>&quot; on <%= comment.created_at %>
+                  </td>
+            </tr>
+        <% end %>
+    <% end %>
+    </table>
+</div>
+
+
+

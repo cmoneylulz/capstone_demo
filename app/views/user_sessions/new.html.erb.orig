@@ -1,0 +1,50 @@
+<h2>Login</h2>
+	
+	<!-- Sign in form -->
+	<%= form_for @user_session, class: 'form-horizontal' do |f| %>
+		<div class="row">	
+			<div class="col-xs-3">
+				<%= f.label :user_name %> 
+				<%= f.text_field :user_name, class: 'form-control' %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3">
+				<%= f.label :password %>
+				<%= f.password_field :password, class: 'form-control'  %>
+			</div>
+		</div>
+		<hr />
+		<div class="row">	
+			<div class="col-xs-3">
+				<%= link_to 'Cancel', root_url, class: 'btn btn-danger' %>
+				<%= f.submit 'Login', class: 'btn btn-primary' %>
+			</div>
+		</div>
+		<hr />
+		<div class="row">
+			<div class="col-xs-3">
+				<% if can? :create, User %><%= link_to 'Create an Account', new_user_path, class: 'text-primary' %><% end %>  | <%= link_to 'Forgot password?', new_reset_password_path, class: 'text-primary', 'data-no-turbolink' => true %>  
+			</div>
+		</div>
+	</div>
+	<% end %>
+
+	<hr />
+
+	<!-- Social media sign in buttons-->
+	<div class="btn-group-vertical">
+		<p><%= link_to "auth/google_oauth2", id: 'google-login' do %><%= image_tag "sign-in-with-google.png", style: "width: 200px; height: 40px" %><% end %></p>
+		<p><%= link_to "auth/twitter", id: 'twitter-login' do %><%= image_tag "sign-in-with-twitter-gray.png", style: "width: 200px; height: 40px"  %><% end %></p>
+		<p><%= link_to "auth/facebook", id: 'facebook-login' do %><%= image_tag "log-in-with-facebook.png", style: "width: 200px; height: 40px"  %><% end %></p>
+	</div>
+	
+
+   <!-- Place this asynchronous JavaScript just before your </body> tag -->
+    <script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client:plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+    </script>

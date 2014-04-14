@@ -1,0 +1,4 @@
+<div class="list-group">
+  <%= link_to pending_contributor_interest_points_path, class: "btn btn-default" do %><span class="badge"><%= InterestPoint.pending.where(contributor_id: current_user.id).count %></span>Pending Interest Points<% end %>
+  <%= link_to active_contributor_interest_points_path, class: "btn btn-default" do %><span class="badge"><%= InterestPoint.active.where(contributor_id: current_user.id).count %></span>Active Interest Points<% end %>
+</div>

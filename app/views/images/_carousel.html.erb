@@ -1,0 +1,32 @@
+<!-- Created by Ashley Childress, 2/21/2014 -->
+
+<div class="slider-wrapper theme-default ash col-xs-12">	
+	<!-- Images -->
+		<!-- display title/caption text for each image_tag in the title attribute to display as a caption [AC] -->
+	<div id="slider">
+		<% @interest_point.images.each do |image| %>
+			 <% if can? :read, image %><%= image_tag image.file %><% end %>
+		<% end %>
+	</div>
+</div>
+
+<!-- Initialize slider script; options listed at https://github.com/gonzedge/rambling.slider/wiki/Options -->
+<script type="text/javascript">
+	$(function() {
+	  $('#slider').ramblingSlider({
+	  	effect: 'rollover',
+	  	directionNav: false,
+	  	adaptImages: true,
+	  	alignBottom: true,
+	  	useLargerImage: true,
+	  	keyboardNav: true,
+	  	pauseOnHover: true,
+	  	speed: 500,
+	  	pauseTime: 3000,
+	  	captionOpacity: 0.8
+	  });
+	});
+</script>
+<%= stylesheet_link_tag 'images' %>
+<%= stylesheet_link_tag 'jquery.rambling.slider' %>
+<%= javascript_include_tag 'jquery.rambling.slider' %>

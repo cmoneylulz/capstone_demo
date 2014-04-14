@@ -1,0 +1,16 @@
+<div id='images-list'>
+  <% @interest_point.images.each do |image| %>
+  <!-- Display image -->
+  <div class='pull-left'><%= image_tag image.file_url, class: 'image-thumbnail', style: "padding-top: 25px; #{"border: 2px solid red;".html_safe if image.default? }" if image.file? %></div>
+  
+  <!-- Image buttons -->
+  <div class='actions pull-left'>
+    <% if can? :approve, image %>
+      <% if image.pending %><%= link_to approve_admin_image_path(image), method: :put, class: 'btn btn-default btn-xs' do %><span class="glyphicon glyphicon-ok"></span> Approve<% end %>
+      <% else %><%= link_to unapprove_admin_image_path(image), method: :put, class: 'btn btn-default btn-xs' do %><span class="glyphicon glyphicon-remove"></span> Unapprove<% end %><% end %>
+    <% end %>
+    <% unless image.default? %><%= link_to 'Set Default', admin_update_default_image_path(@interest_point, image_id: image),  { method: :put, class: 'btn btn-default btn-xs'.html_safe } %><% end %>
+  </div>
+  <p class="clearfix"></p>
+  <% end %>
+</div>
