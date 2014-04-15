@@ -116,3 +116,4 @@ group :production do
 end
 
 gem 'scrypt'
+gem 'heroku'
