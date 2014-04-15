@@ -58,7 +58,7 @@ group :development, :test do
  	gem 'minitest-rails'
   gem 'minitest-reporters' # for RubyMine integration
  	gem 'minitest-spec-rails'
-  gem 'capybara_minitest_spec' # execute integration tests
+  #gem 'capybara_minitest_spec' # execute integration tests
  	
 	# For testing, use factories instead of fixtures and use database_cleaner to speed up testing
 	gem 'factory_girl_rails'
