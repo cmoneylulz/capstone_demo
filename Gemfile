@@ -12,7 +12,7 @@ gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
-# Use Uglifier as compressor for JavaScript
+# Use Uglifier as compressor for `JavaScript
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
@@ -39,7 +39,7 @@ group :doc do
   gem 'guard-yard'
   gem 'yardstick'
   gem 'yard-activerecord'
-  gem 'guard-annotate'
+  #gem 'guard-annotate'
   gem 'annotate'
 end
 
@@ -47,11 +47,11 @@ end
 gem 'bcrypt'
 
 # Use automated testing via guard; additional plugins for annotations & documentation
-gem 'guard'
+#gem 'guard'
 
 # If applicable, do not poll for changes when using guard
-require 'rbconfig'
-gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
+#require 'rbconfig'
+#gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
 
 # Require minitest & helpers for testing
 group :development, :test do
@@ -64,7 +64,7 @@ group :development, :test do
 	gem 'factory_girl_rails'
 	gem 'database_cleaner'
 	
-	gem 'guard-minitest'
+	#gem 'guard-minitest'
 	#gem 'guard-livereload'
 	#gem 'spring'
 end
@@ -74,7 +74,7 @@ group :test do
 	gem 'faker' # Generate random data
 	gem 'simplecov', '~> 0.7.1', require: false
 	gem 'minitest-spec-context'
-	gem "launchy"
+	#gem "launchy"
 end
 
 # Mocks and stubs for testing
