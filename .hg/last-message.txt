@@ -1,1 +1,0 @@
-attempted controller test addition for categories,  testing for the ELSE part of create, not sure how to trigger this condition since when creating an invalid category, an exception is thrown instead of reaching the else code
