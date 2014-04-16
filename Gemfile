@@ -111,9 +111,7 @@ gem 'reek'
 
 gem 'sqlite3', :group => [:development, :test]
 group :production do
-  gem 'thin'
   gem 'pg'
 end
 
 gem 'scrypt'
-gem 'heroku'
