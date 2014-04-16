@@ -115,3 +115,4 @@ group :production do
 end
 
 gem 'scrypt'
+gem 'rails_12factor'
