@@ -30,10 +30,10 @@ gem 'jbuilder'
 
 group :doc do
   gem 'yard'
-  gem 'guard-yard'
+  #gem 'guard-yard'
   gem 'yardstick'
   gem 'yard-activerecord'
-  gem 'guard-annotate'
+  #gem 'guard-annotate'
   gem 'annotate'
 end
 
@@ -41,7 +41,7 @@ end
 gem 'bcrypt'
 
 # Use automated testing via guard; additional plugins for annotations & documentation
-gem 'guard'
+#gem 'guard'
 
 # If applicable, do not poll for changes when using guard
 require 'rbconfig'
@@ -50,15 +50,15 @@ gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
 # Require minitest & helpers for testing
 group :development, :test do
  	gem 'minitest-rails'
-  gem 'minitest-reporters' # for RubyMine integration
+    gem 'minitest-reporters' # for RubyMine integration
  	gem 'minitest-spec-rails'
-  gem 'capybara_minitest_spec' # execute integration tests
+    gem 'capybara_minitest_spec' # execute integration tests
  	
 	# For testing, use factories instead of fixtures and use database_cleaner to speed up testing
 	gem 'factory_girl_rails'
 	gem 'database_cleaner'
 	
-	gem 'guard-minitest'
+	#gem 'guard-minitest'
 	#gem 'guard-livereload'
 	#gem 'spring'
 end
