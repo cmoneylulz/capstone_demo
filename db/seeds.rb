@@ -118,14 +118,14 @@ p "DONE!"
 
 ## Reset Rating data
 # ratings.txt should be formatted as "ratable_type|ratable_id|score|user_id"
-print "\tStarting Ratings.... "
-Rating.delete_all
-open("db/default/ratings.txt") do |interest_point_ratings|
-  interest_point_ratings.read.each_line do |interest_point_rating|
-    ratable_type, id, score, user = interest_point_rating.split("|")
-    Rating.create!(ratable_type: ratable_type, ratable_id: id, score: score, user: User.find(user))
-  end
-end
-p "DONE!"
+#print "\tStarting Ratings.... "
+#Rating.delete_all
+#open("db/default/ratings.txt") do |interest_point_ratings|
+ # interest_point_ratings.read.each_line do |interest_point_rating|
+  #  ratable_type, id, score, user = interest_point_rating.split("|")
+  #  Rating.create!(ratable_type: ratable_type, ratable_id: id, score: score, user: User.find(user))
+  #end
+#end
+#p "DONE!"
 
 puts "SUCCESS!"
