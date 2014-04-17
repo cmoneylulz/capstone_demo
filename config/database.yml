@@ -18,12 +18,14 @@ development:
   database: db/pg_development
   pool: 5
   timeout: 30000
+  username: postgres
 
 test:
   adapter: postgresql
   database: db/pg_test
   pool: 5
   timeout: 30000
+  username: postgres
 
 production:
   adapter: postgresql
