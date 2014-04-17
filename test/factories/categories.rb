@@ -1,6 +1,6 @@
 # Factory for testing Category objects
 
-FactoryGirl.define do
+Factory.define do
 	factory :category do
 		sequence(:name) { |n| "#{Faker::Company.bs}#{n}" }
 
@@ -9,7 +9,7 @@ FactoryGirl.define do
 				number_of_comments 3
 			end
 			after :create do |category, evaluator|
-				FactoryGirl.create_list :comment, evaluator.number_of_comments, category: category
+				Factory.create_list :comment, evaluator.number_of_comments, category: category
 			end
 		end
 	end

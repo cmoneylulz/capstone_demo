@@ -6617,3 +6617,61 @@ ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:mi
   Rendered c:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (118.0ms)
   [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Migrating to ChangeCommentsToPolymorphic (20140201184210)
+  [1m[36m (23.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (94.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateInterestPoints (20140123220935)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (67.0ms)[0m  [1mCREATE TABLE "interest_points" ("id" serial primary key, "latitude" decimal, "longitude" decimal, "interest_type" character varying(255), "summary" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123220935"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20140123221034)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (71.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying(255), "last_name" character varying(255), "password" character varying(255), "user_name" character varying(255), "email" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123221034"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20140123221203)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (51.0ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "author_name" character varying(255), "comment_body" text, "rating" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123221203"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateImages (20140123221252)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (37.0ms)[0m  [1mCREATE TABLE "images" ("id" serial primary key, "file_path" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123221252"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddInterestPointRefToImages (20140123230907)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "images" ADD COLUMN "interest_point_id" integer[0m
+  [1m[35m (37.0ms)[0m  CREATE INDEX "index_images_on_interest_point_id" ON "images" ("interest_point_id")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140123230907"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Migrating to AddInterestPointRefToComments (20140123231016)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "comments" ADD COLUMN "interest_point_id" integer
+  [1m[36m (49.0ms)[0m  [1mCREATE INDEX "index_comments_on_interest_point_id" ON "comments" ("interest_point_id")[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123231016"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddRefUsersToInterestPoints (20140123231356)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "contributor_id" integer[0m
+  [1m[35m (48.0ms)[0m  CREATE INDEX "index_interest_points_on_contributor_id" ON "interest_points" ("contributor_id")
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "approver_id" integer[0m
+  [1m[35m (56.0ms)[0m  CREATE INDEX "index_interest_points_on_approver_id" ON "interest_points" ("approver_id")
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "approved_at" timestamp[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123231356"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddNameToInterestPoints (20140124221100)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "name" character varying(255)[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140124221100"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeCoordinatesTypeInInterestPoints (20140125035344)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "interest_points" DROP "latitude"[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "interest_points" DROP "longitude"
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "latitude" float[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "interest_points" ADD COLUMN "longitude" float
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140125035344"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Migrating to ChangeCommentsToPolymorphic (20140201184210)

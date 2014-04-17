@@ -1,34 +1,23 @@
-# PostgreSQL. Versions 8.2 and up are supported.
-#
-# Install the pg driver:
-#   gem install pg
-# On OS X with Homebrew:
-#   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
-# On OS X with MacPorts:
-#   gem install pg -- --with-pg-config=/opt/local/lib/postgresql84/bin/pg_config
-# On Windows:
-#   gem install pg
-#       Choose the win32 build.
-#       Install PostgreSQL and put its /bin directory on your path.
-#
-# Configure Using Gemfile
-# gem 'pg'
 development:
   adapter: postgresql
-  database: db/pg_development
+  database: database_development
   pool: 5
-  timeout: 30000
-  username: postgres
-
+  timeout: 5000
+  host: localhost
+  
 test:
   adapter: postgresql
-  database: db/pg_test
+  database: database_test
   pool: 5
-  timeout: 30000
-  username: postgres
-
+  timeout: 5000
+  host: localhost
+  
 production:
   adapter: postgresql
-  database: db/pg_production
+  host: ec2-54-225-103-9.compute-1.amazonaws.com
+  database: d89q0a4fpl7o5t
+  username: mozulnvrlpzjzd
+  password: 3hmP-pxBdz_DjOg73CmGBscj6Q
   pool: 5
-  timeout: 30000
+  timeout: 5000
+  
