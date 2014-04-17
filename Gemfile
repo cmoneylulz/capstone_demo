@@ -111,7 +111,7 @@ gem 'reek'
 gem 'sqlite3', :group => [:development, :test]
 group :production do
   gem 'pg'
-  gem 'thin'
+  #gem 'thin'
 end
 
 gem 'scrypt'
