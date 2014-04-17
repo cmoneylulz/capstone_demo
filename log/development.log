@@ -6509,3 +6509,111 @@ Binary data inserted for `string` type on column `password_hash`
   [1m[35m (97.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140309232502')
   [1m[36m (108.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140310210632')[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (11.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (30.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateInterestPoints (20140123220935)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (92.0ms)[0m  [1mCREATE TABLE "interest_points" ("id" serial primary key, "latitude" decimal, "longitude" decimal, "interest_type" character varying(255), "summary" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123220935"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20140123221034)
+  [1m[35m (2.0ms)[0m  BEGIN
+  [1m[36m (70.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying(255), "last_name" character varying(255), "password" character varying(255), "user_name" character varying(255), "email" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123221034"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20140123221203)
+  [1m[35m (2.0ms)[0m  BEGIN
+  [1m[36m (65.0ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "author_name" character varying(255), "comment_body" text, "rating" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123221203"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateImages (20140123221252)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (29.0ms)[0m  [1mCREATE TABLE "images" ("id" serial primary key, "file_path" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123221252"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddInterestPointRefToImages (20140123230907)
+  [1m[35m (2.0ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "images" ADD COLUMN "interest_point_id" integer[0m
+  [1m[35m (24.0ms)[0m  CREATE INDEX "index_images_on_interest_point_id" ON "images" ("interest_point_id")
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140123230907"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+Migrating to AddInterestPointRefToComments (20140123231016)
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.0ms)[0m  ALTER TABLE "comments" ADD COLUMN "interest_point_id" integer
+  [1m[36m (32.0ms)[0m  [1mCREATE INDEX "index_comments_on_interest_point_id" ON "comments" ("interest_point_id")[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123231016"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddRefUsersToInterestPoints (20140123231356)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "contributor_id" integer[0m
+  [1m[35m (32.0ms)[0m  CREATE INDEX "index_interest_points_on_contributor_id" ON "interest_points" ("contributor_id")
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "approver_id" integer[0m
+  [1m[35m (31.0ms)[0m  CREATE INDEX "index_interest_points_on_approver_id" ON "interest_points" ("approver_id")
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "approved_at" timestamp[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140123231356"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddNameToInterestPoints (20140124221100)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "name" character varying(255)[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140124221100"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeCoordinatesTypeInInterestPoints (20140125035344)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (3.0ms)[0m  [1mALTER TABLE "interest_points" DROP "latitude"[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "interest_points" DROP "longitude"
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "interest_points" ADD COLUMN "latitude" float[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "interest_points" ADD COLUMN "longitude" float
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140125035344"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Migrating to ChangeFilePathToAttachmentInImages (20140126212236)
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "images" DROP "file_path"
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeCommentsToPolymorphic (20140201184210)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-17 17:33:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__503255812__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (118.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeCommentsToPolymorphic (20140201184210)
