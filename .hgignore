@@ -29,7 +29,6 @@ Thumbs.db
 .idea/**
 *.help
 *.yardoc
-.git/**
 
 # build script local files
 build
