@@ -41,6 +41,8 @@ end
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
+# Prevent heroku errors from missing authlogic dependency
+gem 'scrypt' 
 
 group :test do
 	gem 'turn'	# Display test output in pretty colors
