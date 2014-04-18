@@ -10,69 +10,76 @@ gem 'pg'
 gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
-#gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for `JavaScript
-#gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-#gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+ gem 'therubyracer', platforms: :ruby
 
 # Use rambling-slider image carousel
-#gem 'rambling-slider-rails'
+gem 'rambling-slider-rails'
 
 # Use jquery as the JavaScript library
-#gem 'jquery-rails'
+gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-#gem 'turbolinks'
-#gem 'jquery-turbolinks'
+gem 'turbolinks'
+gem 'jquery-turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-#gem 'jbuilder'
+gem 'jbuilder'
 
 group :doc do
-  #gem 'yard'
+  gem 'yard'
 end
 
 # Use ActiveModel has_secure_password
-#gem 'bcrypt'
+gem 'bcrypt'
 
 group :test do
-	#gem 'turn'	# Display test output in pretty colors
-	#gem 'simplecov', '~> 0.7.1', require: false
+	gem 'turn'	# Display test output in pretty colors
+	gem 'simplecov', '~> 0.7.1', require: false
+	gem 'minifacture'
+end
+
+group :development, :test do
+	gem 'minitest-rails'
+	gem 'minitest-spec-rails'
 end
 
 # Provides simple page authorization
-#gem 'cancancan', '~> 1.7'
+gem 'cancancan', '~> 1.7'
 
 # Require authlogic for passwords - omniauth provides support to login with facebook, google+, and twitter support
-#gem 'authlogic'
-#gem 'omniauth'
-#gem 'omniauth-twitter'
-#gem 'omniauth-facebook'
-#gem "omniauth-google-oauth2"
+gem 'authlogic'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem "omniauth-google-oauth2"
 
 # Use Geocoder to help with address and coordinate information --> [AC] Suggestion, but not yet installed
-#gem 'geocoder'
+gem 'geocoder'
 # Use Google Maps For Rails for map display
-#gem 'gmaps4rails'
+gem 'gmaps4rails'
 
 # Use Carrierwave for image uploads and display
-#gem 'carrierwave'
+gem 'carrierwave'
 
 #twitter bootstrap
-#gem 'bootstrap-sass'
-#gem 'bootstrap_form'
+gem 'bootstrap-sass'
+gem 'bootstrap_form'
+
 group :development do
-  #gem 'rails_layout'
+  gem 'rails_layout'
 	
 	# Display better errors and allow troubleshooting directly in browser if errors are caught in the code
-  #gem 'better_errors'
-  #gem 'binding_of_caller' 
+  gem 'better_errors'
+  gem 'binding_of_caller' 
   #gem 'debugger'  
 end
 

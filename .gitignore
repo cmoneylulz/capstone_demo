@@ -1,2 +1,6 @@
 .hg
 .idea/**
+public/**
+coverage/**
+log/**
+**.orig

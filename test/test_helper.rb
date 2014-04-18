@@ -1,18 +1,19 @@
 ENV["RAILS_ENV"] = "test"
 
 ## Run simplecov to analyze coverage during testing
-#require 'simplecov'
-#SimpleCov.start 'rails' do
+require 'simplecov'
+SimpleCov.start 'rails' do
 	## Ignore tests for the TextFormatHelper -> improperly reducing coverage value
-	#add_filter '/app/models/helpers/text_format_helper.rb'
-#end
+	add_filter '/app/models/helpers/text_format_helper.rb'
+end
 
 require File.expand_path("../../config/environment", __FILE__)
+require 'factories'
+
 require 'rails/test_help'
 require 'minitest/spec'
-#require 'factory_girl_rails'
-require 'authlogic/test_case'
 
+require 'authlogic/test_case'
 require 'support/omniauth_macros'
 require 'support/mailer_macros'
 

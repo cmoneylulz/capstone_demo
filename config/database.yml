@@ -1,13 +1,13 @@
 development:
   adapter: postgresql
-  database: database_development
+  database: poi_development_db
   pool: 5
   timeout: 5000
   host: localhost
   
 test:
   adapter: postgresql
-  database: database_test
+  database: poi_test_db
   pool: 5
   timeout: 5000
   host: localhost

@@ -27,4 +27,5 @@ GroupDProject1::Application.configure do
   # number of complex assets.
   #config.assets.debug = true
   
+  config.ssl_verify_peer = OpenSSL::SSL::VERIFY_NONE
  end
