@@ -8,7 +8,6 @@ SimpleCov.start 'rails' do
 end
 
 require File.expand_path("../../config/environment", __FILE__)
-require 'factories'
 
 require 'rails/test_help'
 require 'minitest/spec'
@@ -36,4 +35,4 @@ end
 OmniAuth.config.test_mode = true
 
 ## For mocks & method stubs
-#require 'mocha/mini_test'
+require 'mocha/mini_test'

@@ -47,12 +47,15 @@ gem 'scrypt'
 group :test do
 	gem 'turn'	# Display test output in pretty colors
 	gem 'simplecov', '~> 0.7.1', require: false
-	gem 'minifacture'
 end
 
 group :development, :test do
 	gem 'minitest-rails'
 	gem 'minitest-spec-rails'
+	gem 'factory_girl_rails'
+	gem 'faker'	
+	# Mocks and stubs for testing
+	gem 'mocha', :require => false
 end
 
 # Provides simple page authorization
