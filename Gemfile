@@ -14,7 +14,6 @@ end
 
 # Send logs to stdout for heroku
 gem 'rails_12factor', group: :production
->>>>>>> 24455bbaae147f730ee588947b65de9a56ff3802
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
