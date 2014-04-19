@@ -13,4 +13,9 @@ describe MapsController do
     assert_response :success
   end
 
+  it "must get show" do
+    get :show, id: 1
+    assert_response :success
+  end
+
 end

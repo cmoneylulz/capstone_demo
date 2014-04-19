@@ -13,9 +13,6 @@ gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
-
 # Use Uglifier as compressor for JavaScript
 gem 'uglifier', '>= 1.3.0'
 
@@ -63,26 +60,6 @@ group :development, :test do
 	# Mocks and stubs for testing
 	gem 'mocha', :require => false
 end
-
-# Require minitest & helpers for testing
-group :development, :test do
- 	gem 'minitest-rails'
- 	gem 'minitest-spec-rails'
- 	
-	# For testing, use factories instead of fixtures and use database_cleaner to speed up testing
-	gem 'factory_girl_rails'
-	gem 'database_cleaner'
-end
-
-group :test do
-	gem 'turn'	# Display test output in pretty colors
-	gem 'faker' # Generate random data
-	gem 'simplecov', '~> 0.7.1', require: false
-	gem 'minitest-spec-context'
-end
-
-# Mocks and stubs for testing
-gem 'mocha', :require => false
 
 # Provides simple page authorization
 gem 'cancancan', '~> 1.7'
