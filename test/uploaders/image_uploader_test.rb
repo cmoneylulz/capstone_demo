@@ -7,7 +7,7 @@ describe ImageUploader do
 	
 	before do
 		ImageUploader.enable_processing = true
-		@image = FactoryGirl.create(:image)
+		@image = Factory.create(:image)
 		@uploader = ImageUploader.new(@image)
 	end
 	

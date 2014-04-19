@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
+<<<<<<< HEAD
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', :group => [:development, :test]
 group :production do
@@ -10,6 +12,13 @@ group :production do
 	gem 'scrypt'
     #gem 'thin'
 end
+=======
+# Use postgres as the database for Active Record
+gem 'pg'
+
+# Send logs to stdout for heroku
+gem 'rails_12factor', group: :production
+>>>>>>> 24455bbaae147f730ee588947b65de9a56ff3802
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -21,7 +30,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use rambling-slider image carousel
 gem 'rambling-slider-rails'
@@ -38,49 +47,29 @@ gem 'jbuilder'
 
 group :doc do
   gem 'yard'
-  gem 'guard-yard'
   gem 'yardstick'
   gem 'yard-activerecord'
-  gem 'guard-annotate'
   gem 'annotate'
 end
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
-
-# Use automated testing via guard; additional plugins for annotations & documentation
-gem 'guard'
-
-# If applicable, do not poll for changes when using guard
-require 'rbconfig'
-gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
-
-# Require minitest & helpers for testing
-group :development, :test do
- 	gem 'minitest-rails'
-  gem 'minitest-reporters' # for RubyMine integration
- 	gem 'minitest-spec-rails'
-  gem 'capybara_minitest_spec' # execute integration tests
- 	
-	# For testing, use factories instead of fixtures and use database_cleaner to speed up testing
-	gem 'factory_girl_rails'
-	gem 'database_cleaner'
-	
-	gem 'guard-minitest'
-	#gem 'guard-livereload'
-	#gem 'spring'
-end
+# Prevent heroku errors from missing authlogic dependency
+gem 'scrypt' 
 
 group :test do
 	gem 'turn'	# Display test output in pretty colors
-	gem 'faker' # Generate random data
 	gem 'simplecov', '~> 0.7.1', require: false
-	gem 'minitest-spec-context'
-	gem "launchy"
 end
 
-# Mocks and stubs for testing
-gem 'mocha', :require => false
+group :development, :test do
+	gem 'minitest-rails'
+	gem 'minitest-spec-rails'
+	gem 'factory_girl_rails'
+	gem 'faker'	
+	# Mocks and stubs for testing
+	gem 'mocha', :require => false
+end
 
 # Provides simple page authorization
 gem 'cancancan', '~> 1.7'
@@ -103,17 +92,11 @@ gem 'carrierwave'
 #twitter bootstrap
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
+
 group :development do
   gem 'rails_layout'
 	
 	# Display better errors and allow troubleshooting directly in browser if errors are caught in the code
   gem 'better_errors'
   gem 'binding_of_caller' 
-  gem 'debugger'  
 end
-
-## Code analyzers
-gem 'flog'
-gem 'reek'
-
-gem 'scrypt'

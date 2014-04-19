@@ -1,5 +1,5 @@
 # SSL Certificates fail for Facebook authentication, so I turned them off [AC]
-OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+#OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE  ----> Moved this line to development & test environment files [-AC] 4/18/2014
 
 # Configuration for omniauth user authentication
 Rails.application.config.middleware.use OmniAuth::Builder do

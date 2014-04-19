@@ -1,0 +1,10 @@
+.hg
+.idea/**
+public/**
+coverage/*
+log/**
+**.log
+**.orig
+**.json
+test/support/uploads/**
+tmp/**

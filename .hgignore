@@ -1,0 +1,39 @@
+syntax: glob
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+/public/uploads/**
+/public/system/**
+
+# Ignore bundler config
+/.bundle
+
+log/*.log
+tmp/**
+
+# Ignore the default SQLite database.
+db/*.sqlite3
+db/*.sqlite3-journal
+db/test.*
+
+# Folders & files to ignore
+.hg
+Thumbs.db
+*.cache
+*.project
+*.settings
+*.tmproj
+*.orig
+*.idea
+.idea/**
+*.help
+*.yardoc
+
+# build script local files
+build
+spec**
+test/support/**
+public/assets/**
+public/assets_test/**
+public/uploads/**

@@ -13,17 +13,8 @@
 
 ActiveRecord::Schema.define(version: 20140316171444) do
 
-  create_table "Ratings", force: true do |t|
-    t.integer  "score",        default: 0
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_id"
-    t.integer  "ratable_id"
-    t.string   "ratable_type"
-  end
-
-  add_index "Ratings", ["ratable_id", "ratable_type"], name: "index_ratings_on_ratable_id_and_ratable_type"
-  add_index "Ratings", ["user_id"], name: "index_ratings_on_user_id"
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "artist_interest_points", force: true do |t|
     t.integer  "artist_id"
@@ -32,8 +23,8 @@ ActiveRecord::Schema.define(version: 20140316171444) do
     t.integer  "interest_point_id"
   end
 
-  add_index "artist_interest_points", ["artist_id"], name: "index_artist_interest_points_on_artist_id"
-  add_index "artist_interest_points", ["interest_point_id"], name: "index_artist_interest_points_on_interest_point_id"
+  add_index "artist_interest_points", ["artist_id"], name: "index_artist_interest_points_on_artist_id", using: :btree
+  add_index "artist_interest_points", ["interest_point_id"], name: "index_artist_interest_points_on_interest_point_id", using: :btree
 
   create_table "artists", force: true do |t|
     t.string   "first_name"
@@ -48,6 +39,17 @@ ActiveRecord::Schema.define(version: 20140316171444) do
     t.datetime "updated_at"
   end
 
+  create_table "comment_ratings", force: true do |t|
+    t.integer  "comment_id"
+    t.integer  "user_id"
+    t.integer  "score",      default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comment_ratings", ["comment_id"], name: "index_comment_ratings_on_comment_id", using: :btree
+  add_index "comment_ratings", ["user_id"], name: "index_comment_ratings_on_user_id", using: :btree
+
   create_table "comments", force: true do |t|
     t.string   "author"
     t.text     "body"
@@ -57,9 +59,10 @@ ActiveRecord::Schema.define(version: 20140316171444) do
     t.string   "commentable_type"
   end
 
-  add_index "comments", ["commentable_id", "commentable_type"], name: "index_comments_on_commentable_id_and_commentable_type"
+  add_index "comments", ["commentable_id", "commentable_type"], name: "index_comments_on_commentable_id_and_commentable_type", using: :btree
 
   create_table "images", force: true do |t|
+    t.string   "file_path"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "file"
@@ -69,9 +72,9 @@ ActiveRecord::Schema.define(version: 20140316171444) do
     t.integer  "contributor_id"
   end
 
-  add_index "images", ["approver_id"], name: "index_images_on_approver_id"
-  add_index "images", ["contributor_id"], name: "index_images_on_contributor_id"
-  add_index "images", ["interest_point_id"], name: "index_images_on_interest_point_id"
+  add_index "images", ["approver_id"], name: "index_images_on_approver_id", using: :btree
+  add_index "images", ["contributor_id"], name: "index_images_on_contributor_id", using: :btree
+  add_index "images", ["interest_point_id"], name: "index_images_on_interest_point_id", using: :btree
 
   create_table "interest_points", force: true do |t|
     t.text     "summary"
@@ -80,22 +83,34 @@ ActiveRecord::Schema.define(version: 20140316171444) do
     t.integer  "contributor_id"
     t.integer  "approver_id"
     t.datetime "approved_at"
+    t.string   "name"
     t.float    "latitude"
     t.float    "longitude"
-    t.string   "name"
+    t.integer  "category_id"
+    t.integer  "default_image_id"
     t.string   "address_line_1"
     t.string   "address_line_2"
     t.string   "city"
     t.string   "state"
     t.string   "zip"
-    t.integer  "category_id"
-    t.integer  "default_image_id"
   end
 
-  add_index "interest_points", ["approver_id"], name: "index_interest_points_on_approver_id"
-  add_index "interest_points", ["category_id"], name: "index_interest_points_on_category_id"
-  add_index "interest_points", ["contributor_id"], name: "index_interest_points_on_contributor_id"
-  add_index "interest_points", ["default_image_id"], name: "index_interest_points_on_default_image_id"
+  add_index "interest_points", ["approver_id"], name: "index_interest_points_on_approver_id", using: :btree
+  add_index "interest_points", ["category_id"], name: "index_interest_points_on_category_id", using: :btree
+  add_index "interest_points", ["contributor_id"], name: "index_interest_points_on_contributor_id", using: :btree
+  add_index "interest_points", ["default_image_id"], name: "index_interest_points_on_default_image_id", using: :btree
+
+  create_table "ratings", force: true do |t|
+    t.integer  "score",        default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "ratable_id"
+    t.string   "ratable_type"
+  end
+
+  add_index "ratings", ["ratable_id", "ratable_type"], name: "index_ratings_on_ratable_id_and_ratable_type", using: :btree
+  add_index "ratings", ["user_id"], name: "index_ratings_on_user_id", using: :btree
 
   create_table "reports", force: true do |t|
     t.integer  "comment_id"
@@ -104,8 +119,8 @@ ActiveRecord::Schema.define(version: 20140316171444) do
     t.datetime "updated_at"
   end
 
-  add_index "reports", ["comment_id"], name: "index_reports_on_comment_id"
-  add_index "reports", ["user_id"], name: "index_reports_on_user_id"
+  add_index "reports", ["comment_id"], name: "index_reports_on_comment_id", using: :btree
+  add_index "reports", ["user_id"], name: "index_reports_on_user_id", using: :btree
 
   create_table "roles", force: true do |t|
     t.string   "name"
@@ -121,16 +136,16 @@ ActiveRecord::Schema.define(version: 20140316171444) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "persistence_token"
     t.string   "perishable_token"
     t.string   "password_salt"
     t.string   "provider"
     t.string   "uid"
+    t.string   "persistence_token"
     t.integer  "role_id"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email"
-  add_index "users", ["perishable_token"], name: "index_users_on_perishable_token"
-  add_index "users", ["role_id"], name: "index_users_on_role_id"
+  add_index "users", ["email"], name: "index_users_on_email", using: :btree
+  add_index "users", ["perishable_token"], name: "index_users_on_perishable_token", using: :btree
+  add_index "users", ["role_id"], name: "index_users_on_role_id", using: :btree
 
 end

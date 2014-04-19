@@ -1,5 +1,5 @@
 class AddUserToInterestPointRatings < ActiveRecord::Migration
   def change
-    add_reference :Ratings, :user, index: true
+    add_reference :ratings, :user, index: true
   end
 end

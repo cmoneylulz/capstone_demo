@@ -1,27 +1,22 @@
-# SQLite version 3.x
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: postgresql
+  database: poi_development_db
   pool: 5
-  timeout: 30000
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
+  timeout: 5000
+  host: localhost
+  
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
+  adapter: postgresql
+  database: poi_test_db
   pool: 5
-  timeout: 30000
-
+  timeout: 5000
+  host: localhost
+  
 production:
   adapter: postgresql
-  encoding: utf8
-  database: project_production
+  host: ec2-54-225-103-9.compute-1.amazonaws.com
+  database: d89q0a4fpl7o5t
+  username: mozulnvrlpzjzd
+  password: 3hmP-pxBdz_DjOg73CmGBscj6Q
   pool: 5
-  username: 
-  password:
+  timeout: 5000
