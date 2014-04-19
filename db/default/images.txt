@@ -1,10 +1,10 @@
-1|bremen.jpg|1|1
-2|carrollton.gif|1|1
-2|carrollton1.png|1|1
-2|carrollton2.png|1|
-2|carrollton3.png|1|
-3|villa_rica.jpg|1|1
-4|corner-cafe.jpg|2|
-4|corner-logo.jpeg|2|
-5|little-hawaiian.jpg|2|
-5|hawaiian-logo.png|2|
+Bremen|bremen.jpg|achildr1|achildr1
+Carrollton|carrollton.gif|achildr1|achildr1
+Carrollton|carrollton1.png|achildr1|achildr1
+Carrollton|carrollton2.png|achildr1|
+Carrollton|carrollton3.png|achildr1|
+Villa Rica|villa_rica.jpg|achildr1|achildr1
+The Corner Cafe|corner-cafe.jpg|cwilso25|
+The Corner Cafe|corner-logo.jpeg|cwilso25|
+Little Hawaiian|little-hawaiian.jpg|cwilso25|
+Little Hawaiian|hawaiian-logo.png|cwilso25|
