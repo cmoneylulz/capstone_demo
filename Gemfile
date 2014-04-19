@@ -115,3 +115,4 @@ end
 gem 'flog'
 gem 'reek'
 
+gem 'scrypt'
