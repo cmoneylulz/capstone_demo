@@ -11,9 +11,6 @@ group :production do
 	gem 'scrypt'
     #gem 'thin'
 end
-=======
-# Use postgres as the database for Active Record
-gem 'pg'
 
 # Send logs to stdout for heroku
 gem 'rails_12factor', group: :production
