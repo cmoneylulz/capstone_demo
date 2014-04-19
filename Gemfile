@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -30,10 +33,10 @@ gem 'jbuilder'
 
 group :doc do
   gem 'yard'
-  #gem 'guard-yard'
+  gem 'guard-yard'
   gem 'yardstick'
   gem 'yard-activerecord'
-  #gem 'guard-annotate'
+  gem 'guard-annotate'
   gem 'annotate'
 end
 
@@ -41,7 +44,7 @@ end
 gem 'bcrypt'
 
 # Use automated testing via guard; additional plugins for annotations & documentation
-#gem 'guard'
+gem 'guard'
 
 # If applicable, do not poll for changes when using guard
 require 'rbconfig'
@@ -50,15 +53,15 @@ gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
 # Require minitest & helpers for testing
 group :development, :test do
  	gem 'minitest-rails'
-    gem 'minitest-reporters' # for RubyMine integration
+  gem 'minitest-reporters' # for RubyMine integration
  	gem 'minitest-spec-rails'
-    gem 'capybara_minitest_spec' # execute integration tests
+  gem 'capybara_minitest_spec' # execute integration tests
  	
 	# For testing, use factories instead of fixtures and use database_cleaner to speed up testing
 	gem 'factory_girl_rails'
 	gem 'database_cleaner'
 	
-	#gem 'guard-minitest'
+	gem 'guard-minitest'
 	#gem 'guard-livereload'
 	#gem 'spring'
 end
@@ -108,12 +111,3 @@ end
 gem 'flog'
 gem 'reek'
 
-gem 'sqlite3', :group => [:development, :test]
-group :production do
-  gem 'pg'
-  #gem 'thin'
-end
-
-gem 'scrypt'
-gem 'rails_12factor'
-#comment insert
